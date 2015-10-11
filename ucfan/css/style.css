@@ -10,7 +10,7 @@ body {
 }
 
 .fixed-width {
-
+    width: 980px;
 }
 
 .nav {
@@ -25,17 +25,83 @@ body {
     padding: 18px 0;
 }
 
-.nav ul li {
+.nav li {
     display: inline-block;
     list-style: none;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
-.nav ul li a {
+.nav a {
     color: #fff;
     text-decoration: none;
 }
 
+a .active {
+    /* TODO: 抓不到~~~~ */
+    color: #FF5E8B !important;
+}
+
+.cover {
+    height: 600px;
+    position: relative;
+    font-family: serif;
+}
+
 .image {
+    width: 100%;
     text-align: center;
+    background-image: url("../img/cover.png");
+    background-size: cover;
+    color: #fff;
+}
+
+.cover h1 {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    margin-left: -152px;
+    width: 300px;
+    font-size: 60px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+span .s1 {
+    /* TODO: 為什麼抓不到QQ */
+}
+
+span .s2 {
+}
+
+.cover h2 {
+    position: absolute;
+    top: 175px;
+    left: 50%;
+    margin-left: -155px;
+    letter-spacing: 5px;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.cover h3 {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    margin-left: -195px;
+    width: 390px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.cover .message {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -175px;
+    padding: 20px 0;
+    background-color: #FF0048;
+    width: 350px;
+    letter-spacing: 3px;
+    font-size: 18px;
 }
