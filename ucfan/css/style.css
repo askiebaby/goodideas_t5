@@ -2,7 +2,7 @@ body {
     padding: 0;
     margin: 0;
     border: 0;
-    font-family: sans-serif;
+    letter-spacing: 1px;
 }
 
 * {
@@ -15,6 +15,7 @@ body {
 
 .fixed-width {
     width: 980px;
+    margin: 0 auto;
 }
 
 .nav {
@@ -22,6 +23,7 @@ body {
     width: 100%;
     text-align: center;
     font-size: 15px;
+    font-family: sans-serif;
 }
 
 .nav ul {
@@ -41,7 +43,6 @@ body {
 }
 
 a .active {
-    /* TODO: 抓不到~~~~ */
     color: #FF5E8B !important;
 }
 
@@ -49,13 +50,13 @@ a .active {
     height: 600px;
     position: relative;
     font-family: serif;
+    background-image: url("../img/cover.png");
 }
 
 .image {
     width: 100%;
     text-align: center;
-    background-image: url("../img/cover.png");
-    background-size: cover;
+    background-size: 150% 100%;
     color: #fff;
 }
 
@@ -68,13 +69,6 @@ a .active {
     font-size: 60px;
     font-weight: normal;
     font-style: italic;
-}
-
-span .s1 {
-    /* TODO: 為什麼抓不到QQ */
-}
-
-span .s2 {
 }
 
 .cover h2 {
@@ -120,9 +114,100 @@ span .s2 {
     width: 100%;
 }
 
-
 .thumbnail {
     float: left;
     width: 337px;
     height: 252px;
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+}
+
+.content h1 {
+    margin: 45px 0;
+    color: #FF0048;
+    font-weight: normal;
+    font-size: 25px;
+}
+
+.folks {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.profile {
+    width: 400px;
+    float: left;
+    text-align: center;
+}
+
+.profile .name {
+    color: #FF0048;
+    font-size: 46px;
+    margin: 15px 0 0 0;
+}
+
+.profile .description {
+    font-family: sans-serif;
+    margin: 0 0 30px 0;
+}
+
+.black {
+    background-color: #000;
+    color: #fff;
+}
+
+.white {
+    background-color: #fff;
+    color: #000;
+}
+
+.button {
+    padding: 10px 0;
+    font-size: 14px;
+    font-family: sans-serif;
+    width: 212px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.story {
+    background-image: url("../img/footer.jpg");
+    padding-bottom: 10px;
+}
+
+.left {
+    margin-top: 50px;
+}
+
+.right {
+    margin-top: 200px;
+}
+
+.column {
+    width: 50%;
+    float: left;
+    padding: 0 80px 60px 80px;
+    font-size: 14px;
+}
+
+.intro {
+    text-align: left;
+}
+
+.dotted {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 65px;
+    letter-spacing: 13px;
+    padding: 40px 0;
+}
+
+.claim {
+    text-align: center;
+    padding: 30px 0;
 }
