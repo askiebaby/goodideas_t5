@@ -92,6 +92,13 @@ a .active {
     font-weight: normal;
 }
 
+.cover .dots {
+    position: absolute;
+    top: 355px;
+    left: 50%;
+    margin-left: -6px;
+}
+
 .message {
     background-color: #FF0048;
     letter-spacing: 3px;
@@ -110,7 +117,21 @@ a .active {
     width: 350px;
 }
 
+.triangle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -21px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 21px 21px 0 21px;
+    border-color: #FF0048 transparent transparent transparent;
+    z-index: 1px;
+}
+
 .work {
+    position: relative;
     width: 100%;
 }
 
@@ -121,12 +142,14 @@ a .active {
 }
 
 .content {
+    position: relative;
     width: 100%;
     text-align: center;
 }
 
 .content h1 {
-    margin: 45px 0;
+    margin: 0;
+    padding: 45px 0;
     color: #FF0048;
     font-weight: normal;
     font-size: 25px;
@@ -199,7 +222,17 @@ a .active {
     text-align: left;
 }
 
-.dotted {
+.intro p {
+    font-family: sans-serif;
+}
+
+.v {
+    max-width: 12px;
+    word-break: break-all;
+    line-height: 30px;
+}
+
+.dots {
     text-align: center;
     margin: 0 auto;
     font-size: 65px;
