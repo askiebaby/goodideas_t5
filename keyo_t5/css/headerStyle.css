@@ -1,0 +1,22 @@
+#header {
+  color: #FFFFFF;
+  text-align: center; }
+  #header ul {
+    display: inline-block;
+    list-style-type: none;
+    padding: 1.3em 0;
+    margin: 0; }
+  #header li {
+    float: left;
+    padding: 0 1em; }
+  #header a:visited, #header a:link {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-align: center; }
+  #header a:hover, #header a:active {
+    color: #FF0040; }
+
+/*# sourceMappingURL=headerStyle.css.map */
