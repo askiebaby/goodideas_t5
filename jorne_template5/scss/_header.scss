@@ -1,0 +1,62 @@
+#header{
+  background: #360836;
+  ul{
+    text-align: center;
+    li{
+      display: inline-block;
+      a{
+        @include fontset(18px,50px,$rne_subred,padding,0 20px,border,0,margin,0);
+        display: block;
+        height: 50px;
+        @include transition(0.5s linear);
+        &:hover{
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*=====RWD===================================*/
+/*768↓（480~768）*/
+@media (max-width:767px){
+}
+
+
+
+/*480↓*/
+@media (max-width:479px){
+}
+
+
+
+/*768~1023*/
+@media (min-width:768px) and (max-width:1023px){
+}
+
+
+
+/*1024↑（1024~1279）*/
+@media (min-width:1024px){
+}
+
+
+
+/*1280↑*/
+@media (min-width:1280px){
+}
+
+
+
+/*1280↑*/
+@media (min-width:1280px){
+}
