@@ -1,5 +1,141 @@
-header {
-  height: 800px;
-  color: white; }
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%; }
+
+h1, h2 {
+  margin: 0;
+  padding: 0; }
+
+nav {
+  background-color: #191970;
+  color: white;
+  font-size: 12px;
+  text-align: center; }
+  nav ul {
+    padding: 20px 0px;
+    margin: 0px; }
+  nav a {
+    padding: 0px 20px;
+    color: white; }
+    nav a:hover {
+      color: white; }
+
+.clear {
+  clear: both; }
+
+.content {
+  margin: 0;
+  padding: 0;
+  height: 90%; }
+  .content .contentTop {
+    position: relative;
+    background: url(../images/cover.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%; }
+    .content .contentTop .mainTitle {
+      position: relative;
+      top: 20%;
+      width: 30%;
+      margin: 0 auto;
+      color: white;
+      text-align: center; }
+      .content .contentTop .mainTitle h1 {
+        font-size: 40px; }
+      .content .contentTop .mainTitle h2 {
+        font-size: 30px;
+        word-spacing: 20px;
+        letter-spacing: 5px; }
+    .content .contentTop .mainDes {
+      position: relative;
+      top: 40%;
+      width: 25%;
+      margin: 0 auto;
+      color: white;
+      font-size: 20px; }
+    .content .contentTop .pageDown {
+      position: absolute;
+      bottom: 0;
+      left: 40%;
+      width: 20%;
+      margin: 0 auto;
+      color: white;
+      background-color: red;
+      font-size: 15px;
+      padding: 10px; }
+  .content .contentMid .showPic {
+    padding: 0px; }
+    .content .contentMid .showPic img {
+      width: 100%; }
+  .content .contentBot {
+    background-color: white;
+    margin: 60px 0px;
+    color: red; }
+    .content .contentBot .midTitle {
+      background-color: red;
+      font-size: 15px;
+      padding: 10px;
+      color: white; }
+    .content .contentBot .botTitle {
+      font-size: 20px;
+      margin: 40px 0px; }
+    .content .contentBot .folkBoxs {
+      margin: 0 auto; }
+      .content .contentBot .folkBoxs .folkBox {
+        width: 800px;
+        margin: 0 auto 40px auto; }
+        .content .contentBot .folkBoxs .folkBox .folkItem {
+          width: 400px;
+          float: left; }
+          .content .contentBot .folkBoxs .folkBox .folkItem .name {
+            font-size: 40px;
+            letter-spacing: 5px;
+            margin: 0px; }
+          .content .contentBot .folkBoxs .folkBox .folkItem .position {
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin: 0px; }
+    .content .contentBot .btnContact {
+      width: 180px;
+      margin: 0 auto;
+      padding: 5px 0;
+      background-color: black;
+      color: white; }
+      .content .contentBot .btnContact p {
+        margin: 0;
+        font-size: 20px; }
+  .content footer .footerUp {
+    background: url(../images/footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 200px 10px 200px;
+    color: white; }
+    .content footer .footerUp .document {
+      width: 50%;
+      margin: 0 auto; }
+      .content footer .footerUp .document h1 {
+        margin-bottom: 10px; }
+      .content footer .footerUp .document p {
+        font-size: 12px; }
+    .content footer .footerUp .three-cirlce {
+      height: 150px; }
+    .content footer .footerUp #footerRight {
+      margin-top: 150px; }
+    .content footer .footerUp .btnTop {
+      width: 180px;
+      margin: 0 auto;
+      padding: 5px 0;
+      background-color: white;
+      color: black; }
+      .content footer .footerUp .btnTop p {
+        margin: 0;
+        font-size: 20px; }
+  .content footer .copyright {
+    margin: 30px 0px;
+    letter-spacing: 3px; }
 
 /*# sourceMappingURL=mystyle.css.map */

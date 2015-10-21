@@ -1,4 +1,187 @@
-header{
-	height: 800px;
-	color: white;
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
 }
+h1, h2 {
+	margin: 0;
+	padding: 0;
+}
+
+// header start
+nav {
+
+	background-color: #191970;
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	ul {
+		padding: 20px 0px;
+		margin: 0px;
+	}
+	a {			
+		padding: 0px 20px;
+		color: white;
+		&:hover {
+			color: white;
+		}
+	}
+}
+.clear {
+	clear: both;
+}
+
+// header end
+
+.content {
+	margin: 0;
+	padding: 0;
+	height: 90%;
+	.contentTop {
+		position: relative;
+		background: url(../images/cover.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+		.mainTitle {
+			position: relative;
+			top: 20%;
+			width: 30%;
+			margin: 0 auto ;
+			color: white;
+			text-align: center;
+			h1 {
+				font-size: 40px;
+			}
+			h2 {
+				font-size: 30px;
+				word-spacing: 20px;
+				letter-spacing: 5px;
+			}
+		}
+		.mainDes {
+			position: relative;
+			top: 40%;
+			width: 25%;
+			margin: 0 auto ;
+			color: white;
+			font-size: 20px;
+		}
+		.pageDown {
+			position: absolute;
+			bottom: 0;
+			left: 40%;
+			width: 20%;
+			margin: 0 auto;
+			color: white;
+			background-color: red;
+			font-size: 15px;
+			padding: 10px;
+		}
+	}
+	.contentMid {
+		.showPic {
+			padding: 0px;
+			img {
+				width: 100%;
+			}
+		}
+	}
+	.contentBot {
+		background-color: white;
+		margin: 60px 0px;
+		color: red;
+		.midTitle {
+			background-color: red;
+			font-size: 15px;
+			padding: 10px;
+			color: white;
+		}
+		.botTitle {
+			font-size: 20px;
+			margin: 40px 0px;
+		}
+		.folkBoxs {
+
+			margin: 0 auto;
+			.folkBox {
+				width: 800px;
+				margin: 0 auto 40px auto;
+				.folkItem {
+					width: 400px;
+					float: left;
+					.name {
+						font-size: 40px;
+						letter-spacing: 5px;
+						margin: 0px;
+					}
+					.position {
+						font-size: 15px;
+						letter-spacing: 1px;
+						margin: 0px;
+					}
+				}
+			}
+		}
+		.btnContact {
+			width: 180px;
+			margin: 0 auto;
+			padding: 5px 0;
+			background-color: black;
+			color: white;
+			p {
+				margin: 0;
+				font-size: 20px;
+			}
+		}
+	}
+
+	footer {
+		.footerUp{
+			background: url(../images/footer.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			padding: 50px 200px 10px 200px;
+			color: white;
+			.document {
+				width: 50%;
+				margin: 0 auto;	
+				h1 {
+					margin-bottom: 10px;
+				}
+				p {
+					font-size: 12px;
+				}
+			}
+			.three-cirlce {
+				height: 150px;
+			}
+			#footerLeft {
+
+			}
+			#footerRight {
+				margin-top: 150px;
+			}
+			.btnTop {
+				width: 180px;
+				margin: 0 auto;
+				padding: 5px 0;
+				background-color: white;
+				color: black;
+				p {
+					margin: 0;
+					font-size: 20px;
+				}
+			}
+		}
+		.copyright {
+			margin: 30px 0px;
+			letter-spacing: 3px;
+		}
+
+	}
+}
+
