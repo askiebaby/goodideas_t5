@@ -1,0 +1,61 @@
+body {
+  margin: 0px; }
+
+.header {
+  background-color: #360836; }
+  .header ul {
+    margin: 0px;
+    text-align: center; }
+    .header ul li {
+      display: inline-block;
+      padding: 20px; }
+
+.content {
+  background-image: url("../img/cover.png");
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  position: relative; }
+  .content .web-talk {
+    position: absolute;
+    bottom: 281px;
+    left: 498px;
+    background-color: green; }
+    .content .web-talk h3 {
+      margin: 0px; }
+    .content .web-talk p {
+      margin: 0px; }
+  .content .web-dream {
+    position: absolute;
+    left: 498px;
+    bottom: 50px;
+    background-color: yellow; }
+
+.picture .a1, .picture .a2, .picture .a3 {
+  padding: 0px; }
+
+.line {
+  background-color: green; }
+  .line p {
+    text-align: center; }
+
+.banner {
+  height: 1000px;
+  width: 100%;
+  text-align: center; }
+  .banner .banner-content {
+    margin: 0 auto;
+    width: 980px;
+    display: inline-block; }
+
+.story {
+  background-image: url("../img/footer.jpg");
+  background-size: cover;
+  height: 1000px; }
+
+.footer {
+  background-color: white; }
+  .footer p {
+    text-align: center; }
+
+/*# sourceMappingURL=1.css.map */
