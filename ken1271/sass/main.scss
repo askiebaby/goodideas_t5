@@ -1,0 +1,97 @@
+.main{
+  .main-about{
+    background-image: url("img/mountain.png");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height:400px;
+    color: white;
+    position: relative;
+    h1{
+      margin: 0;
+      position: relative;
+      top:20%;
+    }
+    h3{
+      position: relative;
+      top:20%;
+    }
+    p{
+      position: relative;
+      top:20%;
+    }
+    div{
+      background-color:#FF0048;
+      position: relative;
+      top:40%;
+      width: 30%;
+      margin: 0 auto;
+      height:20%;
+      font-size: 18px;
+    }
+  }
+  .main-display{
+    .gallery{
+      div{
+        padding: 0;
+      }
+    }
+    div{
+      background-color: #FF0048;
+      color: white;
+      text-align: center;
+    }
+  }
+  .main-member{
+    margin: 30px 0;
+    text-align: center;
+    h1, h2{
+      color: #FF0048;
+    }
+    a>div{
+      background-image: url("img/contact.png");
+      background-position: center;
+      background-size: cover;
+      height: 50px;
+      width:20%;
+      margin: 20px auto;
+    }
+    >div{
+      width:70%;
+      margin: 0 auto;
+    }
+    >div>div{
+      padding: 0;
+    }
+  }
+  .main-introduction{
+    background-image: url("img/intro_background.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 1400px;
+    text-align: center;
+    >div{
+      text-align: left;
+      width: 70%;
+      margin: 0 auto;
+    }
+    >div>div{
+      color: white;
+    }
+    .intro-left{
+      margin: 0 auto 200px;
+    }
+    .intro-right{
+      margin: 200px auto 0px;
+    }
+    .textblock{
+      margin: 50px auto;
+    }
+    a{
+      text-align: center;
+      background-color: white;
+      color:black;
+      padding: 10px;
+    }
+  }
+}
