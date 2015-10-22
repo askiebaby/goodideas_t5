@@ -1,0 +1,48 @@
+$mainWidth: 80em
+$mainHeightuUnit: 45em
+$pageTitleColor: #FA5858
+$headerBGColor: #3B0B39
+$mainContainerBGColor:#FFFFFF  // for people list
+$subContainerBGColor: #000000  // for intro articles
+$footerBGColor: #D8D8D8
+
+$defaultBGColor1: #6E6E6E  // for layout/design
+$defaultBGColor2: #9AFE2E  // for layout/design
+
+.mainContainerSetup
+  margin: 0 auto
+  width: $mainWidth
+
+#header
+  @extend .mainContainerSetup
+  height: $mainHeightuUnit / 11
+  background-color: $headerBGColor
+
+#mainImage
+  @extend .mainContainerSetup
+  height: $mainHeightuUnit
+  background-image: url("../images/mainbg.png")
+  // background-repeat: no-repeat
+  // background-color: $defaultBGColor1
+
+#mosaic
+  @extend .mainContainerSetup
+  height: $mainHeightuUnit
+  background-color: $defaultBGColor2
+
+#peopleList
+  @extend .mainContainerSetup
+  height: $mainHeightuUnit * 2
+  background-color: $mainContainerBGColor
+
+#articles
+  @extend .mainContainerSetup
+  height: $mainHeightuUnit * 2
+  background-image: url("../images/articlebg.png")
+  // background-color: $subContainerBGColor
+
+
+#footer
+  @extend .mainContainerSetup
+  height: $mainHeightuUnit / 11 * 2
+  background-color: $footerBGColor
