@@ -47,24 +47,23 @@ body{
   .a1,.a2,.a3{
     padding: 0px;
   }
-
 }
 .line{
   background-color: green;
   p{
     text-align: center;
+    margin: 0px;
 
   }
 
 }
 .banner{
-  height: 1000px;
+  height: auto;
   width: 100%;
-  text-align: center;
+
   .banner-content{
     margin: 0 auto;
     width: 980px;
-    display: inline-block;
   }
 }
 
@@ -72,6 +71,10 @@ body{
   background-image: url("../img/footer.jpg");
   background-size: cover;
   height: 1000px;
+  .story-content{
+    width: 980px;
+    margin: 0 auto;
+  }
 }
 
 .footer{

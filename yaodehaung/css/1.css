@@ -37,21 +37,23 @@ body {
 .line {
   background-color: green; }
   .line p {
-    text-align: center; }
+    text-align: center;
+    margin: 0px; }
 
 .banner {
-  height: 1000px;
-  width: 100%;
-  text-align: center; }
+  height: auto;
+  width: 100%; }
   .banner .banner-content {
     margin: 0 auto;
-    width: 980px;
-    display: inline-block; }
+    width: 980px; }
 
 .story {
   background-image: url("../img/footer.jpg");
   background-size: cover;
   height: 1000px; }
+  .story .story-content {
+    width: 980px;
+    margin: 0 auto; }
 
 .footer {
   background-color: white; }
