@@ -12,10 +12,14 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
 	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
+
 
 	<!-- header -->
 	<header id="header">
@@ -40,24 +44,95 @@
 			</div>
 		</div>
 		<!-- work clients -->
-		<div class="workAndClients container-fluid">
-			<div class="showBox row">
-				<div class="showPic col-md-3"><img src="images/a1.jpg"></div>
-				<div class="showPic col-md-3"><img src="images/a2.jpg"></div>
-				<div class="showPic col-md-3"><img src="images/a3.jpg"></div>
-				<div class="showPic col-md-3"><img src="images/a4.jpg"></div>
-				<div class="showPic col-md-3"><img src="images/a5.jpg"></div>
-				<div class="showPic col-md-3"><img src="images/a6.jpg"></div>
-				<div class="showPic col-md-3"><img src="images/a7.jpg"></div>
-				<div class="showPic col-md-3"><img src="images/a8.jpg"></div>
-				<div class="showPic col-md-3"><img src="images/a9.jpg"></div>
-				<div class="showPic col-md-3"><img src="images/a10.jpg"></div>
-				<div class="showPic col-md-3"><img src="images/a11.jpg"></div>
-				<div class="showPic col-md-3"><img src="images/a12.jpg"></div>
+		<!-- picCarousel -->
+		<div class="picShow visible-xs">
+			<div id="carousel-pic" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-pic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-pic" data-slide-to="1" class=""></li>
+					<li data-target="#carousel-pic" data-slide-to="2" class=""></li>
+					<li data-target="#carousel-pic" data-slide-to="3" class=""></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="showPic item active">
+						<img src="images/a1.jpg">
+					</div>
+					<div class="showPic item">
+						<img src="images/a2.jpg">
+					</div>
+					<div class="showPic item">
+						<img src="images/a3.jpg">
+					</div>
+					<div class="showPic item">
+						<img src="images/a4.jpg">
+					</div>
+				</div>	
 			</div>
 		</div>
+		<!-- picCarousel End -->
+
+		<div class="workAndClients container-fluid hidden-xs">
+			<div class="showBox row">
+				<div class="showPic col-sm-6 col-md-4 col-lg-3"><img src="images/a1.jpg"></div>
+				<div class="showPic col-sm-6 col-md-4 col-lg-3"><img src="images/a2.jpg"></div>
+				<div class="showPic col-sm-6 col-md-4 col-lg-3"><img src="images/a3.jpg"></div>
+				<div class="showPic col-sm-6 col-md-4 col-lg-3"><img src="images/a4.jpg"></div>
+				<div class="showPic col-sm-6 col-md-4 col-lg-3"><img src="images/a5.jpg"></div>
+				<div class="showPic col-sm-6 col-md-4 col-lg-3"><img src="images/a6.jpg"></div>
+				<div class="showPic col-sm-6 col-md-4 col-lg-3"><img src="images/a7.jpg"></div>
+				<div class="showPic col-sm-6 col-md-4 col-lg-3"><img src="images/a8.jpg"></div>
+				<div class="showPic col-sm-6 col-md-4 col-lg-3"><img src="images/a9.jpg"></div>
+				<div class="showPic col-sm-6 col-md-4 col-lg-3"><img src="images/a10.jpg"></div>
+				<div class="showPic col-sm-6 col-md-4 col-lg-3"><img src="images/a11.jpg"></div>
+				<div class="showPic col-sm-6 col-md-4 col-lg-3"><img src="images/a12.jpg"></div>
+			</div>
+		</div>
+
 		<!-- introFolks -->
-		<div class="introFolks container-fluid">
+		<!-- folkCarousel -->
+		<h1 class="visible-xs-block text-center">Our Folks</h1>
+		<div class="folksShow visible-xs">
+			<div id="carousel-folks" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-folks" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-folks" data-slide-to="1" class=""></li>
+					<li data-target="#carousel-folks" data-slide-to="2" class=""></li>
+					<li data-target="#carousel-folks" data-slide-to="3" class=""></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="showPic item active">
+						<img src="images/andreas.jpg">
+						<div class="carousel-caption">
+							<h3>Andrea</h3>
+							<p>Co founder &amp; Designer</p>
+						</div>
+					</div>
+					<div class="showPic item">
+						<img src="images/matt.jpg">
+						<div class="carousel-caption">
+							<h3>Matt</h3>
+							<p>Co founder &amp; Creative Director</p>
+						</div>
+					</div>
+					<div class="showPic item">
+						<img src="images/dustin.jpg">
+						<div class="carousel-caption">
+							<h3>Dustin</h3>
+							<p>Designer &amp; Front End Developer</p>
+						</div>
+					</div>
+					<div class="showPic item">
+						<img src="images/anna.jpg">
+						<div class="carousel-caption">
+							<h3>Anna</h3>
+							<p>Designer</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<!-- folkCarousel End -->
+		<div class="introFolks container-fluid hidden-xs">
 			<p id="introTitle">We design great website and all sorts of interactive products from start to finish</p>
 
 			<h1 id="folksTitle">Meet The Folks:</h1>
@@ -91,6 +166,7 @@
 			</div>
 		</div>
 	</div>
+
 	<!-- footer -->
 	<footer>
 		<div class="container-fluid footerTop">
@@ -98,29 +174,27 @@
 				<div class="col-md-6">
 					<div class="itemDes col-md-12">
 						<h1>What We Do</h1>
-						<p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.<br><br>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.</p>
-						
+						<p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.<br><br>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.</p>	
 					</div>
-					<div class="threeCircle"><h1>. . .</h1></div>
+					<div class="threeCircle hidden-xs"><h1>. . .</h1></div>
 					<div class="itemDes col-md-12">
 						<h1>How We Work</h1>
 						<p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.<br><br>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.</p>
 					</div>
-					<div class="blank"></div>
+					<div class="blank hidden-xs"></div>
 				</div>
 				<div class="col-md-6">
-					<div class="blank"></div>
+					<div class="blank hidden-xs"></div>
 					<div class="itemDes col-md-12">
 						<h1>Who We Are</h1>
 						<p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.<br><br>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.</p>
 						
 					</div>
-					<div class="threeCircle"><h1>. . .</h1></div>
+					<div class="threeCircle hidden-xs"><h1>. . .</h1></div>
 
 					<div class="itemDes col-md-12">
 						<h1>What We Believe</h1>
-						<p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.<br><br>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.</p>
-						
+						<p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.<br><br>This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are.</p>		
 					</div>
 				</div>
 			</div>
@@ -133,5 +207,7 @@
 			&copy; 2023 by Web Fulk. Proudly created with Wix.com
 		</div>
 	</footer>
+
+
 </body>
 </html>

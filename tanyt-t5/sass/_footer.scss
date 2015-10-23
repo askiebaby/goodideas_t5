@@ -47,3 +47,19 @@ footer{
 		background-color: #F5F5F5;
 	}
 }
+@media (max-width: 768px) {
+	footer .footerTop  {
+		padding: 30px 5% 0px 5%;
+		.itemDes{
+			padding: 0px 50px;
+			h1 {
+				@include setFontStyleWith(20px, $text-color, center, 5px);	
+			}
+			p {
+				@include setFontStyleWith(10px, $text-color);	
+			}
+		}
+
+	}
+	
+}
