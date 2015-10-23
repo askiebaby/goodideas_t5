@@ -38,6 +38,95 @@ header nav a:hover {
   color: #FFE4E1;
 }
 
+/* line 4, ../sass/_cover.scss */
+.content {
+  padding: 0;
+}
+
+/* line 8, ../sass/_cover.scss */
+.cover {
+  position: relative;
+  height: 760px;
+  width: 100%;
+  background-image: url("../images/cover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* line 14, ../sass/_cover.scss */
+.cover .wordsBox {
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+  top: 20%;
+}
+/* line 19, ../sass/_cover.scss */
+.cover .wordsBox #bigTitle {
+  font-size: 50px;
+  color: white;
+  letter-spacing: 5px;
+  word-spacing: "0";
+  text-align: center;
+  margin: 0;
+}
+/* line 23, ../sass/_cover.scss */
+.cover .wordsBox #smallTitle {
+  font-size: 25px;
+  color: white;
+  letter-spacing: 10px;
+  word-spacing: "0";
+  text-align: center;
+  margin-bottom: 30%;
+}
+/* line 27, ../sass/_cover.scss */
+.cover .wordsBox #slogan {
+  font-size: 20px;
+  color: white;
+  letter-spacing: "0";
+  word-spacing: "0";
+  text-align: center;
+}
+/* line 31, ../sass/_cover.scss */
+.cover .pageDown {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+/* line 35, ../sass/_cover.scss */
+.cover .pageDown p {
+  font-size: 20px;
+  color: white;
+  letter-spacing: 5px;
+  word-spacing: "0";
+  text-align: center;
+  display: block;
+  width: 300px;
+  background-color: red;
+  margin: 0 auto;
+  padding: 10px 30px;
+}
+
+@media (max-width: 768px) {
+  /* line 48, ../sass/_cover.scss */
+  .cover {
+    height: 650px;
+  }
+
+  /* line 52, ../sass/_cover.scss */
+  .cover .pageDown p {
+    width: 100%;
+    background-color: blue;
+  }
+}
+/* line 1, ../sass/_work_clients.scss */
+.showPic {
+  padding: 0px;
+}
+/* line 3, ../sass/_work_clients.scss */
+.showPic img {
+  width: 100%;
+}
+
 /* line 6, ../sass/_introFolks.scss */
 .introFolks {
   background: white;
@@ -196,15 +285,15 @@ footer .copyright {
 }
 
 @media (max-width: 768px) {
-  /* line 51, ../sass/_footer.scss */
+  /* line 53, ../sass/_footer.scss */
   footer .footerTop {
     padding: 30px 5% 0px 5%;
   }
-  /* line 53, ../sass/_footer.scss */
+  /* line 55, ../sass/_footer.scss */
   footer .footerTop .itemDes {
     padding: 0px 50px;
   }
-  /* line 55, ../sass/_footer.scss */
+  /* line 57, ../sass/_footer.scss */
   footer .footerTop .itemDes h1 {
     font-size: 20px;
     color: white;
@@ -212,101 +301,12 @@ footer .copyright {
     word-spacing: "0";
     text-align: center;
   }
-  /* line 58, ../sass/_footer.scss */
+  /* line 60, ../sass/_footer.scss */
   footer .footerTop .itemDes p {
     font-size: 10px;
     color: white;
     letter-spacing: "0";
     word-spacing: "0";
     text-align: "left";
-  }
-}
-/* line 9, ../sass/index.scss */
-.content {
-  padding: 0;
-}
-
-/* line 12, ../sass/index.scss */
-.cover {
-  position: relative;
-  height: 760px;
-  width: 100%;
-  background-image: url("../images/cover.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-/* line 18, ../sass/index.scss */
-.cover .wordsBox {
-  position: relative;
-  width: 400px;
-  margin: 0 auto;
-  top: 20%;
-}
-/* line 23, ../sass/index.scss */
-.cover .wordsBox #bigTitle {
-  font-size: 50px;
-  color: white;
-  letter-spacing: 5px;
-  word-spacing: "0";
-  text-align: center;
-  margin: 0;
-}
-/* line 27, ../sass/index.scss */
-.cover .wordsBox #smallTitle {
-  font-size: 25px;
-  color: white;
-  letter-spacing: 10px;
-  word-spacing: "0";
-  text-align: center;
-  margin-bottom: 30%;
-}
-/* line 31, ../sass/index.scss */
-.cover .wordsBox #slogan {
-  font-size: 20px;
-  color: white;
-  letter-spacing: "0";
-  word-spacing: "0";
-  text-align: center;
-}
-/* line 35, ../sass/index.scss */
-.cover .pageDown {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-/* line 39, ../sass/index.scss */
-.cover .pageDown p {
-  font-size: 20px;
-  color: white;
-  letter-spacing: 5px;
-  word-spacing: "0";
-  text-align: center;
-  display: block;
-  width: 300px;
-  background-color: red;
-  margin: 0 auto;
-  padding: 10px 30px;
-}
-
-/* line 49, ../sass/index.scss */
-.showPic {
-  padding: 0px;
-}
-/* line 51, ../sass/index.scss */
-.showPic img {
-  width: 100%;
-}
-
-@media (max-width: 768px) {
-  /* line 57, ../sass/index.scss */
-  .cover {
-    height: 650px;
-  }
-
-  /* line 61, ../sass/index.scss */
-  .cover .pageDown p {
-    width: 100%;
-    background-color: blue;
   }
 }

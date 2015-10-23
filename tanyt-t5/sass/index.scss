@@ -1,70 +1,17 @@
 @import "reset";
 @import "mytool";
 @import "header";
+@import "cover";
+@import "work_clients";
 @import "introFolks";
 @import "footer";
 
-$text-color: white;
 
-.content {
-	padding: 0;
-}
-.cover {
-	position: relative;
-	height: 760px;
-	width: 100%;
-	@include setFullScreenBackgroundWith("../images/cover.png");
 
-	.wordsBox {
-		position: relative;
-		width: 400px;
-		margin: 0 auto;
-		top: 20%;
-		#bigTitle {
-			@include setFontStyleWith(50px, $text-color, center, 5px);
-			margin: 0;
-		}
-		#smallTitle {
-			@include setFontStyleWith(25px, $text-color, center, 10px);
-			margin-bottom: 30%;
-		}
-		#slogan {
-			@include setFontStyleWith(20px, $text-color, center);
-		}
-	}
-	.pageDown {
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		p {
-			@include setFontStyleWith(20px, $text-color, center, 5px);	
-			display: block;
-			width: 300px;
-			background-color: red;
-			margin: 0 auto;
-			padding: 10px 30px;
-		}	
-	}
-}
-.showPic {
-	padding: 0px;
-	img {
-		width: 100%;
-	}
-}
-// RWD TEST
-@media (max-width: 768px){
-	.cover {
-		height: 650px;
-	}
-	.cover .pageDown {
-		p {
-			width: 100%;
-			background-color: blue;
-		}
-		
-	}
-};
+
+
+
+
 
 
 
