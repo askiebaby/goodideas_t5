@@ -3,6 +3,9 @@
 	setFullScreenBackgroundWith( $file) 
 		- set backgound-img with $file 
 
+	setFontStyleWith( $size, $color, $align:"left", $letter_spacing:"0", $word-spacing:"0")
+		- set fontstyle with size, color, align, letter_spacing and word_spacing
+
 */
 
 @mixin setFullScreenBackgroundWith( $file) {
@@ -12,8 +15,11 @@
 	background-position: center	
 }
 
-@mixin setFontStyleWith( $size, $color, $letter_spacing:"0", $word-spacing:"0") {
+@mixin setFontStyleWith( $size, $color, $align:"left", $letter_spacing:"0", $word-spacing:"0") {
 	font-size: $size;
-	
+	color: $color;
+	letter-spacing: $letter_spacing;
+	word-spacing: $word-spacing;
+	text-align: $align;
 	
 }

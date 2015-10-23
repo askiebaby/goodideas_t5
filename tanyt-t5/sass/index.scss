@@ -1,9 +1,10 @@
 @import "reset";
 @import "mytool";
 @import "header";
-@import "workAndClients";
 @import "introFolks";
 @import "footer";
+
+$text-color: white;
 
 .content {
 	padding: 0;
@@ -19,21 +20,16 @@
 		width: 400px;
 		margin: 0 auto;
 		top: 20%;
-		color: white;
-		text-align: center;
-
 		#bigTitle {
-			font-size: 50px;
-			letter-spacing: 5px;
+			@include setFontStyleWith(50px, $text-color, center, 5px);
 			margin: 0;
 		}
 		#smallTitle {
-			font-size: 25px;
-			letter-spacing: 10px;
+			@include setFontStyleWith(25px, $text-color, center, 10px);
 			margin-bottom: 30%;
 		}
 		#slogan {
-			font-size: 20px;
+			@include setFontStyleWith(20px, $text-color, center);
 		}
 	}
 
@@ -41,15 +37,19 @@
 		position: absolute;
 		bottom: 0;
 		width: 100%;
-		text-align: center;
-		color: white;
 		p {
-			display: inline-block;
+			@include setFontStyleWith(20px, $text-color, center, 5px);	
+			display: block;
+			width: 300px;
 			background-color: red;
-			font-size: 20px;
-			letter-spacing: 5px;
-			margin: 0;
+			margin: 0 auto;
 			padding: 10px 30px;
 		}	
+	}
+}
+.showPic {
+	padding: 0px;
+	img {
+		width: 100%;
 	}
 }

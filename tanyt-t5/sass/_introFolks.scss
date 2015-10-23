@@ -1,3 +1,8 @@
+@import "mytool";
+$intro-title-color: white;
+$text-color: red;
+$button-color: white;
+
 .introFolks {
 	background: white;
 	padding: 60px 0px;
@@ -6,15 +11,11 @@
 	#introTitle {
 		background: red;
 		padding: 10px 0px;
-		letter-spacing: 5px;
-		text-align: center;
-		color: white;
-		font-size: 15px;
+		@include setFontStyleWith(15px, $intro-title-color, center, 5px);
 	}
 
 	#folksTitle {
-		text-align: center;
-		font-size: 30px;
+		@include setFontStyleWith(30px, $text-color, center);
 		margin: 50px 0;
 	}
 
@@ -23,16 +24,15 @@
 		padding: 0px 25%;
 		.folkItem {
 			padding: 0;
-			text-align: center;
 			img {
 				width: 100%;
 			}
 			.name {
-				letter-spacing: 5px;
+				@include setFontStyleWith(40px, $text-color, center, 5px);
 				margin-bottom: 0; 
 			}
 			.position {
-				letter-spacing: 3px;
+				@include setFontStyleWith(10px, $text-color, center, 3px);
 				margin: 0px 0px 60px 0px;
 			}
 		}
@@ -42,9 +42,8 @@
 		background: black;
 		margin: 0 auto;
 		padding: 5px 0px;
-		text-align: center;
 		p {
-			color: white;
+			@include setFontStyleWith(14px, $button-color, center);
 			margin: 0;
 		}
 	}
