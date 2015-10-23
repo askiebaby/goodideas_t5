@@ -1,0 +1,19 @@
+// 
+/*
+	setFullScreenBackgroundWith( $file) 
+		- set backgound-img with $file 
+
+*/
+
+@mixin setFullScreenBackgroundWith( $file) {
+	background-image: url($file);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center	
+}
+
+@mixin setFontStyleWith( $size, $color, $letter_spacing:"0", $word-spacing:"0") {
+	font-size: $size;
+	
+	
+}

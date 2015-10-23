@@ -1,0 +1,218 @@
+/* line 1, ../sass/_reset.scss */
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+	setFullScreenBackgroundWith( $file) 
+		- set backgound-img with $file 
+
+*/
+/* line 1, ../sass/_header.scss */
+header {
+  background-color: #660077;
+}
+/* line 4, ../sass/_header.scss */
+header nav ul {
+  margin: 0;
+  list-style-type: none;
+  line-height: 3;
+}
+/* line 8, ../sass/_header.scss */
+header nav ul li {
+  display: inline;
+  padding: 0px 20px;
+}
+/* line 13, ../sass/_header.scss */
+header nav a {
+  color: white;
+  font-size: 15px;
+}
+/* line 16, ../sass/_header.scss */
+header nav a:hover {
+  color: #FFE4E1;
+}
+
+/* line 1, ../sass/_workAndClients.scss */
+.showPic {
+  padding: 0px;
+}
+/* line 3, ../sass/_workAndClients.scss */
+.showPic img {
+  width: 100%;
+}
+
+/* line 1, ../sass/_introFolks.scss */
+.introFolks {
+  background: white;
+  padding: 60px 0px;
+  color: red;
+}
+/* line 6, ../sass/_introFolks.scss */
+.introFolks #introTitle {
+  background: red;
+  padding: 10px 0px;
+  letter-spacing: 5px;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+}
+/* line 15, ../sass/_introFolks.scss */
+.introFolks #folksTitle {
+  text-align: center;
+  font-size: 30px;
+  margin: 50px 0;
+}
+/* line 21, ../sass/_introFolks.scss */
+.introFolks .folksBox {
+  margin: 0;
+  padding: 0px 25%;
+}
+/* line 24, ../sass/_introFolks.scss */
+.introFolks .folksBox .folkItem {
+  padding: 0;
+  text-align: center;
+}
+/* line 27, ../sass/_introFolks.scss */
+.introFolks .folksBox .folkItem img {
+  width: 100%;
+}
+/* line 30, ../sass/_introFolks.scss */
+.introFolks .folksBox .folkItem .name {
+  letter-spacing: 5px;
+  margin-bottom: 0;
+}
+/* line 34, ../sass/_introFolks.scss */
+.introFolks .folksBox .folkItem .position {
+  letter-spacing: 3px;
+  margin: 0px 0px 60px 0px;
+}
+/* line 40, ../sass/_introFolks.scss */
+.introFolks .contact {
+  width: 150px;
+  background: black;
+  margin: 0 auto;
+  padding: 5px 0px;
+  text-align: center;
+}
+/* line 46, ../sass/_introFolks.scss */
+.introFolks .contact p {
+  color: white;
+  margin: 0;
+}
+
+/* line 4, ../sass/_footer.scss */
+footer .footerTop {
+  padding: 60px 15% 0px 15%;
+  background-image: url("../images/footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* line 8, ../sass/_footer.scss */
+footer .footerTop .itemDes {
+  color: white;
+  padding: 0px 50px;
+}
+/* line 11, ../sass/_footer.scss */
+footer .footerTop .itemDes h1 {
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+/* line 16, ../sass/_footer.scss */
+footer .footerTop .blank {
+  height: 150px;
+  clear: both;
+}
+/* line 20, ../sass/_footer.scss */
+footer .footerTop .threeCircle {
+  clear: both;
+  padding: 10px 0px;
+}
+/* line 23, ../sass/_footer.scss */
+footer .footerTop .threeCircle h1 {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 60px;
+  color: white;
+}
+/* line 30, ../sass/_footer.scss */
+footer .footerTop .back {
+  width: 150px;
+  background: white;
+  margin: 80px auto 20px auto;
+  padding: 5px 0px;
+  text-align: center;
+}
+/* line 36, ../sass/_footer.scss */
+footer .footerTop .back p {
+  color: black;
+  margin: 0;
+}
+/* line 42, ../sass/_footer.scss */
+footer .copyright {
+  text-align: center;
+  letter-spacing: 3px;
+  padding: 20px;
+  background-color: #F5F5F5;
+}
+
+/* line 8, ../sass/index.scss */
+.content {
+  padding: 0;
+}
+
+/* line 11, ../sass/index.scss */
+.cover {
+  position: relative;
+  height: 760px;
+  width: 100%;
+  background-image: url("../images/cover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* line 17, ../sass/index.scss */
+.cover .wordsBox {
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+  top: 20%;
+  color: white;
+  text-align: center;
+}
+/* line 25, ../sass/index.scss */
+.cover .wordsBox #bigTitle {
+  font-size: 50px;
+  letter-spacing: 5px;
+  margin: 0;
+}
+/* line 30, ../sass/index.scss */
+.cover .wordsBox #smallTitle {
+  font-size: 25px;
+  letter-spacing: 10px;
+  margin-bottom: 30%;
+}
+/* line 35, ../sass/index.scss */
+.cover .wordsBox #slogan {
+  font-size: 20px;
+}
+/* line 40, ../sass/index.scss */
+.cover .pageDown {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+/* line 46, ../sass/index.scss */
+.cover .pageDown p {
+  display: inline-block;
+  background-color: red;
+  font-size: 20px;
+  letter-spacing: 5px;
+  margin: 0;
+  padding: 10px 30px;
+}

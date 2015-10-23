@@ -1,0 +1,55 @@
+@import "reset";
+@import "mytool";
+@import "header";
+@import "workAndClients";
+@import "introFolks";
+@import "footer";
+
+.content {
+	padding: 0;
+}
+.cover {
+	position: relative;
+	height: 760px;
+	width: 100%;
+	@include setFullScreenBackgroundWith("../images/cover.png");
+
+	.wordsBox {
+		position: relative;
+		width: 400px;
+		margin: 0 auto;
+		top: 20%;
+		color: white;
+		text-align: center;
+
+		#bigTitle {
+			font-size: 50px;
+			letter-spacing: 5px;
+			margin: 0;
+		}
+		#smallTitle {
+			font-size: 25px;
+			letter-spacing: 10px;
+			margin-bottom: 30%;
+		}
+		#slogan {
+			font-size: 20px;
+		}
+	}
+
+	.pageDown {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		text-align: center;
+		color: white;
+		p {
+			display: inline-block;
+			background-color: red;
+			font-size: 20px;
+			letter-spacing: 5px;
+			margin: 0;
+			padding: 10px 30px;
+		}	
+	}
+}

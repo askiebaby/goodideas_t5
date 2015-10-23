@@ -1,0 +1,48 @@
+@import "mytool";
+
+footer{
+	.footerTop {
+		padding: 60px 15% 0px 15%;
+		@include setFullScreenBackgroundWith("../images/footer.jpg");
+
+		.itemDes {
+			color: white;
+			padding: 0px 50px;
+			h1 {
+				font-size: 40px;
+				letter-spacing: 5px;
+			}
+		}
+		.blank {
+			height: 150px;
+			clear: both;
+		}
+		.threeCircle {
+			clear: both;
+			padding: 10px 0px;
+			h1 {
+				text-align: center;
+				vertical-align: middle;
+				font-size: 60px;
+				color: white;
+			}
+		}
+		.back {
+			width: 150px;
+			background: white;
+			margin: 80px auto 20px auto;
+			padding: 5px 0px;
+			text-align: center;
+			p {
+				color: black;
+				margin: 0;
+			}
+		}
+	}
+	.copyright {
+		text-align: center;
+		letter-spacing: 3px;
+		padding: 20px;
+		background-color: #F5F5F5;
+	}
+}
