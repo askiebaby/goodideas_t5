@@ -1,8 +1,8 @@
-$back-white: #360836;
+$back-color: #360836;
 
 .subheader{
   text-align: center;
-  background-color:#360836;
+  background-color:$back-color;
   a{
     color: white;
     font-size: 20px;

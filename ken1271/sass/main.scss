@@ -1,52 +1,82 @@
+$back-color-2:#FF0048;
 .main{
   .main-about{
     background-image: url("img/mountain.png");
     background-position: center;
     background-size: cover;
     text-align: center;
-    height:400px;
+    height:600px;
     color: white;
     position: relative;
+    letter-spacing: 0.1em;
     h1{
       margin: 0;
       position: relative;
-      top:20%;
+      top:10%;
+      padding: 20px;
+      font-size: 50px;
     }
-    h3{
+    h2{
+      padding: 20px;
+      letter-spacing: 2px;
+    }
+    >p{
+      position: relative;
+      top:15%;
+      font-size: 20px;
+    }
+    #vertical-line{
+      height:10%;
+      border-right: 12px dotted #EEE;
+      width: 0;
+      margin: 0 auto;
       position: relative;
       top:20%;
     }
-    p{
-      position: relative;
-      top:20%;
-    }
-    div{
+    #client{
       background-color:#FF0048;
       position: relative;
-      top:40%;
+      top:29%;
       width: 30%;
       margin: 0 auto;
-      height:20%;
-      font-size: 18px;
+      height:16%;
+      p{
+        font-size: 18px;
+        margin: 0 auto;
+        position: relative;
+        top:40%;
+      }
+
     }
   }
   .main-display{
     .gallery{
       div{
         padding: 0;
+        img{
+          width: 100%;
+        }
       }
     }
     div{
-      background-color: #FF0048;
+      background-color:$back-color-2;
       color: white;
+      font-size: 20px;
+      letter-spacing: 0.1em;
+      line-height: 30px;
       text-align: center;
     }
   }
   .main-member{
-    margin: 30px 0;
+    margin: 60px 0;
     text-align: center;
-    h1, h2{
-      color: #FF0048;
+    h1{
+      margin: 20px auto;
+      color: $back-color-2;
+    }
+    h2{
+      margin: 40px auto;
+      color: $back-color-2;
     }
     a>div{
       background-image: url("img/contact.png");
@@ -70,6 +100,16 @@
     background-size: cover;
     height: 1400px;
     text-align: center;
+    .line{
+      width:15%;
+      margin: 0 auto;
+      border-top: 12px dotted #EEE;
+    }
+    p{
+      line-height: 20px;
+      padding: 5px 0;
+      letter-spacing: 1px;
+    }
     >div{
       text-align: left;
       width: 70%;
@@ -85,13 +125,14 @@
       margin: 200px auto 0px;
     }
     .textblock{
-      margin: 50px auto;
+      margin: 80px auto;
     }
     a{
       text-align: center;
       background-color: white;
       color:black;
       padding: 10px;
+
     }
   }
 }
