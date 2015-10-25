@@ -9,9 +9,15 @@ $button-color: white;
 	color: red;
 
 	#introTitle {
+		position: absolute;
+		width: 100%;
 		background: red;
 		padding: 10px 0px;
 		@include setFontStyleWith(15px, $intro-title-color, center, 5px);
+		&:after {
+			@include triangle(red, 20px, 20px, 0px, 20px);
+
+		}
 	}
 
 	#folksTitle {

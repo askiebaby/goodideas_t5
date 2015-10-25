@@ -39,7 +39,11 @@ $text-color: white;
 			background-color: red;
 			margin: 0 auto;
 			padding: 10px 30px;
-		}	
+			&:after{
+				@include triangle(red, 20px, 20px, 0px, 20px);
+			}	
+		}
+		
 	}
 }
 
@@ -53,6 +57,5 @@ $text-color: white;
 			width: 100%;
 			background-color: blue;
 		}
-		
 	}
 };

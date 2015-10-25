@@ -11,7 +11,9 @@ html, body {
 
 	setFontStyleWith( $size, $color, $align:"left", $letter_spacing:"0", $word-spacing:"0")
 		- set fontstyle with size, color, align, letter_spacing and word_spacing
-
+	
+	triangle(triangle($color:"red", $up, $right, $down, $left) 
+		- create an red triangle
 */
 /* line 1, ../sass/_header.scss */
 header {
@@ -65,7 +67,7 @@ header nav a:hover {
   font-size: 50px;
   color: white;
   letter-spacing: 5px;
-  word-spacing: "0";
+  word-spacing: 0px;
   text-align: center;
   margin: 0;
 }
@@ -74,7 +76,7 @@ header nav a:hover {
   font-size: 25px;
   color: white;
   letter-spacing: 10px;
-  word-spacing: "0";
+  word-spacing: 0px;
   text-align: center;
   margin-bottom: 30%;
 }
@@ -82,8 +84,8 @@ header nav a:hover {
 .cover .wordsBox #slogan {
   font-size: 20px;
   color: white;
-  letter-spacing: "0";
-  word-spacing: "0";
+  letter-spacing: 0px;
+  word-spacing: 0px;
   text-align: center;
 }
 /* line 31, ../sass/_cover.scss */
@@ -97,7 +99,7 @@ header nav a:hover {
   font-size: 20px;
   color: white;
   letter-spacing: 5px;
-  word-spacing: "0";
+  word-spacing: 0px;
   text-align: center;
   display: block;
   width: 300px;
@@ -105,14 +107,29 @@ header nav a:hover {
   margin: 0 auto;
   padding: 10px 30px;
 }
+/* line 42, ../sass/_cover.scss */
+.cover .pageDown p:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  margin: 0 auto;
+  border-width: 20px 20px 0px 20px;
+  border-color: red transparent transparent transparent;
+}
 
 @media (max-width: 768px) {
-  /* line 48, ../sass/_cover.scss */
+  /* line 52, ../sass/_cover.scss */
   .cover {
     height: 650px;
   }
 
-  /* line 52, ../sass/_cover.scss */
+  /* line 56, ../sass/_cover.scss */
   .cover .pageDown p {
     width: 100%;
     background-color: blue;
@@ -135,78 +152,95 @@ header nav a:hover {
 }
 /* line 11, ../sass/_introFolks.scss */
 .introFolks #introTitle {
+  position: absolute;
+  width: 100%;
   background: red;
   padding: 10px 0px;
   font-size: 15px;
   color: white;
   letter-spacing: 5px;
-  word-spacing: "0";
+  word-spacing: 0px;
   text-align: center;
 }
 /* line 17, ../sass/_introFolks.scss */
+.introFolks #introTitle:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  margin: 0 auto;
+  border-width: 20px 20px 0px 20px;
+  border-color: red transparent transparent transparent;
+}
+/* line 23, ../sass/_introFolks.scss */
 .introFolks #folksTitle {
   font-size: 30px;
   color: red;
-  letter-spacing: "0";
-  word-spacing: "0";
+  letter-spacing: 0px;
+  word-spacing: 0px;
   text-align: center;
   margin: 50px 0;
 }
-/* line 22, ../sass/_introFolks.scss */
+/* line 28, ../sass/_introFolks.scss */
 .introFolks .folksBox {
   margin: 0;
   padding: 0px 25%;
 }
-/* line 25, ../sass/_introFolks.scss */
+/* line 31, ../sass/_introFolks.scss */
 .introFolks .folksBox .folkItem {
   padding: 0;
 }
-/* line 27, ../sass/_introFolks.scss */
+/* line 33, ../sass/_introFolks.scss */
 .introFolks .folksBox .folkItem img {
   width: 100%;
 }
-/* line 30, ../sass/_introFolks.scss */
+/* line 36, ../sass/_introFolks.scss */
 .introFolks .folksBox .folkItem .name {
   font-size: 40px;
   color: red;
   letter-spacing: 5px;
-  word-spacing: "0";
+  word-spacing: 0px;
   text-align: center;
   margin-bottom: 0;
 }
-/* line 34, ../sass/_introFolks.scss */
+/* line 40, ../sass/_introFolks.scss */
 .introFolks .folksBox .folkItem .position {
   font-size: 10px;
   color: red;
   letter-spacing: 3px;
-  word-spacing: "0";
+  word-spacing: 0px;
   text-align: center;
   margin: 0px 0px 60px 0px;
 }
-/* line 40, ../sass/_introFolks.scss */
+/* line 46, ../sass/_introFolks.scss */
 .introFolks .contact {
   width: 150px;
   background: black;
   margin: 0 auto;
   padding: 5px 0px;
 }
-/* line 45, ../sass/_introFolks.scss */
+/* line 51, ../sass/_introFolks.scss */
 .introFolks .contact p {
   font-size: 14px;
   color: white;
-  letter-spacing: "0";
-  word-spacing: "0";
+  letter-spacing: 0px;
+  word-spacing: 0px;
   text-align: center;
   margin: 0;
 }
 
 @media (max-width: 768px) {
-  /* line 53, ../sass/_introFolks.scss */
+  /* line 59, ../sass/_introFolks.scss */
   .introFolks #introTitle {
     font-size: 10px;
     color: white;
     letter-spacing: 5px;
-    word-spacing: "0";
+    word-spacing: 0px;
     text-align: center;
   }
 }
@@ -227,15 +261,15 @@ footer .footerTop .itemDes h1 {
   font-size: 40px;
   color: white;
   letter-spacing: 5px;
-  word-spacing: "0";
+  word-spacing: 0px;
   text-align: center;
 }
 /* line 17, ../sass/_footer.scss */
 footer .footerTop .itemDes p {
   font-size: 14px;
   color: white;
-  letter-spacing: "0";
-  word-spacing: "0";
+  letter-spacing: 0px;
+  word-spacing: 0px;
   text-align: "left";
 }
 /* line 21, ../sass/_footer.scss */
@@ -252,8 +286,8 @@ footer .footerTop .threeCircle {
 footer .footerTop .threeCircle h1 {
   font-size: 60px;
   color: white;
-  letter-spacing: "0";
-  word-spacing: "0";
+  letter-spacing: 0px;
+  word-spacing: 0px;
   text-align: center;
 }
 /* line 32, ../sass/_footer.scss */
@@ -268,8 +302,8 @@ footer .footerTop .back {
 footer .footerTop .back p {
   font-size: 14px;
   color: black;
-  letter-spacing: "0";
-  word-spacing: "0";
+  letter-spacing: 0px;
+  word-spacing: 0px;
   text-align: center;
   margin: 0;
 }
@@ -278,7 +312,7 @@ footer .copyright {
   font-size: 14px;
   color: black;
   letter-spacing: 3px;
-  word-spacing: "0";
+  word-spacing: 0px;
   text-align: center;
   padding: 20px;
   background-color: #F5F5F5;
@@ -298,15 +332,15 @@ footer .copyright {
     font-size: 20px;
     color: white;
     letter-spacing: 5px;
-    word-spacing: "0";
+    word-spacing: 0px;
     text-align: center;
   }
   /* line 60, ../sass/_footer.scss */
   footer .footerTop .itemDes p {
     font-size: 10px;
     color: white;
-    letter-spacing: "0";
-    word-spacing: "0";
+    letter-spacing: 0px;
+    word-spacing: 0px;
     text-align: "left";
   }
 }
