@@ -58,13 +58,27 @@ $back-color-2:#FF0048;
         }
       }
     }
-    div{
+    >div{
       background-color:$back-color-2;
       color: white;
       font-size: 20px;
       letter-spacing: 0.1em;
       line-height: 30px;
       text-align: center;
+      position: relative;
+      >div>div{
+        transition-duration: 0.8s;
+        width:100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left: 0;
+        &:hover{
+          background-color: rgba(246, 0, 44, 1);
+          color: rgba(225, 225, 225, 1) ;
+        }
+
+      }
     }
   }
   .main-member{

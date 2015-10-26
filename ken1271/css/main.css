@@ -62,30 +62,45 @@
   width: 100%;
 }
 /* line 61, ../sass/main.scss */
-.main .main-display div {
+.main .main-display > div {
   background-color: #FF0048;
   color: white;
   font-size: 20px;
   letter-spacing: 0.1em;
   line-height: 30px;
   text-align: center;
+  position: relative;
 }
-/* line 70, ../sass/main.scss */
+/* line 69, ../sass/main.scss */
+.main .main-display > div > div > div {
+  transition-duration: 0.8s;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 76, ../sass/main.scss */
+.main .main-display > div > div > div:hover {
+  background-color: #f6002c;
+  color: #e1e1e1;
+}
+/* line 84, ../sass/main.scss */
 .main .main-member {
   margin: 60px 0;
   text-align: center;
 }
-/* line 73, ../sass/main.scss */
+/* line 87, ../sass/main.scss */
 .main .main-member h1 {
   margin: 20px auto;
   color: #FF0048;
 }
-/* line 77, ../sass/main.scss */
+/* line 91, ../sass/main.scss */
 .main .main-member h2 {
   margin: 40px auto;
   color: #FF0048;
 }
-/* line 81, ../sass/main.scss */
+/* line 95, ../sass/main.scss */
 .main .main-member a > div {
   background-image: url("img/contact.png");
   background-position: center;
@@ -94,16 +109,16 @@
   width: 20%;
   margin: 20px auto;
 }
-/* line 89, ../sass/main.scss */
+/* line 103, ../sass/main.scss */
 .main .main-member > div {
   width: 70%;
   margin: 0 auto;
 }
-/* line 93, ../sass/main.scss */
+/* line 107, ../sass/main.scss */
 .main .main-member > div > div {
   padding: 0;
 }
-/* line 97, ../sass/main.scss */
+/* line 111, ../sass/main.scss */
 .main .main-introduction {
   background-image: url("img/intro_background.jpeg");
   background-position: center;
@@ -111,41 +126,41 @@
   height: 1400px;
   text-align: center;
 }
-/* line 103, ../sass/main.scss */
+/* line 117, ../sass/main.scss */
 .main .main-introduction .line {
   width: 15%;
   margin: 0 auto;
   border-top: 12px dotted #EEE;
 }
-/* line 108, ../sass/main.scss */
+/* line 122, ../sass/main.scss */
 .main .main-introduction p {
   line-height: 20px;
   padding: 5px 0;
   letter-spacing: 1px;
 }
-/* line 113, ../sass/main.scss */
+/* line 127, ../sass/main.scss */
 .main .main-introduction > div {
   text-align: left;
   width: 70%;
   margin: 0 auto;
 }
-/* line 118, ../sass/main.scss */
+/* line 132, ../sass/main.scss */
 .main .main-introduction > div > div {
   color: white;
 }
-/* line 121, ../sass/main.scss */
+/* line 135, ../sass/main.scss */
 .main .main-introduction .intro-left {
   margin: 0 auto 200px;
 }
-/* line 124, ../sass/main.scss */
+/* line 138, ../sass/main.scss */
 .main .main-introduction .intro-right {
   margin: 200px auto 0px;
 }
-/* line 127, ../sass/main.scss */
+/* line 141, ../sass/main.scss */
 .main .main-introduction .textblock {
   margin: 80px auto;
 }
-/* line 130, ../sass/main.scss */
+/* line 144, ../sass/main.scss */
 .main .main-introduction a {
   text-align: center;
   background-color: white;
