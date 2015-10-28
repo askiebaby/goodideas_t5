@@ -1,0 +1,15 @@
+#header{
+	background-color : $header-bgcolor;
+	height : 50px;
+	ul{
+		padding-top: 5px;
+	}
+	li{
+		padding-right : 25px;
+	}
+	a{
+		text-decoration: none;
+		@include link-colors($header-nav-color, $header-nav-hover-color, $header-nav-color, $header-nav-color, $header-nav-hover-color); 
+		//$normal, $hover, $active, $visited, $focus
+	}
+}

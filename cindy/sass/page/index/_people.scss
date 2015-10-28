@@ -1,0 +1,45 @@
+#people{
+	background-color : $people-bgcolor;
+	margin-top: -20px;
+	.box{
+		margin-top : 80px;
+	}
+
+	h3{
+		color : $people-title-color;
+		letter-spacing: 0.025em;
+		padding-bottom: 25px;
+	}
+
+	h1{
+		color : $people-title-color;
+		letter-spacing: 0.1em;
+	}
+
+	h6{
+		padding-bottom : 25px;
+	}
+}
+
+@for $i from 1 through 4{
+	#people-img-#{$i} {
+		background: url(#{$img-path}/m#{$i}.jpg);
+		background-repeat: no-repeat;
+		height : 400px;
+		width : 400px;
+		@include background-size(cover);
+	}
+}
+
+.btn-contact{
+	background-color : #000000;
+	width : 200px;
+	line-height : 32px;
+	color : #ffffff;
+	transition: all 0.5s ease;
+	margin-bottom: 25px;
+
+	&:hover {
+	 background: $content-hover-bgcolor;
+	}
+}

@@ -1,0 +1,56 @@
+#info{
+	background: url(#{$img-path}/footer.png);
+	background-repeat: no-repeat;
+	@include background-size(cover);
+}
+
+article{
+	width: 80%;
+	color : $info-color;
+
+	h1{
+		letter-spacing: 0.1em;
+		font-size: 30px;
+	}
+	p{
+		padding-bottom: 15px;
+		font-size: 10px;
+	}
+}
+
+#info-right{
+	margin-top: 60px;
+}
+
+#info-bottom{
+	    padding-bottom: 20px;
+	.btn:hover{
+		color : #ffffff;
+	}
+}
+
+.btn-bktop{
+	background: #ffffff;
+	text-decoration: none;
+	width : 200px;
+	line-height : 30px;
+	transition: all 0.5s ease;
+	color : #000000;
+
+	&:hover {
+	 	background: $content-hover-bgcolor;
+	}
+}
+
+.info-sep{
+	margin-top: 70px;
+    margin-bottom: 50px;
+	li{
+		margin-right: 20px;
+	}
+
+	.circle{
+		width:10px;
+		height:10px;
+	}
+}
