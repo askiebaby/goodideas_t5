@@ -99,6 +99,16 @@ header ul a:hover {
 #cover2 .col-md-3 img {
   width: 100%;
 }
+/* line 36, ../sass/_cover2.scss */
+#cover2 .col-md-3:hover {
+  background-color: #FF0048;
+  opacity: 1;
+}
+/* line 39, ../sass/_cover2.scss */
+#cover2 .col-md-3:hover img {
+  width: 100%;
+  opacity: 0;
+}
 
 /* line 2, ../sass/_cover3.scss */
 #cover3 {

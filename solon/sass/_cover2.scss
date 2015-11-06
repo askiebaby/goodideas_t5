@@ -32,6 +32,16 @@
         width: 100%;
     }
   }
+  
+  .col-md-3:hover{
+    background-color: #FF0048;
+    opacity: 1;
+    img{
+      width: 100%;
+      opacity: 0;
+    }
+
+  }
 
 
 }
