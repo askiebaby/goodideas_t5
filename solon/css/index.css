@@ -196,49 +196,52 @@ header ul a:hover {
   padding-top: 40px;
   color: white;
 }
-/* line 11, ../sass/_cover4.scss */
+/* line 10, ../sass/_cover4.scss */
 #cover4 .container {
   width: 900px;
 }
-/* line 15, ../sass/_cover4.scss */
+/* line 14, ../sass/_cover4.scss */
 #cover4 h1 {
   letter-spacing: 2px;
   font-size: 40px;
 }
-/* line 20, ../sass/_cover4.scss */
+/* line 19, ../sass/_cover4.scss */
 #cover4 h2 {
   text-align: center;
   font-size: 100px;
 }
-/* line 26, ../sass/_cover4.scss */
+/* line 25, ../sass/_cover4.scss */
 #cover4 #descript_LEFT {
   padding-bottom: 200px;
   padding-right: 60px;
 }
-/* line 32, ../sass/_cover4.scss */
+/* line 31, ../sass/_cover4.scss */
 #cover4 #descript_RIGHT {
   padding-top: 200px;
   padding-left: 60px;
 }
-/* line 37, ../sass/_cover4.scss */
+/* line 36, ../sass/_cover4.scss */
 #cover4 #top_button {
-  color: black;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-top: 50px;
 }
-/* line 43, ../sass/_cover4.scss */
+/* line 41, ../sass/_cover4.scss */
 #cover4 #top_button input {
   border-width: 0px;
   background-color: white;
   width: 240px;
   height: 40px;
 }
-/* line 49, ../sass/_cover4.scss */
+/* line 47, ../sass/_cover4.scss */
 #cover4 #top_button input:hover {
   color: white;
   background-color: #FF0048;
+}
+/* line 51, ../sass/_cover4.scss */
+#cover4 #top_button a {
+  color: black;
 }
 
 /* line 1, ../sass/_footer.scss */
