@@ -69,7 +69,7 @@ header ul a:hover {
   width: 100%;
   margin-bottom: 100px;
 }
-/* line 6, ../sass/_cover2.scss */
+/* line 7, ../sass/_cover2.scss */
 #cover2 h3 {
   background-color: #FF0048;
   text-align: center;
@@ -78,11 +78,23 @@ header ul a:hover {
   color: white;
   margin: -66px auto 0px auto;
 }
-/* line 15, ../sass/_cover2.scss */
+/* line 16, ../sass/_cover2.scss */
 #cover2 .row {
   margin: 0px;
 }
-/* line 19, ../sass/_cover2.scss */
+/* line 20, ../sass/_cover2.scss */
+#cover2 #bg_color {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  padding-top: 30%;
+  color: white;
+}
+/* line 33, ../sass/_cover2.scss */
 #cover2 #tri {
   position: absolute;
   left: 50%;
@@ -90,21 +102,23 @@ header ul a:hover {
   top: 66px;
   z-index: 2;
 }
-/* line 28, ../sass/_cover2.scss */
+/* line 42, ../sass/_cover2.scss */
 #cover2 .col-md-3 {
+  position: relative;
   padding-left: 0px;
   padding-right: 0px;
 }
-/* line 31, ../sass/_cover2.scss */
+/* line 46, ../sass/_cover2.scss */
 #cover2 .col-md-3 img {
   width: 100%;
 }
-/* line 36, ../sass/_cover2.scss */
-#cover2 .col-md-3:hover {
+/* line 53, ../sass/_cover2.scss */
+#cover2 .col-md-3:hover #bg_color {
   background-color: #FF0048;
+  letter-spacing: 4px;
   opacity: 1;
 }
-/* line 39, ../sass/_cover2.scss */
+/* line 58, ../sass/_cover2.scss */
 #cover2 .col-md-3:hover img {
   width: 100%;
   opacity: 0;
@@ -177,6 +191,7 @@ header ul a:hover {
   background-image: url("../img/bg_what.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   color: white;
 }
 /* line 9, ../sass/_cover4.scss */

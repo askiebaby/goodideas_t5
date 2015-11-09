@@ -3,6 +3,7 @@
   position: relative;
   width: 100%;
   margin-bottom: 100px;
+
   h3{
     background-color: #FF0048;
     text-align: center;
@@ -16,6 +17,19 @@
     margin: 0px;
   }
 
+  #bg_color{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    padding-top: 30%;
+    color: white;
+  }
+
+
   #tri{
     position: absolute;
     left:50% ;
@@ -26,16 +40,21 @@
 
   .col-md-3
   {
+    position: relative;
     padding-left: 0px;
     padding-right: 0px;
     img{
         width: 100%;
     }
   }
-  
+
   .col-md-3:hover{
-    background-color: #FF0048;
-    opacity: 1;
+    #bg_color
+    {
+      background-color: #FF0048;
+      letter-spacing: 4px;
+      opacity: 1;
+    }
     img{
       width: 100%;
       opacity: 0;
