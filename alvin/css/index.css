@@ -1,3 +1,19 @@
 header {
-  background: #360836;
+  background-color: #360836;
+}
+header li {
+  margin: 20px 10px;
+}
+header li a {
+  color: #fff;
+}
+header li a:hover {
+  color: #FF00CC;
+  text-decoration: none;
+}
+
+#banner {
+  background: url("../images/banner.png");
+  width: 864px;
+  height: 360px;
 }
