@@ -211,6 +211,12 @@
     /*font-size: 16px;*/
 }
 
+@media (max-width: 500px) {
+    .role .row {
+        width: 100vw;
+    }
+}
+
 .name {
     color: rgba(255, 0, 72, 1);
     font-size: 2em;
@@ -303,8 +309,7 @@
     .about .row div {
         width: 80vw;
     }
-
     .about .row p {
-    	width: 80vw;	
+        width: 80vw;
     }
 }
