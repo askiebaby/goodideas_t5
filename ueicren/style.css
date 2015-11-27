@@ -1,0 +1,315 @@
+.header {
+    background-color: rgba(54, 8, 54, 1);
+    line-height: 4em;
+    /*height: 4em;
+	vertical-align: middle;*/
+}
+
+.header ul {
+    width: 30vw;
+    margin: auto;
+    text-align: center;
+}
+
+.header li {
+    display: inline-block;
+    color: #FF5E8B;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.header li.active {
+    color: #FFFFFF;
+}
+
+.header .hanber {
+    color: #FFFFFF;
+    border: solid 1px #FFFFFF;
+    width: 50px;
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.5em;
+    border-radius: 4px;
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .header {
+        text-align: right;
+    }
+    .header .hanber {
+        display: block;
+        float: right;
+        margin: 0.2em;
+    }
+    .header .hanber:hover {
+        color: #FF0000;
+        border: solid 1px #FF0000;
+    }
+    .header .nav {
+        display: none;
+    }
+}
+
+.banner {
+    /* ref: background: color image position/size repeat origin clip attachment initial|inherit;*/
+    /*background: url(banner_bg) 50% 50% / cover no-repeat;*/
+    background: url(banner_bg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.container {
+    width: 50vw;
+    margin: auto;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.design-studio {
+    padding-top: 35vh;
+    padding-bottom: 35vh;
+}
+
+.web,
+.folk {
+    font-size: 4em;
+}
+
+.folk {
+    font-style: italic;
+    margin-left: 2vw;
+}
+
+.design-studio p {
+    font-size: 1.7em;
+    letter-spacing: 0.4em;
+}
+
+.we-dream p {
+    font-size: 1.1em;
+    width: 28vw;
+    margin: auto;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 80vw;
+    }
+    .design-studio p {
+        /*width: 80vw;*/
+    }
+    .we-dream p {
+        width: 80vw;
+    }
+}
+
+.dot {
+    /*fill: #FFFFFF;*/
+    /*stroke: #FFFFFF;
+	stroke-width: 0;*/
+    /*font-size: 3em;*/
+    background: #FFFFFF;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 10vh auto;
+}
+
+.work-clients {
+    background-color: rgba(255, 0, 72, 1);
+    width: 30vw;
+    margin: auto;
+    letter-spacing: 0.4em;
+    padding: 1.5em 0;
+}
+
+.banner .container {
+    /*position: relative;*/
+}
+
+.banner .container .work-clients {
+    position: relative;
+}
+
+.arrow-area {
+    position: relative;
+    bottom: -22px;
+    width: 20px;
+    margin: auto;
+}
+
+
+/*absolute 飄起來才不會占空間， relative 飄起來還是會占空間*/
+
+.arrow-down {
+    /*border-top: 50px solid black;
+	border-right: 50px solid red;
+	border-bottom: 50px solid green;
+	border-left: 50px solid blue;*/
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgba(255, 0, 72, 1);
+    margin: 0 0 0 -13px;
+    position: absolute;
+    bottom: -20px;
+    /*top: 20px;*/
+    /*bottom: -20px;*/
+}
+
+
+/*ref: http://www.puritys.me/docs-blog/article-259-%E7%A7%BB%E9%99%A4-CSS-inline-block-%E7%A9%BA%E7%99%BD.html*/
+
+
+/*ref: http://www.w3cplus.com/css/fighting-the-space-between-inline-block-elements*/
+
+.demo .row {
+    font-size: 0;
+}
+
+.demo .row div {
+    /*display: inline-block;*/
+    /*font-size: 16px;*/
+}
+
+@media (max-width: 500px) {
+    .demo .row img {
+        width: 100vw;
+    }
+}
+
+.we-design {
+    background-color: rgba(255, 0, 72, 1);
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 0.2em;
+    padding-top: 1.4em;
+    padding-bottom: 1.4em;
+    position: relative;
+}
+
+.role h2 {
+    width: 40vw;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    color: rgba(255, 0, 72, 1);
+}
+
+.role .row {
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+}
+
+.role .row div {
+    display: inline-block;
+    /*font-size: 16px;*/
+}
+
+@media (max-width: 500px) {
+    .role .row {
+        width: 100vw;
+    }
+}
+
+.name {
+    color: rgba(255, 0, 72, 1);
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+.contact-us-row {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.contact-us {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 0.8em 5em;
+    text-decoration: none;
+    /*border-top: 10px;
+	border-bottom: 10px;
+	border-left: 30px;
+	border-right: 30px;
+	border-color: #000000;
+	border-style: solid;*/
+    /*border: 10px solid #000000;*/
+}
+
+.about {
+    /*background-color: #000000;*/
+    color: #FFFFFF;
+    background: url(about_bg.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.about .row {
+    width: 90vw;
+    margin: auto;
+    text-align: center;
+}
+
+.about .row div {
+    display: inline-block;
+    width: 35vw;
+    vertical-align: top;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.about .row h1 {
+    font-size: 3em;
+    padding-top: 2em;
+}
+
+.about .row p {
+    width: 30vw;
+    margin-top: 2em;
+    text-align: left;
+    margin: 2em auto auto auto;
+}
+
+.back-to-top-row {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.back-to-top {
+    background-color: #CCCCCC;
+    color: #000000;
+    padding: 0.8em 5em;
+    text-decoration: none;
+}
+
+.back-to-top:hover {
+    background-color: rgba(255, 94, 139, 1);
+    color: #FFFFFF;
+    padding: 0.8em 5em;
+    text-decoration: none;
+}
+
+.footer {
+    text-align: center;
+    padding: 3em 0 3em 0;
+}
+
+.footer a {
+    color: rgba(255, 0, 72, 1);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .about .row div {
+        width: 80vw;
+    }
+    .about .row p {
+        width: 80vw;
+    }
+}
