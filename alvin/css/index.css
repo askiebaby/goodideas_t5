@@ -54,7 +54,32 @@ header li a:hover {
   line-height: 60px;
 }
 
-.content img {
+.content figure {
+  position: relative;
+  margin: 0 -15px;
+}
+.content figure img {
   width: 100%;
   height: auto;
+}
+.content figure figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.content figure:hover figcaption {
+  background-color: #FF0048;
+}
+
+.folks p {
+  background-color: #FF0048;
+  color: #fff;
+  text-align: center;
+  margin-top: 80px;
+  padding: 20px 0px;
+  font-size: 20px;
+  letter-spacing: 0.1em;
 }
