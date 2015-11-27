@@ -74,7 +74,7 @@ header li a:hover {
   background-color: #FF0048;
 }
 
-.folks p {
+.folks #folks-title {
   background-color: #FF0048;
   color: #fff;
   text-align: center;
@@ -82,4 +82,42 @@ header li a:hover {
   padding: 20px 0px;
   font-size: 20px;
   letter-spacing: 0.1em;
+}
+.folks figure {
+  margin: 0 -15px;
+}
+.folks figure h3 {
+  color: #FF0048;
+  font-size: 40px;
+}
+.folks figure p {
+  font-size: 16px;
+}
+.folks figure img {
+  width: 100%;
+}
+.folks .folks-bottom {
+  margin-top: 20px;
+}
+
+.narrow {
+  width: 70%;
+}
+
+.article {
+  background: url("../images/bg_what.jpg") no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: #fff;
+}
+.article .text1 {
+  margin-top: 50px;
+}
+.article .text2 {
+  margin-top: 100px;
+}
+.article .text3 {
+  margin-top: -50px;
 }

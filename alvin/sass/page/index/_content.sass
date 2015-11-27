@@ -15,7 +15,7 @@
 		&:hover figcaption
 			background-color: $banner-bgcolor
 .folks 
-	p 
+	#folks-title 
 		background-color: $banner-bgcolor
 		color: $text-color
 		text-align: center
@@ -24,9 +24,25 @@
 		font-size: 20px
 		letter-spacing: 0.1em
 	figure
+		margin: 0 -15px
+		h3
+			color: $name-color
+			font-size: 40px
+		p 
+			font-size: 16px
 		img
-			//width: 100%
-			
-
-
-
+			width: 100%
+	.folks-bottom
+		margin-top: 20px
+.narrow
+	width: 70%
+.article
+	+banner-bg(bg_what,jpg)	
+	+background-size(cover)
+	color: $text-color
+	.text1
+		margin-top: 50px
+	.text2
+		margin-top: 100px
+	.text3
+		margin-top: -50px
