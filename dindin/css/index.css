@@ -1,0 +1,185 @@
+/* line 16, ../sass/common/_header.sass */
+header ul {
+  background-color: #290029;
+  margin-bottom: 0;
+  color: #970a41;
+  line-height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* line 23, ../sass/common/_header.sass */
+header ul a:visited {
+  color: #970a41;
+}
+/* line 25, ../sass/common/_header.sass */
+header ul a:hover {
+  color: white;
+  text-decoration: none;
+}
+/* line 29, ../sass/common/_header.sass */
+header .mainheader {
+  background-image: url(../img/cover.png);
+  background-size: cover;
+  height: 600px;
+  color: white;
+  position: relative;
+}
+/* line 35, ../sass/common/_header.sass */
+header .mainheader .boxmainh {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -160px auto auto -200px;
+}
+/* line 40, ../sass/common/_header.sass */
+header .mainheader .boxmainh .boxmainhp {
+  margin: 80px auto auto auto;
+}
+
+/* line 1, ../sass/pages/_main.sass */
+#topsection {
+  position: relative;
+}
+/* line 3, ../sass/pages/_main.sass */
+#topsection .outerimg {
+  position: relative;
+}
+/* line 5, ../sass/pages/_main.sass */
+#topsection h4 {
+  width: 200px;
+  color: white;
+  background-color: #fa0026;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  margin: auto auto auto -100px;
+  line-height: 50px;
+}
+/* line 14, ../sass/pages/_main.sass */
+#topsection .tri {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 40px 30px 0 30px;
+  border-color: #fa0026 transparent transparent transparent;
+  margin: 0 auto;
+  z-index: 99;
+  position: absolute;
+  left: 50%;
+  margin: 0 auto 0 -30px;
+}
+/* line 16, ../sass/pages/_main.sass */
+#topsection .imgtext {
+  opacity: 0;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 35% 20%;
+}
+/* line 25, ../sass/pages/_main.sass */
+#topsection img {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+/* line 30, ../sass/pages/_main.sass */
+#topsection a:hover .imgtext {
+  opacity: 1;
+  background-color: #fa0026;
+  color: white;
+  transition: background-color 1s;
+}
+
+/* line 36, ../sass/pages/_main.sass */
+#downsection h4 {
+  background-color: #fa0026;
+  color: white;
+  line-height: 50px;
+  margin: 0 auto 0 auto;
+}
+/* line 41, ../sass/pages/_main.sass */
+#downsection h3 {
+  color: #fa0026;
+  margin: 50px auto 180px auto;
+}
+/* line 44, ../sass/pages/_main.sass */
+#downsection .tri {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 40px 30px 0 30px;
+  border-color: #fa0026 transparent transparent transparent;
+  margin: 0 auto;
+  z-index: 99;
+  position: absolute;
+  left: 50%;
+  margin: 0 auto 0 -30px;
+}
+/* line 46, ../sass/pages/_main.sass */
+#downsection .container {
+  max-width: 800px;
+}
+/* line 48, ../sass/pages/_main.sass */
+#downsection .container h2 {
+  color: #fa0026;
+}
+/* line 50, ../sass/pages/_main.sass */
+#downsection .middlebutton {
+  display: block;
+  width: 200px;
+  margin: 0 auto 20px auto;
+}
+/* line 54, ../sass/pages/_main.sass */
+#downsection .middlebutton h4 {
+  line-height: 40px;
+}
+/* line 56, ../sass/pages/_main.sass */
+#downsection .middlebutton:hover {
+  text-decoration: none;
+}
+
+/* line 1, ../sass/common/_footer.sass */
+footer {
+  background-image: url(../img/bg.jpg);
+}
+/* line 3, ../sass/common/_footer.sass */
+footer ul {
+  color: white;
+  padding: 10% 30%;
+}
+/* line 6, ../sass/common/_footer.sass */
+footer .rightfooter {
+  margin-top: 200px;
+}
+/* line 8, ../sass/common/_footer.sass */
+footer li {
+  margin: 10px auto 50px auto;
+}
+/* line 10, ../sass/common/_footer.sass */
+footer .footerbutton {
+  display: block;
+  width: 180px;
+  margin: 0 auto 50px auto;
+  height: 40px;
+  color: black;
+  background-color: white;
+}
+/* line 17, ../sass/common/_footer.sass */
+footer .footerbutton h4 {
+  line-height: 40px;
+}
+/* line 21, ../sass/common/_footer.sass */
+footer .footerbutton:hover {
+  text-decoration: none;
+  background-color: #fa0026;
+  transition: background-color 1s;
+}
+/* line 25, ../sass/common/_footer.sass */
+footer .endph {
+  line-height: 80px;
+  background-color: grey;
+}
