@@ -1,0 +1,22 @@
+header {
+  background-color: #360836;
+  ul {
+    padding: 0;
+    margin: 0;
+    a {
+      padding: 0 20px;
+      font-size: 18px;
+      color: #FF5E8B;
+      line-height: 60px;
+      &:hover {
+        color: #fff;
+        transition: 2s;
+        text-decoration: none;
+      }
+      &:focus {
+        color: #ecb24b;
+        text-decoration: none;
+      }
+    }
+  }
+}

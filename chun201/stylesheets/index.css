@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/* line 1, ../sass/index.scss */
+body {
+  background-color: #fff;
+}
+
+/*---------- common use ----------*/
+/* line 6, ../sass/index.scss */
+.title {
+  background-color: #FF0048;
+  color: #fff;
+}
+
+/* line 11, ../sass/index.scss */
+.triangle {
+  width: 50px;
+  margin: 0 auto;
+  border-left: 25px solid rgba(255, 255, 255, 0);
+  border-top: 25px solid #FF0048;
+  border-right: 25px solid rgba(255, 255, 255, 0);
+  position: relative;
+  z-index: 999;
+}
+
+/* line 21, ../sass/index.scss */
+.block {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 26, ../sass/index.scss */
+.img {
+  width: 100%;
+}
+
+/* line 30, ../sass/index.scss */
+.author {
+  padding: 20px 0 30px 0;
+}
+/* line 32, ../sass/index.scss */
+.author h1 {
+  padding: 0;
+  margin: 0;
+  font-family: Kepler;
+  font-weight: bold;
+  color: #FF0048;
+  letter-spacing: 6px;
+}
+/* line 40, ../sass/index.scss */
+.author h5 {
+  padding: 0 0 10px 0;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* line 47, ../sass/index.scss */
+.intro_block {
+  padding: 40px 50px;
+}
+/* line 49, ../sass/index.scss */
+.intro_block .intro_content_title {
+  font-size: 32px;
+  margin: 10px auto;
+  color: #fff;
+}
+/* line 54, ../sass/index.scss */
+.intro_block .intro_content_text {
+  padding: 5px 0;
+  margin: 0;
+  color: #fff;
+}
+
+/*---------- main content-info ----------*/
+/* line 62, ../sass/index.scss */
+#info {
+  position: relative;
+  top: -50px;
+}
+/* line 65, ../sass/index.scss */
+#info #topTitle {
+  width: 300px;
+  margin: 0 auto;
+}
+/* line 68, ../sass/index.scss */
+#info #topTitle h4 {
+  padding: 0;
+  margin: 0;
+  line-height: 50px;
+  letter-spacing: 3px;
+}
+/* line 75, ../sass/index.scss */
+#info .block .img {
+  position: relative;
+  top: -25px;
+}
+
+/*---------- main content-member ----------*/
+/* line 82, ../sass/index.scss */
+#team {
+  padding-top: 50px;
+}
+/* line 84, ../sass/index.scss */
+#team #downTitle {
+  padding: 0;
+  margin: 0;
+}
+/* line 87, ../sass/index.scss */
+#team #downTitle h4 {
+  padding: 0;
+  margin: 0;
+  line-height: 45px;
+  letter-spacing: 2px;
+}
+/* line 93, ../sass/index.scss */
+#team #downTitle h3 {
+  margin: 40px 0 50px 0;
+  color: #FF0048;
+  letter-spacing: 2px;
+}
+/* line 99, ../sass/index.scss */
+#team #member {
+  width: 60%;
+}
+/* line 102, ../sass/index.scss */
+#team #contaceBtn {
+  background-color: #000;
+  padding: 8px 60px;
+  border: 2px solid #FF5E8B;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  color: #fff;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+/* line 112, ../sass/index.scss */
+#team #contaceBtn:hover {
+  color: #FF5E8B;
+  transition: 1s ease-in-out;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+/*---------- main content-introduction ----------*/
+/* line 123, ../sass/index.scss */
+#intro {
+  background: url(../img/bg.jpg) no-repeat center center;
+  background-size: cover;
+  padding-bottom: 20px;
+}
+/* line 127, ../sass/index.scss */
+#intro #intro_content {
+  width: 85%;
+  padding: 10px 50px;
+}
+/* line 131, ../sass/index.scss */
+#intro #BackBtn {
+  background-color: #fff;
+  padding: 10px 50px;
+  border: 3px solid;
+  border-radius: 10px;
+  margin-top: 30px;
+  letter-spacing: 2px;
+}
+/* line 138, ../sass/index.scss */
+#intro #BackBtn:hover {
+  box-shadow: 2px 2px 4px 30px rgba(255, 94, 139, 0.4) inset;
+  transition: 1s ease-in-out;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 16px;
+  letter-spacing: 4px;
+}
+
+/*=============== RDW ===============*/
+/*----- xs:768↓（480~768） -----*/
+@media (max-width: 767px) {
+  /* line 152, ../sass/index.scss */
+  .intro_block {
+    padding: 40px 10px;
+  }
+
+  /* line 156, ../sass/index.scss */
+  #intro_content_right {
+    margin-top: 0px;
+  }
+}
+/*----- sm:768~991 -----*/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 163, ../sass/index.scss */
+  .intro_block {
+    padding: 40px 10px;
+  }
+
+  /* line 167, ../sass/index.scss */
+  #intro_content_right {
+    margin-top: 0px;
+  }
+}
+/*----- md:768~991 -----*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 174, ../sass/index.scss */
+  .intro_block {
+    padding: 40px 50px;
+  }
+
+  /* line 178, ../sass/index.scss */
+  #intro_content_right {
+    margin-top: 200px;
+  }
+}
+/*----- lg:768~991 -----*/
+@media (min-width: 1200px) {
+  /* line 185, ../sass/index.scss */
+  .intro_block {
+    padding: 40px 50px;
+  }
+
+  /* line 189, ../sass/index.scss */
+  #intro_content_right {
+    margin-top: 200px;
+  }
+}

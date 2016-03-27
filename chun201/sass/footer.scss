@@ -1,0 +1,16 @@
+footer {
+  background-color: #DEDDDD;
+  p {
+    padding: 20px 0;
+    margin: 0;
+    color: #000;
+    letter-spacing: 1px;
+    a {
+      color: #FF5E8B;
+      &:hover {
+        color: #035194;
+        text-decoration: none;
+      }
+    }
+  }
+}

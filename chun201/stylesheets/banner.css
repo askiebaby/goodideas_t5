@@ -1,0 +1,35 @@
+/* line 1, ../sass/banner.scss */
+#banner {
+  background: url(../img/cover.png) no-repeat;
+  background-size: cover;
+  height: 550px;
+  position: relative;
+}
+/* line 6, ../sass/banner.scss */
+#banner #logo {
+  width: 400px;
+  margin-top: -120px;
+  margin-left: -200px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  color: #fff;
+}
+/* line 14, ../sass/banner.scss */
+#banner #logo h1 {
+  font-size: 50px;
+  font-style: italic;
+  letter-spacing: 4px;
+}
+/* line 19, ../sass/banner.scss */
+#banner #logo h4 {
+  font-size: 20px;
+  letter-spacing: 8px;
+}
+/* line 23, ../sass/banner.scss */
+#banner #logo p {
+  padding-top: 70px;
+  margin: 30px;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
