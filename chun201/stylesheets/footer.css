@@ -14,7 +14,7 @@ footer p a {
   color: #FF5E8B;
 }
 /* line 10, ../sass/footer.scss */
-footer p a:hover {
+footer p a:hover, footer p a:focus {
   color: #035194;
   text-decoration: none;
 }

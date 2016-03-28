@@ -24,20 +24,21 @@ body {
 
 /* line 21, ../sass/index.scss */
 .block {
+  position: relative;
   padding: 0;
   margin: 0;
 }
 
-/* line 26, ../sass/index.scss */
+/* line 27, ../sass/index.scss */
 .img {
   width: 100%;
 }
 
-/* line 30, ../sass/index.scss */
+/* line 31, ../sass/index.scss */
 .author {
   padding: 20px 0 30px 0;
 }
-/* line 32, ../sass/index.scss */
+/* line 33, ../sass/index.scss */
 .author h1 {
   padding: 0;
   margin: 0;
@@ -46,24 +47,24 @@ body {
   color: #FF0048;
   letter-spacing: 6px;
 }
-/* line 40, ../sass/index.scss */
+/* line 41, ../sass/index.scss */
 .author h5 {
   padding: 0 0 10px 0;
   margin: 0;
   letter-spacing: 1px;
 }
 
-/* line 47, ../sass/index.scss */
+/* line 48, ../sass/index.scss */
 .intro_block {
   padding: 40px 50px;
 }
-/* line 49, ../sass/index.scss */
+/* line 50, ../sass/index.scss */
 .intro_block .intro_content_title {
   font-size: 32px;
   margin: 10px auto;
   color: #fff;
 }
-/* line 54, ../sass/index.scss */
+/* line 55, ../sass/index.scss */
 .intro_block .intro_content_text {
   padding: 5px 0;
   margin: 0;
@@ -71,57 +72,78 @@ body {
 }
 
 /*---------- main content-info ----------*/
-/* line 62, ../sass/index.scss */
+/* line 63, ../sass/index.scss */
 #info {
   position: relative;
   top: -50px;
 }
-/* line 65, ../sass/index.scss */
+/* line 66, ../sass/index.scss */
 #info #topTitle {
   width: 300px;
   margin: 0 auto;
 }
-/* line 68, ../sass/index.scss */
+/* line 69, ../sass/index.scss */
 #info #topTitle h4 {
   padding: 0;
   margin: 0;
   line-height: 50px;
   letter-spacing: 3px;
 }
-/* line 75, ../sass/index.scss */
-#info .block .img {
+/* line 77, ../sass/index.scss */
+#info .block figure {
   position: relative;
   top: -25px;
 }
+/* line 80, ../sass/index.scss */
+#info .block figure figcaption {
+  width: 100%;
+  height: 100%;
+  padding: 31% 10%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  text-align: center;
+  opacity: 0;
+}
+/* line 89, ../sass/index.scss */
+#info .block figure figcaption:hover {
+  background-color: rgba(205, 45, 95, 0.8);
+  color: #fff;
+  transition: 1s ease-in-out;
+  font-size: 30px;
+  text-shadow: 1px 2px 3px #dcdbdb;
+  letter-spacing: 3px;
+  opacity: 1;
+}
 
 /*---------- main content-member ----------*/
-/* line 82, ../sass/index.scss */
+/* line 104, ../sass/index.scss */
 #team {
   padding-top: 50px;
 }
-/* line 84, ../sass/index.scss */
+/* line 106, ../sass/index.scss */
 #team #downTitle {
   padding: 0;
   margin: 0;
 }
-/* line 87, ../sass/index.scss */
+/* line 109, ../sass/index.scss */
 #team #downTitle h4 {
   padding: 0;
   margin: 0;
   line-height: 45px;
   letter-spacing: 2px;
 }
-/* line 93, ../sass/index.scss */
+/* line 115, ../sass/index.scss */
 #team #downTitle h3 {
   margin: 40px 0 50px 0;
   color: #FF0048;
   letter-spacing: 2px;
 }
-/* line 99, ../sass/index.scss */
+/* line 121, ../sass/index.scss */
 #team #member {
   width: 60%;
 }
-/* line 102, ../sass/index.scss */
+/* line 124, ../sass/index.scss */
 #team #contaceBtn {
   background-color: #000;
   padding: 8px 60px;
@@ -133,7 +155,7 @@ body {
   letter-spacing: 2px;
   text-decoration: none;
 }
-/* line 112, ../sass/index.scss */
+/* line 134, ../sass/index.scss */
 #team #contaceBtn:hover {
   color: #FF5E8B;
   transition: 1s ease-in-out;
@@ -143,18 +165,22 @@ body {
 }
 
 /*---------- main content-introduction ----------*/
-/* line 123, ../sass/index.scss */
+/* line 145, ../sass/index.scss */
 #intro {
   background: url(../img/bg.jpg) no-repeat center center;
   background-size: cover;
   padding-bottom: 20px;
 }
-/* line 127, ../sass/index.scss */
+/* line 149, ../sass/index.scss */
 #intro #intro_content {
   width: 85%;
   padding: 10px 50px;
 }
-/* line 131, ../sass/index.scss */
+/* line 152, ../sass/index.scss */
+#intro #intro_content #intro_content_right {
+  margin-top: 200px;
+}
+/* line 156, ../sass/index.scss */
 #intro #BackBtn {
   background-color: #fff;
   padding: 10px 50px;
@@ -163,7 +189,7 @@ body {
   margin-top: 30px;
   letter-spacing: 2px;
 }
-/* line 138, ../sass/index.scss */
+/* line 163, ../sass/index.scss */
 #intro #BackBtn:hover {
   box-shadow: 2px 2px 4px 30px rgba(255, 94, 139, 0.4) inset;
   transition: 1s ease-in-out;
@@ -176,49 +202,27 @@ body {
 /*=============== RDW ===============*/
 /*----- xs:768↓（480~768） -----*/
 @media (max-width: 767px) {
-  /* line 152, ../sass/index.scss */
+  /* line 177, ../sass/index.scss */
   .intro_block {
     padding: 40px 10px;
   }
 
-  /* line 156, ../sass/index.scss */
+  /* line 181, ../sass/index.scss */
   #intro_content_right {
     margin-top: 0px;
   }
 }
 /*----- sm:768~991 -----*/
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 163, ../sass/index.scss */
+  /* line 188, ../sass/index.scss */
   .intro_block {
     padding: 40px 10px;
   }
 
-  /* line 167, ../sass/index.scss */
+  /* line 192, ../sass/index.scss */
   #intro_content_right {
     margin-top: 0px;
   }
 }
 /*----- md:768~991 -----*/
-@media (min-width: 992px) and (max-width: 1199px) {
-  /* line 174, ../sass/index.scss */
-  .intro_block {
-    padding: 40px 50px;
-  }
-
-  /* line 178, ../sass/index.scss */
-  #intro_content_right {
-    margin-top: 200px;
-  }
-}
 /*----- lg:768~991 -----*/
-@media (min-width: 1200px) {
-  /* line 185, ../sass/index.scss */
-  .intro_block {
-    padding: 40px 50px;
-  }
-
-  /* line 189, ../sass/index.scss */
-  #intro_content_right {
-    margin-top: 200px;
-  }
-}

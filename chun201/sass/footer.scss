@@ -7,7 +7,7 @@ footer {
     letter-spacing: 1px;
     a {
       color: #FF5E8B;
-      &:hover {
+      &:hover, &:focus {
         color: #035194;
         text-decoration: none;
       }
