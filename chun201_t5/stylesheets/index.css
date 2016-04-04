@@ -199,7 +199,7 @@ body {
   letter-spacing: 4px;
 }
 
-/*=============== RDW ===============*/
+/*=============== RWD ===============*/
 /*----- xs:768↓（480~768） -----*/
 @media (max-width: 767px) {
   /* line 177, ../sass/index.scss */
@@ -207,20 +207,20 @@ body {
     padding: 40px 10px;
   }
 
-  /* line 181, ../sass/index.scss */
-  #intro_content_right {
+  /* line 183, ../sass/index.scss */
+  #intro #intro_content #intro_content_right {
     margin-top: 0px;
   }
 }
 /*----- sm:768~991 -----*/
 @media (min-width: 768px) and (max-width: 991px) {
-  /* line 188, ../sass/index.scss */
+  /* line 192, ../sass/index.scss */
   .intro_block {
     padding: 40px 10px;
   }
 
-  /* line 192, ../sass/index.scss */
-  #intro_content_right {
+  /* line 198, ../sass/index.scss */
+  #intro #intro_content #intro_content_right {
     margin-top: 0px;
   }
 }

@@ -171,15 +171,19 @@ body {
   }
 }
 
-/*=============== RDW ===============*/
+/*=============== RWD ===============*/
   /*----- xs:768↓（480~768） -----*/
 @media (max-width:767px){
   .intro_block {
     padding: 40px 10px;
   }
 
-  #intro_content_right {
-    margin-top: 0px;
+  #intro {
+    #intro_content {
+      #intro_content_right {
+        margin-top: 0px;
+      }
+    }
   }
 }
 
@@ -189,17 +193,19 @@ body {
     padding: 40px 10px;
   }
 
-  #intro_content_right {
-    margin-top: 0px;
+  #intro {
+    #intro_content {
+      #intro_content_right {
+        margin-top: 0px;
+      }
+    }
   }
 }
 
   /*----- md:768~991 -----*/
 @media (min-width:992px) and (max-width:1199px){
-
 }
 
   /*----- lg:768~991 -----*/
 @media (min-width:1200px){
-
 }
