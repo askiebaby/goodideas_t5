@@ -1,0 +1,213 @@
+// header
+.header {
+    justify-content: center;
+    display: flex;
+    background-color: black;
+    a {
+        @extend %mpx;
+        padding: 10px;
+        color: white;
+    }
+}
+// header
+// body
+%sh {
+    color: #0096D6;
+}
+%mpx {
+    font-size: 15px;
+}
+%bpx {
+    font-size: 25px;
+}
+%hpx {
+    font-size: 36px;
+}
+%bgc {
+    background-color: #454547;
+}
+%triangle {
+    width: 40px;
+    margin: 0 auto;
+    border-color: #454547 transparent transparent transparent;
+    border-style: solid solid solid solid;
+    border-width: 20px;
+}
+.mid {
+    position: relative;
+    background-image: url("../img/bgimg.jpg");
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .midt {
+        position: absolute;
+        @extend %sh;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        height: 50%;
+        text-align: center;
+        h2 {
+            @extend %mpx;
+            padding-bottom: 50%;
+        }
+        p {
+            margin-bottom: 20%;
+        }
+    }
+    .midtb {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        margin: auto;
+        width: 300px;
+        @extend %sh;
+        @extend %hpx;
+        p {
+            margin-bottom: 0;
+            @extend %bgc;
+        }
+        .triangle {
+            @extend %triangle;
+        }
+    }
+}
+.midm {
+    .grid3 {
+        padding: 0;
+        figure {
+            position: relative;
+            img {
+                max-width: 100%;
+            }
+            figcaption {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                @extend %hpx;
+                opacity: 0;
+                padding: 40% 5%;
+                &:hover {
+                    opacity: 0.9;
+                    color: white;
+                    background-color: rgba(0, 150, 214, 0.5);
+                    transition-duration: 0.8s;
+                }
+            }
+        }
+    }
+    .midmb {
+        p {
+            @extend %bgc;
+            padding: 1%;
+            margin: 0;
+            text-align: center;
+            @extend %bpx;
+            @extend %sh;
+        }
+        .triangle {
+            @extend %triangle;
+        }
+    }
+}
+.midb {
+    h1 {
+        text-align: center;
+        @extend %bpx;
+        color: #454547;
+    }
+    .grid3 {
+        padding: 0;
+        img {
+            max-width: 100%;
+        }
+        figure {}
+    }
+    .button {
+        padding-top: 5%;
+        text-align: center;
+        a {
+            display: block;
+            width: 200px;
+            height: 40px;
+            margin: auto;
+            text-align: center;
+            text-decoration:none;
+            @extend %bpx;
+            @extend %bgc;
+            @extend %sh;
+            border-radius: 5px;
+            &:hover {
+                background-color: #0096D6;
+                color: #454547;
+                transition-duration: 3s;
+            }
+        }
+    }
+}
+.midtext{
+  padding-top: 40px;
+  background-image:url("../img/bg2.jpg");
+  background-size:contain;
+  background-repeat: no-repeat;
+  .midtext1{
+    height:250px;
+    opacity:0.2;
+&:hover{
+  @extend %bgc;
+border-radius: 4px;
+opacity:0.8;}
+  h1{
+    @extend %sh;
+    @extend %bpx;
+  }
+  p{
+    @extend %sh;
+  }
+}
+.botbutton {
+    padding-top: 3%;
+    text-align: center;
+    a {
+        display: block;
+        width: 200px;
+        height: 40px;
+        margin: auto;
+        text-align: center;
+        @extend %bpx;
+        @extend %bgc;
+        @extend %sh;
+        border-radius: 5px;
+        text-decoration:none;
+        &:hover {
+            background-color: #0096D6;
+            color: #454547;
+            transition-duration: 3s;
+            position:relative;
+top:2px;
+        }
+    }
+}
+}
+.footer{
+  text-align: center;
+  background-color:black;
+margin-top:20px;
+color:white;
+h1{
+@extend %mpx;
+margin:0;
+height: 20px;
+}}
+@media (min-width:1024px) {
+.hm{margin-top:100px;}
+.bm{margin-bottom: 100px;}
+}
