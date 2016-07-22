@@ -1,0 +1,166 @@
+/* line 1, ../sass/index.scss */
+.triangle {
+  width: 5px;
+  margin: auto;
+  border-left: 20px solid rgba(255, 255, 255, 0);
+  border-top: 20px solid #FF0048;
+  border-right: 20px solid rgba(255, 255, 255, 0);
+  position: relative;
+  z-index: 999;
+}
+
+/* line 10, ../sass/index.scss */
+#img {
+  padding: 0;
+  margin: 0;
+}
+/* line 14, ../sass/index.scss */
+#img figure img {
+  width: 100%;
+}
+/* line 17, ../sass/index.scss */
+#img figure figcaption {
+  width: 100%;
+  height: 100%;
+  padding: 30%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  text-align: center;
+  opacity: 0;
+}
+/* line 26, ../sass/index.scss */
+#img figure figcaption:hover {
+  background-color: rgba(205, 45, 95, 0.8);
+  color: #fff;
+  transition: 1s;
+  font-size: 50px;
+  text-shadow: 1px 2px 3px #dcdbdb;
+  opacity: 1;
+}
+
+/* line 37, ../sass/index.scss */
+#team {
+  padding-top: 80px;
+}
+/* line 40, ../sass/index.scss */
+#team #downtittle h4 {
+  text-align: center;
+  background-color: #FF0048;
+  margin: 0;
+  padding: 15px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+/* line 48, ../sass/index.scss */
+#team #downtittle h5 {
+  text-align: center;
+  color: #FF0048;
+  font-size: 25px;
+  margin: 40px 0 50px 0;
+  letter-spacing: 2px;
+}
+/* line 56, ../sass/index.scss */
+#team #member {
+  width: 60%;
+  margin: auto;
+}
+/* line 59, ../sass/index.scss */
+#team #member #staff {
+  padding: 0;
+  margin: auto;
+}
+/* line 62, ../sass/index.scss */
+#team #member #staff img {
+  width: 100%;
+}
+/* line 65, ../sass/index.scss */
+#team #member #staff h1 {
+  color: #FF0048;
+  font-family: serif;
+  letter-spacing: 6px;
+  text-align: center;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+/* line 73, ../sass/index.scss */
+#team #member #staff p {
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 0 0 20px 0;
+}
+/* line 80, ../sass/index.scss */
+#team #contact {
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* line 83, ../sass/index.scss */
+#team #contact .contactBtn {
+  background-color: #000;
+  border: 2px #FF5E88 solid;
+  color: #fff;
+  letter-spacing: 2px;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+/* line 90, ../sass/index.scss */
+#team #contact .contactBtn:hover {
+  font-size: 18px;
+  transition: 1s;
+  color: #FF5E88;
+  text-shadow: 3px 3px 2px #fff;
+}
+
+/* line 99, ../sass/index.scss */
+#intro {
+  background-image: url("../img/bg.jpg");
+}
+/* line 101, ../sass/index.scss */
+#intro .row {
+  width: 85%;
+  margin: auto;
+  color: #fff;
+}
+/* line 106, ../sass/index.scss */
+#intro #introleft {
+  padding: 40px 50px;
+}
+/* line 110, ../sass/index.scss */
+#intro #introright {
+  padding: 40px 50px;
+  margin-top: 200px;
+}
+
+/* line 116, ../sass/index.scss */
+.introblock {
+  padding: 20px;
+  text-align: justify;
+}
+/* line 119, ../sass/index.scss */
+.introblock h1 {
+  margin: 20px 0 20px 0;
+  font-family: serif;
+  letter-spacing: 4px;
+}
+
+/* line 125, ../sass/index.scss */
+.top {
+  text-align: center;
+  padding: 20px;
+}
+/* line 128, ../sass/index.scss */
+.top .topBtn {
+  background-color: #000;
+  border: 2px #FF5E88 solid;
+  color: #fff;
+  letter-spacing: 2px;
+  padding: 10px 50px;
+  border-radius: 10px;
+}
+/* line 135, ../sass/index.scss */
+.top .topBtn:hover {
+  font-size: 18px;
+  transition: 1s;
+  color: #FF5E88;
+  text-shadow: 3px 3px 2px #fff;
+}
