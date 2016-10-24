@@ -1,0 +1,63 @@
+:root{
+  --onebgcolor:purple;
+  --hovercolor:red;
+  --defaultcolor:white;
+  --WorkClientscolor:red;
+}
+body{
+  margin: 0px;
+}
+.one{
+  background-color:var(--onebgcolor);
+  text-align: center;
+}
+ul{
+  margin: 0;
+}
+ul li{
+  display: inline;
+  margin-right: 30px;
+}
+a{
+  text-decoration: none;
+  color: var(--defaultcolor);
+}
+a:hover{
+  color: var(--hovercolor);
+}
+.two{
+  width: 100%;
+}
+.triangle {
+  width: 0px;
+  margin: 0 auto;
+  border-left: 25px solid transparent;
+  border-top: 25px solid red;
+  border-right: 25px solid transparent;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+}
+.WorkClients{
+  width: 300px;
+  background-color: var(--WorkClientscolor);
+  margin-top: -60px;
+  padding-top: 10px;
+  height: 60px;
+  position: relative;
+  color: var(--defaultcolor);
+}
+.colset{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.rowset{
+  margin: 0;
+}
+.four{
+  margin: 0;
+  margin-top: 50px;
+  background-color: var(--WorkClientscolor);
+  color: var(--defaultcolor);
+}

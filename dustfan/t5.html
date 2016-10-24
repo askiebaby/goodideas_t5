@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="src/bootstrap.css" media="screen" title="t5">
+  <!--  <link rel="stylesheet" href="dest/style.css">-->
+    <title>t5</title>
+<style media="screen">
+:root{
+  --onebgcolor:purple;
+  --hovercolor:red;
+  --defaultcolor:white;
+  --WorkClientscolor:red;
+}
+body{
+  margin: 0px;
+}
+.one{
+  background-color:var(--onebgcolor);
+  text-align: center;
+}
+ul{
+  margin: 0;
+}
+ul li{
+  display: inline;
+  margin-right: 30px;
+}
+ul li a{
+  text-decoration: none;
+  color: var(--defaultcolor);
+}
+ul li a:hover{
+  text-decoration: none;
+  color: var(--hovercolor);
+}
+.two{
+  width: 100%;
+}
+.twocontent{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-top: 10%;
+  color: var(--defaultcolor);
+}
+.triangle {
+  width: 0px;
+  margin: 0 auto;
+  border-left: 25px solid transparent;
+  border-top: 25px solid red;
+  border-right: 25px solid transparent;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+}
+.WorkClients{
+  width: 300px;
+  background-color: var(--WorkClientscolor);
+  margin-top: -60px;
+  padding-top: 10px;
+  height: 60px;
+  position: relative;
+  color: var(--defaultcolor);
+}
+.colset{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.rowset{
+  margin: 0;
+}
+.four{
+  margin: 0;
+  margin-top: 50px;
+  background-color: var(--WorkClientscolor);
+  color: var(--defaultcolor);
+}
+.triangle2 {
+  width: 0px;
+  margin: 0 auto;
+  margin-top: -10px;
+  border-left: 25px solid transparent;
+  border-top: 25px solid red;
+  border-right: 25px solid transparent;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+}
+.contactus{
+  width: 200px;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: black;
+  color: var(--defaultcolor);
+}
+.contactus:hover{
+  background-color: red;
+  text-decoration: none;
+  color: var(--defaultcolor);
+}
+.last2{
+  height: 900px;
+  background-image: url("images/bg_what.jpg");
+  background-repeat: no-repeat;
+}
+.colset2{
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.backtotop{
+  width: 200px;
+  display: block;
+  margin-top: 50px;
+  color:black;
+  background-color: white;
+}
+.backtotop:hover{
+  background-color: red;
+  text-decoration: none;
+  color: black;
+}
+
+.foot{
+  background-color: #d5d4d4;
+}
+.layer{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-top: 35%;
+  font-size: 25px;
+  display: block;
+  transition:  background-color 1s;
+  color: transparent;
+}
+.layer:hover{
+  color: white;
+  background-color: red;
+}
+</style>
+  </head>
+  <body>
+    <div class="one">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="two center-block">
+      <div class="text-center twocontent">
+        <h1>WEB FOLK</h1>
+        <h3>WEB DESIGN STUDIO</h3>
+        <p style="padding-top:70px">We dream, explore, create and craft progressive digital expreriences</p>
+
+      </div>
+      <img src="images/banner.png" style="width:100%" />
+
+      <div class="WorkClients text-center center-block">
+        <p style="font-size:30px">
+          Work&Clients
+        </p>
+      </div>
+      <div class="triangle"></div>
+    </div>
+
+    <div class="three">
+      <div class="row rowset">
+        <div class="col-md-3 colset">
+          <a href="#">
+            <div class="layer text-center">
+              i am a image
+            </div>
+            <img src="images/element1.jpg" style="width:100%"/>
+          </a>
+        </div>
+        <div class="col-md-3 colset">
+          <a href="#">
+            <div class="layer text-center">
+              i am a image
+            </div>
+            <img src="images/element2.jpg" style="width:100%"/>
+          </a>
+        </div>
+        <div class="col-md-3 colset">
+          <a href="#">
+            <div class="layer text-center">
+              i am a image
+            </div>
+            <img src="images/element3.jpg" style="width:100%"/>
+          </a>
+        </div>
+        <div class="col-md-3 colset">
+          <a href="#">
+            <div class="layer text-center">
+              i am a image
+            </div>
+            <img src="images/element4.jpg" style="width:100%"/>
+          </a>
+        </div>
+      </div>
+
+        <div class="row rowset">
+          <div class="col-md-3 colset">
+            <a href="#">
+              <div class="layer text-center">
+                i am a image
+              </div>
+              <img src="images/element5.jpg" style="width:100%"/>
+            </a>
+          </div>
+          <div class="col-md-3 colset">
+            <a href="#">
+              <div class="layer text-center">
+                i am a image
+              </div>
+              <img src="images/element6.jpg" style="width:100%"/>
+            </a>
+          </div>
+          <div class="col-md-3 colset">
+            <a href="#">
+              <div class="layer text-center">
+                i am a image
+              </div>
+              <img src="images/element7.jpg" style="width:100%"/>
+            </a>
+          </div>
+          <div class="col-md-3 colset">
+            <a href="#">
+              <div class="layer text-center">
+                i am a image
+              </div>
+              <img src="images/element8.jpg" style="width:100%"/>
+            </a>
+          </div>
+        </div>
+
+          <div class="row rowset">
+            <div class="col-md-3 colset">
+              <a href="#">
+                <div class="layer text-center">
+                  i am a image
+                </div>
+                <img src="images/element9.jpg" style="width:100%"/>
+              </a>
+            </div>
+            <div class="col-md-3 colset">
+              <a href="#">
+                <div class="layer text-center">
+                  i am a image
+                </div>
+                <img src="images/element10.jpg" style="width:100%"/>
+              </a>
+            </div>
+            <div class="col-md-3 colset">
+              <a href="#">
+                <div class="layer text-center">
+                  i am a image
+                </div>
+                <img src="images/element11.jpg" style="width:100%"/>
+              </a>
+            </div>
+            <div class="col-md-3 colset">
+              <a href="#">
+                <div class="layer text-center">
+                  i am a image
+                </div>
+                <img src="images/element12.jpg" style="width:100%"/>
+              </a>
+            </div>
+          </div>
+    </div>
+
+    <div class="four text-center">
+      <p style="font-size:30px">
+        We design great websites
+      </p>
+    </div>
+    <div class="triangle2"></div>
+
+    <div class="text-center" style="margin:50px 0">
+      <p style="font-size:30px">
+       Meets The Forks:
+      </p>
+    </div>
+
+    <div class="row rowset text-center">
+      <div class="col-md-4 colset col-md-offset-2">
+          <img src="images/Andreas.jpg" style="width:100%"/>
+          <p style="font-size:30px">
+            Andreas
+          </p>
+          <p>
+            Co Founder & Developer
+          </p>
+      </div>
+      <div class="col-md-4 colset">
+          <img src="images/Matt.jpg" style="width:100%"/>
+          <p style="font-size:30px">
+            Matt
+          </p>
+          <p>
+            Co Founder & Developer
+          </p>
+      </div>
+    </div>
+
+    <div class="row rowset text-center">
+      <div class="col-md-4 colset col-md-offset-2 text-center">
+          <img src="images/Dustin.jpg" style="width:100%"/>
+          <p style="font-size:30px">
+            Dustin
+          </p>
+          <p>
+            Co Founder & Developer
+          </p>
+      </div>
+      <div class="col-md-4 colset">
+          <img src="images/Anna.jpg" style="width:100%"/>
+          <p style="font-size:30px">
+            Anna
+          </p>
+          <p>
+            Co Founder & Developer
+          </p>
+      </div>
+    </div>
+
+    <div class="">
+      <a href="#" class="text-center center-block contactus">
+          contact us
+      </a>
+    </div>
+
+    <div class="last2 container-fluid" style="color:white">
+      <div class="row text-center">
+        <div class="col-md-6 colset2">
+                            <h2>who we are</h2>
+                              lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                               tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. at
+                               vero eos et accusam et justo duo dolores et ea rebum. stet clita kasd gubergren,
+                               no sea takimata sanctus est lorem ipsum dolor sit amet.
+                             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                             <h2>who we are</h2>
+                              lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                              tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. at
+                              vero eos et accusam et justo duo dolores et ea rebum. stet clita kasd gubergren,
+                              no sea takimata sanctus est lorem ipsum dolor sit amet.
+        </div>
+        <div class="col-md-6 colset2" style="margin-top:150px">
+                            <h2>who we are</h2>
+                              lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                              tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. at
+                              vero eos et accusam et justo duo dolores et ea rebum. stet clita kasd gubergren,
+                              no sea takimata sanctus est lorem ipsum dolor sit amet.
+                            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                            <h2>who we are</h2>
+                              lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                              tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. at
+                              vero eos et accusam et justo duo dolores et ea rebum. stet clita kasd gubergren,
+                              no sea takimata sanctus est lorem ipsum dolor sit amet.
+        </div>
+      </div>
+      <div class="">
+        <a href="#" class="text-center center-block backtotop">
+            Back to top
+        </a>
+      </div>
+    </div>
+    <div class="foot text-center">
+      GGGGGGGGGGGGGGGGGGGGg
+    </div>
+
+  </body>
+</html>
