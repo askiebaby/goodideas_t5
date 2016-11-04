@@ -1,0 +1,226 @@
+/* line 2, ../scss/t5.scss */
+.header {
+  justify-content: center;
+  display: flex;
+  background-color: black;
+}
+/* line 6, ../scss/t5.scss */
+.header a {
+  padding: 10px;
+  color: white;
+}
+
+/* line 14, ../scss/t5.scss */
+.mid .midt, .mid .midtb, .midm .midmb p, .midb .button a, .midtext .midtext1 h1, .midtext .midtext1 p, .midtext .botbutton a {
+  color: #0096D6;
+}
+
+/* line 17, ../scss/t5.scss */
+.header a, .mid .midt h2, .footer h1 {
+  font-size: 15px;
+}
+
+/* line 20, ../scss/t5.scss */
+.midm .midmb p, .midb h1, .midb .button a, .midtext .midtext1 h1, .midtext .botbutton a {
+  font-size: 25px;
+}
+
+/* line 23, ../scss/t5.scss */
+.mid .midtb, .midm .grid3 figure figcaption {
+  font-size: 36px;
+}
+
+/* line 26, ../scss/t5.scss */
+.mid .midtb p, .midm .midmb p, .midb .button a, .midtext .midtext1:hover, .midtext .botbutton a {
+  background-color: #454547;
+}
+
+/* line 29, ../scss/t5.scss */
+.mid .midtb .triangle, .midm .midmb .triangle {
+  width: 40px;
+  margin: 0 auto;
+  border-color: #454547 transparent transparent transparent;
+  border-style: solid solid solid solid;
+  border-width: 20px;
+}
+
+/* line 36, ../scss/t5.scss */
+.mid {
+  position: relative;
+  background-image: url("../img/bgimg.jpg");
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* line 43, ../scss/t5.scss */
+.mid .midt {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  height: 50%;
+  text-align: center;
+}
+/* line 53, ../scss/t5.scss */
+.mid .midt h2 {
+  padding-bottom: 50%;
+}
+/* line 57, ../scss/t5.scss */
+.mid .midt p {
+  margin-bottom: 20%;
+}
+/* line 61, ../scss/t5.scss */
+.mid .midtb {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  margin: auto;
+  width: 300px;
+}
+/* line 71, ../scss/t5.scss */
+.mid .midtb p {
+  margin-bottom: 0;
+}
+
+/* line 81, ../scss/t5.scss */
+.midm .grid3 {
+  padding: 0;
+}
+/* line 83, ../scss/t5.scss */
+.midm .grid3 figure {
+  position: relative;
+}
+/* line 85, ../scss/t5.scss */
+.midm .grid3 figure img {
+  max-width: 100%;
+}
+/* line 88, ../scss/t5.scss */
+.midm .grid3 figure figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  padding: 40% 5%;
+}
+/* line 98, ../scss/t5.scss */
+.midm .grid3 figure figcaption:hover {
+  opacity: 0.9;
+  color: white;
+  background-color: rgba(0, 150, 214, 0.5);
+  transition-duration: 0.8s;
+}
+/* line 108, ../scss/t5.scss */
+.midm .midmb p {
+  padding: 1%;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 122, ../scss/t5.scss */
+.midb h1 {
+  text-align: center;
+  color: #454547;
+}
+/* line 127, ../scss/t5.scss */
+.midb .grid3 {
+  padding: 0;
+}
+/* line 129, ../scss/t5.scss */
+.midb .grid3 img {
+  max-width: 100%;
+}
+/* line 134, ../scss/t5.scss */
+.midb .button {
+  padding-top: 5%;
+  text-align: center;
+}
+/* line 137, ../scss/t5.scss */
+.midb .button a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+/* line 148, ../scss/t5.scss */
+.midb .button a:hover {
+  background-color: #0096D6;
+  color: #454547;
+  transition-duration: 3s;
+}
+
+/* line 156, ../scss/t5.scss */
+.midtext {
+  padding-top: 40px;
+  background-image: url("../img/bg2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* line 161, ../scss/t5.scss */
+.midtext .midtext1 {
+  height: 250px;
+  opacity: 0.2;
+}
+/* line 164, ../scss/t5.scss */
+.midtext .midtext1:hover {
+  border-radius: 4px;
+  opacity: 0.8;
+}
+/* line 176, ../scss/t5.scss */
+.midtext .botbutton {
+  padding-top: 3%;
+  text-align: center;
+}
+/* line 179, ../scss/t5.scss */
+.midtext .botbutton a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  margin: auto;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+}
+/* line 190, ../scss/t5.scss */
+.midtext .botbutton a:hover {
+  background-color: #0096D6;
+  color: #454547;
+  transition-duration: 3s;
+  position: relative;
+  top: 2px;
+}
+
+/* line 200, ../scss/t5.scss */
+.footer {
+  text-align: center;
+  background-color: black;
+  margin-top: 20px;
+  color: white;
+}
+/* line 205, ../scss/t5.scss */
+.footer h1 {
+  margin: 0;
+  height: 20px;
+}
+
+@media (min-width: 1024px) {
+  /* line 211, ../scss/t5.scss */
+  .hm {
+    margin-top: 100px;
+  }
+
+  /* line 212, ../scss/t5.scss */
+  .bm {
+    margin-bottom: 100px;
+  }
+}
