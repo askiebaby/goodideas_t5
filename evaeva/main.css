@@ -30,16 +30,17 @@ header ul li a {
 /*------------------------------*/
 
 .slide {
-	text-align: center;
 	background-image: url(img/banner.png);
 	background-position: center center;
 	background-size: cover;
-	width: 100%;
+	display: inline-block;
 	min-height: 625px;
 	position: relative; /*paired*/
+	text-align: center;
+	width: 100%;
 }
 
-.slide div {
+.slideContent {
 	padding-top: 80px;
 }
 
@@ -66,6 +67,12 @@ header ul li a {
 	margin: 15px 0;
 }
 
+.WandC {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .WorkandClients {
 	background-color: #FF5252;
 	bottom: 0;
@@ -80,20 +87,23 @@ header ul li a {
 
 /*------------------------------*/
 
-.Works {
-	position: relative; /*paired*/
-}
-
 .work {
 	float: left;
 }
 
 .work img {
 	max-width: 320px;
+	display: block;
 }
 
 .clear {
 	clear: both;
+}
+
+.Clients {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .clients {
@@ -104,7 +114,6 @@ header ul li a {
 	font-size: 20px;
 	margin: auto;
 	padding: 11px 41px;
-	position: absolute; /*paired*/
 	text-align: center;
 }
 
