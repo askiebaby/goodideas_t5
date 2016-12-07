@@ -1,0 +1,10 @@
+@media (max-width: 767px){
+  .guyleft{
+    border:yellow 3px solid;
+    margin-right: 0;
+  }
+  .guyright{
+    border:yellow 3px solid;
+    margin-left: 0;
+  }
+}

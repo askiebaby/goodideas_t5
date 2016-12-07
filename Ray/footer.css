@@ -1,0 +1,49 @@
+@CHARSET "UTF-8";
+footer{
+  background-image: url(/home/ray/git/t5/Ray/cover2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:auto;
+}
+.footertitle{
+  color:white;
+  font-family: cursive ,fantasy,sans-serif;
+}
+.footercontent{
+  color:white;
+  font-family: sans-serif;
+  line-height: 150%;
+  font-size: 16px;
+}
+
+.footerright{
+  display:block;
+  flex-direction:column;
+  justify-content:space-between;
+  padding:5% 0 0 0;
+}
+.fa-camera-retro{
+  color:white;
+}
+
+.backtopbt{
+  background-color: rgb(162, 164, 170);
+  color:black;
+  display: block;
+  margin:0 auto;
+  padding:0.5% 10%;
+  border-radius: 5px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  transform: rotate(-3deg);
+  transform-origin: right bottom ;
+}
+ .backtopbt:hover{
+   transition-property: all;
+   transition-duration: 0.5;
+   transition-delay: 0.1;
+   transition-timing-function: ease-in;
+   background-color: rgb(240, 84, 210);
+   transform: rotate(0deg);
+ }

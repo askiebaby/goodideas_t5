@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  border:1px solid red;
+  word-break: break-all;
+}
+h3,h5{
+  display: block;
+  letter-spacing: 5px;
+}

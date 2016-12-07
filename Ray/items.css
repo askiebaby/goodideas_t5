@@ -1,0 +1,58 @@
+@CHARSET "UTF-8";
+.container-fluid{
+  position: relative;
+  top:-40px;
+  background-color: rgb(240, 84, 210);
+}
+.row{
+  border:green 2px solid;
+}
+
+.item{
+  border:3px purple solid;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.item a{
+  border:3px yellow solid;
+  display: block;
+  text-align: center;
+  padding: 30% 0%;
+  color:transparent;
+  font-size: 16px;
+  width:110%;
+  position: relative;
+  left:-5%;
+}
+
+.item1{background-image: url(/home/ray/git/t5/Ray/display1.jpeg);}
+.item2{background-image: url(/home/ray/git/t5/Ray/display2.jpeg);}
+.item3{background-image: url(/home/ray/git/t5/Ray/display3.jpeg);}
+.item4{background-image: url(/home/ray/git/t5/Ray/display4.jpeg);}
+
+.item5{background-image: url(/home/ray/git/t5/Ray/display5.jpeg);}
+.item6{background-image: url(/home/ray/git/t5/Ray/display6.jpeg);}
+.item7{background-image: url(/home/ray/git/t5/Ray/display7.jpeg);}
+.item8{background-image: url(/home/ray/git/t5/Ray/display8.jpeg);}
+
+.item9{background-image: url(/home/ray/git/t5/Ray/display9.jpeg);}
+.item10{background-image: url(/home/ray/git/t5/Ray/display10.jpeg);}
+.item11{background-image: url(/home/ray/git/t5/Ray/display11.jpeg);}
+.item12{background-image: url(/home/ray/git/t5/Ray/display12.jpeg);}
+
+.item :hover{
+  background-color: rgba(240, 84, 210,0.4);
+  color:white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family:cursive,fantasy,sans-serif;
+  transition: all 0.3s ease-in 0.1s;
+  transform:rotate(360deg);
+}
+
+.container-fluid h4{
+  line-height: 30px;
+  text-align: center;
+  font-family:cursive,fantasy,sans-serif;
+  color:white;
+}
