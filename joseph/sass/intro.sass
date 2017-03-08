@@ -1,0 +1,115 @@
+$bn_fontcolor: #FFFFFF
+$intro_fontcolor: #FF0048
+$a_font: 18px
+$font_m: 16px
+$spacer-x: 10px
+$spacer-y: 10px
+@mixin m-0
+	   		margin: 0
+
+@mixin p-0
+	   		padding: 0
+
+@mixin mt-10
+	   		margin-top: $spacer-x
+
+@mixin mt-20
+	   		margin-top: $spacer-x * 2
+
+@mixin mb-10
+	   		margin-bottom: $spacer-x
+
+@mixin mb-20
+	   		margin-bottom: $spacer-x * 2
+
+@mixin ml-10
+			margin-left: $spacer-y
+
+@mixin mr-10
+			margin-right: $spacer-y 		
+
+
+.pic 
+	padding: 0
+
+.intro
+	text-align: center
+	position: relative
+
+	p
+		@include m-0
+		@include mt-20
+		padding: 10px 0
+		letter-spacing: 4px
+		color: $bn_fontcolor
+		background: #FF0048
+	h3
+		@include m-0
+		margin: 40px 0 30px 0;
+		color: $intro_fontcolor
+		font-weight: bold
+
+	.triangle_d	
+		width: 0
+		height: 0
+		border-width: 20px 20px 0
+		border-style: solid
+		border-color: #FF0048 transparent transparent
+		position: absolute
+		margin-left: -20px
+		left: 50%
+	
+	.person
+		@include m-0
+		margin: 0 200px
+		@media(max-width: 768px)
+			margin: 0 
+		li
+			@include p-0
+			list-style: none
+			text-align: center
+			img
+				@include mb-20
+			a
+				font-size: $a_font*1.5
+				font-weight: bold
+				text-decoration: none
+				color: $intro_fontcolor
+			p
+				color: black
+				@include p-0
+				font-size: $font_m
+				background: none
+				letter-spacing: 2px
+				@include mb-20
+	.btn1
+		display: inline-block
+		position: relative
+		margin: 0.4em  
+		padding: 0.5em 1.5em
+		background: #000000 
+		z-index: 0
+		a
+			text-decoration: none
+			color: white 
+			font-size: 20px
+	.btn1:before 
+		content: ""
+		position: absolute
+		z-index: -1
+		top: 0  
+		left: 0  
+		right: 0  
+		bottom: 0
+		background: #FF0048
+		transform: scaleX(0)
+		transform-origin: 0 50%
+		transition: transform .3s ease-out
+	.btn1:hover:before
+		transform: scaleX(1)
+
+
+
+
+
+
