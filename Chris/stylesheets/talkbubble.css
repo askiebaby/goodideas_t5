@@ -1,0 +1,21 @@
+/* line 22, ../sass/talkbubble.scss */
+.talkbubble {
+  position: relative;
+  line-height: 20px;
+  padding: 4px;
+  background-color: #FF0040;
+  line-height: 60px;
+  font-size: 1rem;
+}
+/* line 30, ../sass/talkbubble.scss */
+.talkbubble:before {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;
+  content: "";
+  border-top: 15px solid #FF0040;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  z-index: 1;
+}

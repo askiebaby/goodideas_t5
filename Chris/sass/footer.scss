@@ -1,0 +1,10 @@
+@import "main_colors";
+
+.footer {
+  letter-spacing: 1.5px;
+  line-height: 14vh;
+  @include set_background_color_inver_font_color($light_gray);
+  a {
+    color: $light_pinky;
+  }
+}

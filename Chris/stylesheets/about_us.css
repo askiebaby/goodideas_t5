@@ -1,0 +1,20 @@
+/* line 6, ../sass/about_us.scss */
+.about_us {
+  padding: 25px;
+}
+/* line 9, ../sass/about_us.scss */
+.about_us .about_text {
+  padding: 50px 25px;
+  column-count: 2;
+  column-gap: 120px;
+}
+/* line 13, ../sass/about_us.scss */
+.about_us .about_text .line_spacer {
+  margin-top: 16vh;
+  margin-bottom: 8vh;
+  letter-spacing: 10px;
+}
+/* line 19, ../sass/about_us.scss */
+.about_us .about_text .about_us_spacer {
+  padding: 25vh 0;
+}

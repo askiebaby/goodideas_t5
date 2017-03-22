@@ -1,0 +1,23 @@
+@mixin multi_column ($total_column: 2, $middle_space: 50px) {
+    column-count: $total_column;
+    column-gap: $middle_space;
+}
+
+.about_us {
+  // height: 200vh;
+  padding: 25px;
+  .about_text{
+    padding: 50px 25px;
+    @include multi_column(2, 120px);
+
+    .line_spacer {
+      margin-top: 8vh * 2;
+      margin-bottom: 8vh;
+      letter-spacing: 10px;
+    }
+
+    .about_us_spacer {
+      padding: 25vh 0;
+    }
+  }
+}

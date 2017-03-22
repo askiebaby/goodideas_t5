@@ -1,0 +1,18 @@
+$dark_red: #FF0040;
+$light_pinky: #FF0087;
+$dark_purple: #3D003B;
+$light_gray: #E4E3E3;
+
+
+@mixin set_background_color_inver_font_color($bk_color) {
+  @include set_background($bk_color);
+  @include set_font_color(#ffffff - $bk_color);
+}
+
+@mixin set_font_color($color: black) {
+  color: $color;
+}
+
+@mixin set_background($color: white) {
+  background-color: $color;
+}
