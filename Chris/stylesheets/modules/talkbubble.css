@@ -1,13 +1,14 @@
-/* line 22, ../sass/talkbubble.scss */
+/* line 20, ../../sass/modules/talkbubble.scss */
 .talkbubble {
+  color: #E4E3E3;
   position: relative;
-  line-height: 20px;
+  line-height: 40px;
   padding: 4px;
   background-color: #FF0040;
   line-height: 60px;
   font-size: 1rem;
 }
-/* line 30, ../sass/talkbubble.scss */
+/* line 29, ../../sass/modules/talkbubble.scss */
 .talkbubble:before {
   position: absolute;
   top: 100%;

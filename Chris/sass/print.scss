@@ -1,89 +1,13 @@
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
-@import "_main_colors";
 
-@mixin background_image ($img_name) {
-   background-position: center;
-   background-repeat: no-repeat;
-   background-image: image-url($img_name);
-   background-size: cover;
-}
+@import "modules/button";
+@import "modules/talkbubble";
 
-//banner
-.banner_back_ground_img{
-  @include background_image("banner.png");
-}
-
-// work client
-%work_client_size {
-  height: 33.33vh;
-}
-
-.work_client_1 {
-  @include background_image("p1.jpg");
-  @extend %work_client_size;
-}
-
-.work_client_2 {
-  @include background_image("p2.jpg");
-  @extend %work_client_size;
-}
-
-.work_client_3 {
-  @include background_image("p3.jpg");
-  @extend %work_client_size;
-}
-
-.work_client_4 {
-  @include background_image("p4.jpg");
-  @extend %work_client_size;
-}
-
-.work_client_5 {
-  @include background_image("p5.jpg");
-  @extend %work_client_size;
-}
-
-.work_client_6 {
-  @include background_image("p6.jpg");
-  @extend %work_client_size;
-}
-
-.work_client_7 {
-  @include background_image("p7.jpg");
-  @extend %work_client_size;
-}
-
-.work_client_8 {
-  @include background_image("p8.jpg");
-  @extend %work_client_size;
-}
-
-.work_client_9 {
-  @include background_image("p9.jpg");
-  @extend %work_client_size;
-}
-
-.work_client_10 {
-  @include background_image("p10.jpg");
-  @extend %work_client_size;
-}
-
-.work_client_11 {
-  @include background_image("p11.jpg");
-  @extend %work_client_size;
-}
-
-.work_client_12 {
-  @include background_image("p12.jpg");
-  @extend %work_client_size;
-}
-
-.about_us {
-  color: $light_gray;
-  @include background_image("bg.jpg");
-}
-
-
-// about us
+@import "partials/nav";
+@import "partials/about_us";
+@import "partials/banner";
+@import "partials/folk_card";
+@import "partials/footer";
+@import "partials/work_client";

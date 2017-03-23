@@ -1,4 +1,3 @@
-
 @import "main_colors";
 
 @mixin aligh_center($center_position: 5px) {
@@ -18,15 +17,15 @@
 
 $triangle_hdight: 15px;
 
-
 .talkbubble {
+  @include set_font_color($light_gray);
   position: relative;
-  line-height: 20px;
+  line-height: 40px;
   padding: 4px;
   background-color: $dark_red;
   line-height: 60px;
   font-size: 1rem;
-  
+
   &:before {
     @include aligh_center($triangle_hdight);
     @include aligh_sharp($triangle_hdight);

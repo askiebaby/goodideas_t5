@@ -1,4 +1,4 @@
-@import "main_colors";
+@import "modules/_main_colors";
 
 .black_btn {
   @include set_background_color_inver_font_color(black);

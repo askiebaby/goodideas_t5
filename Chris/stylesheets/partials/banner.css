@@ -1,4 +1,4 @@
-/* line 2, ../sass/banner.scss */
+/* line 2, ../../sass/partials/banner.scss */
 .banner {
   display: flex;
   flex-direction: column;
@@ -7,24 +7,24 @@
   height: 100vh;
   color: white;
 }
-/* line 10, ../sass/banner.scss */
+/* line 10, ../../sass/partials/banner.scss */
 .banner .banner_title h1 {
   font-size: 4rem;
 }
-/* line 13, ../sass/banner.scss */
+/* line 13, ../../sass/partials/banner.scss */
 .banner .banner_title h3 {
   letter-spacing: 7px;
 }
-/* line 18, ../sass/banner.scss */
+/* line 18, ../../sass/partials/banner.scss */
 .banner .banner_text {
   font-size: 1.4rem;
 }
-/* line 22, ../sass/banner.scss */
+/* line 22, ../../sass/partials/banner.scss */
 .banner i {
   display: block;
   font-size: 1rem;
 }
-/* line 27, ../sass/banner.scss */
+/* line 27, ../../sass/partials/banner.scss */
 .banner .talkbubble {
   min-width: 25vw;
   padding: 0 5px;
