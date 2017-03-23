@@ -1,6 +1,6 @@
 .intro{
   padding-top: 50px;
-  background: #000;
+  @include banner-image("bg.jpg");
   .container{
     width: 80%;
     margin: 0 auto;
