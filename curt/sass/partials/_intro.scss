@@ -1,0 +1,27 @@
+.intro{
+  padding-top: 50px;
+  background: #000;
+  .container{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .marginFix{
+    margin: 200px;
+  }
+
+}
+
+@media (min-width: 576px) {
+  .paddingTopFix{
+    padding-top: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .intro .marginFix{
+    margin: 0px;
+  }
+  .slide{
+    padding-bottom: 20px;
+  }
+}
