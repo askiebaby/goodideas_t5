@@ -1,3 +1,22 @@
+/* line 3, ../../sass/modules/button.scss */
+.black_btn {
+  background-color: black;
+  color: white;
+}
+
+/* line 7, ../../sass/modules/button.scss */
+.white_btn {
+  background-color: white;
+  color: black;
+}
+
+/* line 11, ../../sass/modules/button.scss */
+.folk_btn {
+  border: none;
+  padding: 10px;
+  width: 100%;
+}
+
 /* line 20, ../../sass/partials/about_us.scss */
 .about_us {
   color: #E4E3E3;

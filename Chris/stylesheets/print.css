@@ -1,48 +1,6 @@
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
-/* line 3, ../sass/modules/button.scss */
-.black_btn {
-  background-color: black;
-  color: white;
-}
-
-/* line 7, ../sass/modules/button.scss */
-.white_btn {
-  background-color: white;
-  color: black;
-}
-
-/* line 11, ../sass/modules/button.scss */
-.folk_btn {
-  border: none;
-  padding: 10px;
-  width: 100%;
-}
-
-/* line 20, ../sass/modules/talkbubble.scss */
-.talkbubble {
-  color: #E4E3E3;
-  position: relative;
-  line-height: 40px;
-  padding: 4px;
-  background-color: #FF0040;
-  line-height: 60px;
-  font-size: 1rem;
-}
-/* line 29, ../sass/modules/talkbubble.scss */
-.talkbubble:before {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -15px;
-  content: "";
-  border-top: 15px solid #FF0040;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  z-index: 1;
-}
-
 /* line 4, ../sass/modules/menu.scss */
 ul.menu {
   margin-bottom: 0;
@@ -83,6 +41,25 @@ div.nav ul.menu li a:hover {
   background-size: 120% !important;
 }
 
+/* line 3, ../sass/modules/button.scss */
+.black_btn {
+  background-color: black;
+  color: white;
+}
+
+/* line 7, ../sass/modules/button.scss */
+.white_btn {
+  background-color: white;
+  color: black;
+}
+
+/* line 11, ../sass/modules/button.scss */
+.folk_btn {
+  border: none;
+  padding: 10px;
+  width: 100%;
+}
+
 /* line 20, ../sass/partials/about_us.scss */
 .about_us {
   color: #E4E3E3;
@@ -117,7 +94,30 @@ div.nav ul.menu li a:hover {
   padding: 25vh 0;
 }
 
-/* line 2, ../sass/partials/banner.scss */
+/* line 20, ../sass/modules/talkbubble.scss */
+.talkbubble {
+  color: #E4E3E3;
+  position: relative;
+  line-height: 40px;
+  padding: 4px;
+  background-color: #FF0040;
+  line-height: 60px;
+  font-size: 1rem;
+}
+/* line 29, ../sass/modules/talkbubble.scss */
+.talkbubble::before {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;
+  content: "";
+  border-top: 15px solid #FF0040;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  z-index: 1;
+}
+
+/* line 3, ../sass/partials/banner.scss */
 .banner {
   display: flex;
   flex-direction: column;
@@ -126,48 +126,48 @@ div.nav ul.menu li a:hover {
   height: 100vh;
   color: white;
 }
-/* line 10, ../sass/partials/banner.scss */
+/* line 11, ../sass/partials/banner.scss */
 .banner .banner_title h1 {
   font-size: 4rem;
 }
-/* line 13, ../sass/partials/banner.scss */
+/* line 14, ../sass/partials/banner.scss */
 .banner .banner_title h3 {
   letter-spacing: 7px;
 }
-/* line 18, ../sass/partials/banner.scss */
+/* line 19, ../sass/partials/banner.scss */
 .banner .banner_text {
   font-size: 1.4rem;
 }
-/* line 22, ../sass/partials/banner.scss */
+/* line 23, ../sass/partials/banner.scss */
 .banner i {
   display: block;
   font-size: 1rem;
 }
-/* line 27, ../sass/partials/banner.scss */
+/* line 28, ../sass/partials/banner.scss */
 .banner .talkbubble {
   min-width: 25vw;
   padding: 0 5px;
   letter-spacing: 6px;
 }
 
-/* line 4, ../sass/partials/folk_card.scss */
+/* line 6, ../sass/partials/folk_card.scss */
 .folks .talkbubble {
   letter-spacing: 1.5px;
 }
-/* line 8, ../sass/partials/folk_card.scss */
+/* line 10, ../sass/partials/folk_card.scss */
 .folks .container {
   padding: 50px;
 }
-/* line 12, ../sass/partials/folk_card.scss */
+/* line 14, ../sass/partials/folk_card.scss */
 .folks div h2 {
   color: #FF0040;
 }
-/* line 16, ../sass/partials/folk_card.scss */
+/* line 18, ../sass/partials/folk_card.scss */
 .folks .card {
   display: inline-block;
   border-style: none;
 }
-/* line 19, ../sass/partials/folk_card.scss */
+/* line 21, ../sass/partials/folk_card.scss */
 .folks .card .card-title {
   letter-spacing: 4px;
   color: #FF0040;

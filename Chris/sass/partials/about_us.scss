@@ -1,6 +1,6 @@
 @import "modules/main_colors";
 @import "modules/set_image";
-
+@import "modules/button";
 
 @mixin multi_column ($total_column: 2, $middle_space: 50px) {
     column-count: $total_column;
