@@ -1,0 +1,26 @@
+@import "modules/main_colors";
+@import "modules/talkbubble";
+@import "modules/button";
+
+.folks {
+  .talkbubble {
+    letter-spacing: 1.5px;
+  }
+
+  .container {
+    padding: 50px;
+  }
+
+  div h2 {
+    color: $dark_red;
+  }
+
+  .card {
+    display: inline-block;
+    border-style: none;
+    .card-title {
+      letter-spacing: 4px;
+      color: $dark_red;
+    }
+  }
+}

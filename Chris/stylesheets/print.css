@@ -1,0 +1,301 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* line 4, ../sass/modules/menu.scss */
+ul.menu {
+  margin-bottom: 0;
+}
+/* line 6, ../sass/modules/menu.scss */
+ul.menu li {
+  display: inline-block;
+  padding: 0 1vw;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+/* line 4, ../sass/partials/nav.scss */
+div.nav {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 14px 0;
+  padding-right: 30px;
+  background-color: #3D003B;
+}
+/* line 16, ../sass/partials/nav.scss */
+div.nav ul.menu li a {
+  color: #FF0040;
+}
+/* line 18, ../sass/partials/nav.scss */
+div.nav ul.menu li a:hover {
+  color: #E4E3E3;
+}
+
+/* line 9, ../sass/modules/_set_image.scss */
+.work_client_1, .work_client_2, .work_client_3, .work_client_4, .work_client_5, .work_client_6, .work_client_7, .work_client_8, .work_client_9, .work_client_10, .work_client_11, .work_client_12 {
+  background-size: 100% !important;
+  transition: background-size 0.3s;
+}
+/* line 12, ../sass/modules/_set_image.scss */
+.work_client_1:hover, .work_client_2:hover, .work_client_3:hover, .work_client_4:hover, .work_client_5:hover, .work_client_6:hover, .work_client_7:hover, .work_client_8:hover, .work_client_9:hover, .work_client_10:hover, .work_client_11:hover, .work_client_12:hover {
+  background-size: 120% !important;
+}
+
+/* line 3, ../sass/modules/button.scss */
+.black_btn {
+  background-color: black;
+  color: white;
+}
+
+/* line 7, ../sass/modules/button.scss */
+.white_btn {
+  background-color: white;
+  color: black;
+}
+
+/* line 11, ../sass/modules/button.scss */
+.folk_btn {
+  border: none;
+  padding: 10px;
+  width: 100%;
+}
+
+/* line 20, ../sass/partials/about_us.scss */
+.about_us {
+  color: #E4E3E3;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/bg.jpg?1489326313');
+  background-size: cover;
+  padding: 25px;
+}
+/* line 25, ../sass/partials/about_us.scss */
+.about_us .about_text {
+  padding-top: 50px;
+  padding-bottom: 25px;
+  column-count: 2;
+  column-gap: 120px;
+}
+@media (max-width: 992px) {
+  /* line 25, ../sass/partials/about_us.scss */
+  .about_us .about_text {
+    column-count: 1;
+    column-gap: 0;
+  }
+}
+/* line 33, ../sass/partials/about_us.scss */
+.about_us .about_text .line_spacer {
+  margin-top: 16vh;
+  margin-bottom: 8vh;
+  letter-spacing: 10px;
+}
+/* line 38, ../sass/partials/about_us.scss */
+.about_us .about_text .about_us_spacer {
+  padding: 25vh 0;
+}
+
+/* line 20, ../sass/modules/talkbubble.scss */
+.talkbubble {
+  color: #E4E3E3;
+  position: relative;
+  line-height: 40px;
+  padding: 4px;
+  background-color: #FF0040;
+  line-height: 60px;
+  font-size: 1rem;
+}
+/* line 29, ../sass/modules/talkbubble.scss */
+.talkbubble::before {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;
+  content: "";
+  border-top: 15px solid #FF0040;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  z-index: 1;
+}
+
+/* line 3, ../sass/partials/banner.scss */
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  color: white;
+}
+/* line 11, ../sass/partials/banner.scss */
+.banner .banner_title h1 {
+  font-size: 4rem;
+}
+/* line 14, ../sass/partials/banner.scss */
+.banner .banner_title h3 {
+  letter-spacing: 7px;
+}
+/* line 19, ../sass/partials/banner.scss */
+.banner .banner_text {
+  font-size: 1.4rem;
+}
+/* line 23, ../sass/partials/banner.scss */
+.banner i {
+  display: block;
+  font-size: 1rem;
+}
+/* line 28, ../sass/partials/banner.scss */
+.banner .talkbubble {
+  min-width: 25vw;
+  padding: 0 5px;
+  letter-spacing: 6px;
+}
+
+/* line 6, ../sass/partials/folk_card.scss */
+.folks .talkbubble {
+  letter-spacing: 1.5px;
+}
+/* line 10, ../sass/partials/folk_card.scss */
+.folks .container {
+  padding: 50px;
+}
+/* line 14, ../sass/partials/folk_card.scss */
+.folks div h2 {
+  color: #FF0040;
+}
+/* line 18, ../sass/partials/folk_card.scss */
+.folks .card {
+  display: inline-block;
+  border-style: none;
+}
+/* line 21, ../sass/partials/folk_card.scss */
+.folks .card .card-title {
+  letter-spacing: 4px;
+  color: #FF0040;
+}
+
+/* line 3, ../sass/partials/footer.scss */
+.footer {
+  letter-spacing: 1.5px;
+  line-height: 14vh;
+  background-color: #E4E3E3;
+  color: #1b1c1c;
+}
+/* line 7, ../sass/partials/footer.scss */
+.footer a {
+  color: #FF0087;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+/* line 12, ../sass/partials/footer.scss */
+.footer a:hover {
+  color: #3D003B;
+}
+
+/* line 5, ../sass/partials/work_client.scss */
+.banner_back_ground_img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/banner.png?1489326313');
+  background-size: cover;
+}
+
+/* line 10, ../sass/partials/work_client.scss */
+.work_client_1, .work_client_2, .work_client_3, .work_client_4, .work_client_5, .work_client_6, .work_client_7, .work_client_8, .work_client_9, .work_client_10, .work_client_11, .work_client_12 {
+  height: 33.33vh;
+}
+
+/* line 14, ../sass/partials/work_client.scss */
+.work_client_1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/p1.jpg?1489326313');
+  background-size: cover;
+}
+
+/* line 20, ../sass/partials/work_client.scss */
+.work_client_2 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/p2.jpg?1489326313');
+  background-size: cover;
+}
+
+/* line 26, ../sass/partials/work_client.scss */
+.work_client_3 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/p3.jpg?1489326313');
+  background-size: cover;
+}
+
+/* line 32, ../sass/partials/work_client.scss */
+.work_client_4 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/p4.jpg?1489326313');
+  background-size: cover;
+}
+
+/* line 38, ../sass/partials/work_client.scss */
+.work_client_5 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/p5.jpg?1489326313');
+  background-size: cover;
+}
+
+/* line 44, ../sass/partials/work_client.scss */
+.work_client_6 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/p6.jpg?1489326313');
+  background-size: cover;
+}
+
+/* line 50, ../sass/partials/work_client.scss */
+.work_client_7 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/p7.jpg?1489326313');
+  background-size: cover;
+}
+
+/* line 56, ../sass/partials/work_client.scss */
+.work_client_8 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/p8.jpg?1489326313');
+  background-size: cover;
+}
+
+/* line 62, ../sass/partials/work_client.scss */
+.work_client_9 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/p9.jpg?1489326313');
+  background-size: cover;
+}
+
+/* line 68, ../sass/partials/work_client.scss */
+.work_client_10 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/p10.jpg?1489326313');
+  background-size: cover;
+}
+
+/* line 74, ../sass/partials/work_client.scss */
+.work_client_11 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/p11.jpg?1489326313');
+  background-size: cover;
+}
+
+/* line 80, ../sass/partials/work_client.scss */
+.work_client_12 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/p12.jpg?1489326313');
+  background-size: cover;
+}

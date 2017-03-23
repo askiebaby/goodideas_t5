@@ -1,0 +1,52 @@
+/* line 3, ../../sass/modules/button.scss */
+.black_btn {
+  background-color: black;
+  color: white;
+}
+
+/* line 7, ../../sass/modules/button.scss */
+.white_btn {
+  background-color: white;
+  color: black;
+}
+
+/* line 11, ../../sass/modules/button.scss */
+.folk_btn {
+  border: none;
+  padding: 10px;
+  width: 100%;
+}
+
+/* line 20, ../../sass/partials/about_us.scss */
+.about_us {
+  color: #E4E3E3;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../../images/bg.jpg?1489326313');
+  background-size: cover;
+  padding: 25px;
+}
+/* line 25, ../../sass/partials/about_us.scss */
+.about_us .about_text {
+  padding-top: 50px;
+  padding-bottom: 25px;
+  column-count: 2;
+  column-gap: 120px;
+}
+@media (max-width: 992px) {
+  /* line 25, ../../sass/partials/about_us.scss */
+  .about_us .about_text {
+    column-count: 1;
+    column-gap: 0;
+  }
+}
+/* line 33, ../../sass/partials/about_us.scss */
+.about_us .about_text .line_spacer {
+  margin-top: 16vh;
+  margin-bottom: 8vh;
+  letter-spacing: 10px;
+}
+/* line 38, ../../sass/partials/about_us.scss */
+.about_us .about_text .about_us_spacer {
+  padding: 25vh 0;
+}

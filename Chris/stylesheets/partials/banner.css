@@ -1,0 +1,55 @@
+/* line 20, ../../sass/modules/talkbubble.scss */
+.talkbubble {
+  color: #E4E3E3;
+  position: relative;
+  line-height: 40px;
+  padding: 4px;
+  background-color: #FF0040;
+  line-height: 60px;
+  font-size: 1rem;
+}
+/* line 29, ../../sass/modules/talkbubble.scss */
+.talkbubble::before {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -15px;
+  content: "";
+  border-top: 15px solid #FF0040;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  z-index: 1;
+}
+
+/* line 3, ../../sass/partials/banner.scss */
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  color: white;
+}
+/* line 11, ../../sass/partials/banner.scss */
+.banner .banner_title h1 {
+  font-size: 4rem;
+}
+/* line 14, ../../sass/partials/banner.scss */
+.banner .banner_title h3 {
+  letter-spacing: 7px;
+}
+/* line 19, ../../sass/partials/banner.scss */
+.banner .banner_text {
+  font-size: 1.4rem;
+}
+/* line 23, ../../sass/partials/banner.scss */
+.banner i {
+  display: block;
+  font-size: 1rem;
+}
+/* line 28, ../../sass/partials/banner.scss */
+.banner .talkbubble {
+  min-width: 25vw;
+  padding: 0 5px;
+  letter-spacing: 6px;
+}
