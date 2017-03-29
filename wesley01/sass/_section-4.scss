@@ -1,0 +1,51 @@
+@import "modules/_variable.scss";
+
+
+.section-4 {
+  padding: 4%;
+  background: url('../images/bg.jpg');
+  // @include bg(,contain);
+  background-position: center;
+
+
+   color: $text-color-1;
+  .row {
+    @extend %content-center;
+  }
+
+  ul li {
+
+ float:left;
+  }
+
+  .space-block {
+    height: 20vh;
+  }
+
+  .row a {
+    text-decoration: none;
+    color: $Main-color-2;
+    &:hover {
+      color: $Main-color-1;
+    }
+  }
+
+   .btn2{
+    @include btn(150px,50px,$btn-bg-color-2,7%);
+   }
+  // 
+  //  .btn2::before{
+  //   @include btn_before(50px,50px,$btn-bg-color-2,4%,48%);
+  // }
+  // @media screen and (max-width: 412px) {
+  //   .btn2::before{
+  //    @include btn_before(50px,50px,$btn-bg-color-2,2%,44%);
+  //  }
+  // }
+  // @media screen and (min-width: 568px) {
+  //   .btn2::before{
+  //    @include btn_before(50px,50px,$btn-bg-color-2,2.5%,46%);
+  //  }
+  // }
+
+}

@@ -1,0 +1,23 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+
+@import "_header.scss";
+
+@import "_section-1.scss";
+
+@import "_section-2.scss";
+@import "modules/_Dialog-box";
+
+
+@import "_section-3.scss";
+
+@import "_section-4.scss";
+
+@import "_footer.scss";
+
+
+body {
+  padding: 0;
+  margin: 0;
+}

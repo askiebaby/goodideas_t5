@@ -1,0 +1,16 @@
+@import "modules/_variable.scss";
+
+header {
+  background-color: $Main-color-1;
+  padding: 1.3%;
+
+  a {
+
+   color: white;
+    &:hover{
+      color: $Main-color-2;
+    text-decoration: none;
+    }
+
+  }
+}

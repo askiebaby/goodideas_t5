@@ -1,0 +1,57 @@
+@import "modules/_variable.scss";
+
+.section-2 {
+  padding:0 !important;
+
+  .img-card {
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+
+    figure{
+      width: 100%;
+      height: 100%;
+
+
+       img{
+         width: 100%;
+         height: 100%;
+       }
+
+      //  figure:hover img {
+      //    top:20px;
+      //    left: 20px;
+      //  }
+
+
+    figcaption{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0%;
+      left: 0%;
+      opacity: 0;
+      // padding: 25%;
+      padding-top: 35%;
+      // padding-left: 30%;
+      font-size: 15px;
+      text-align: center;
+      transition: opacity ease-in-out 1s;
+      transition: font-size ease-in-out 0.5s;
+
+     &:hover {
+       font-size: 25px;
+       color: white;
+       width: 100%;
+       height: 100%;
+       background-color: $Main-color-2;
+       opacity: 0.7;
+
+      }
+
+    }
+
+    }
+  }
+
+}
