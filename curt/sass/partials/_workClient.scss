@@ -1,0 +1,45 @@
+.workClient{
+  .row{
+    width: 100%;
+    margin: 0;
+    .col-sm-3{
+      padding: 0px;
+    }
+  }
+  .workPic1{
+    @include banner-image("p1.jpg");
+  }
+  .workPic2{
+    @include banner-image("p2.jpg");
+  }
+  .workPic3{
+    @include banner-image("p3.jpg");
+  }
+  .workPic4{
+    @include banner-image("p4.jpg");
+  }
+  .workPic5{
+    @include banner-image("p5.jpg");
+  }
+  .workPic6{
+    @include banner-image("p6.jpg");
+  }
+  .workPic7{
+    @include banner-image("p7.jpg");
+  }
+  .workPic8{
+    @include banner-image("p8.jpg");
+  }
+  .workPic9{
+    @include banner-image("p9.jpg");
+  }
+  .workPic10{
+    @include banner-image("p10.jpg");
+  }
+  .workPic11{
+    @include banner-image("p11.jpg");
+  }
+  .workPic12{
+    @include banner-image("p12.jpg");
+  }
+}

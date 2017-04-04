@@ -1,0 +1,16 @@
+@import "modules/_variable.scss";
+
+footer {
+  padding: 1.5%;
+  background-color: $Main-color-3;
+
+  @media screen and (max-width: 414px) {
+
+    span {
+      padding: 1.5%;
+      font-size: 15px;
+    }
+
+  }
+
+}

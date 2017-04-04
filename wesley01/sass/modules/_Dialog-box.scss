@@ -1,0 +1,17 @@
+@import "modules/_variable.scss";
+@import "modules/_btn.scss";
+
+%Dialog-box {
+  background-color: $Main-color-2;
+}
+
+@mixin Dialog-box_before($border-width,$top,$margin-left) {
+  border-style: solid;
+  border-width: $border-width;
+  border-color: $Main-color-2 transparent transparent;
+  z-index: 1;
+  position: absolute;
+  top: $top;
+  margin-left: $margin-left;
+  content: "";
+}

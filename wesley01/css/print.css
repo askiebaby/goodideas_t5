@@ -1,0 +1,320 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* line 23, ../sass/modules/_variable.scss */
+.section-3 .row, .section-4 .row {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 3, ../sass/_header.scss */
+header {
+  background-color: #340836;
+  padding: 1.3%;
+}
+/* line 7, ../sass/_header.scss */
+header a {
+  color: white;
+}
+/* line 10, ../sass/_header.scss */
+header a:hover {
+  color: #FF0048;
+  text-decoration: none;
+}
+
+/* line 4, ../sass/modules/_Dialog-box.scss */
+.section-1 .Dialog-box, .section-3 .Dialog-box {
+  background-color: #FF0048;
+}
+
+/* line 4, ../sass/_section-1.scss */
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("../images/cover.png");
+  background-size: cover;
+  color: white;
+}
+/* line 12, ../sass/_section-1.scss */
+.section-1 h1 {
+  font-family: serif;
+  font-style: oblique;
+  font-weight: bold;
+}
+/* line 18, ../sass/_section-1.scss */
+.section-1 .Dialog-box-text {
+  line-height: 43px;
+}
+/* line 22, ../sass/_section-1.scss */
+.section-1 .Dialog-box {
+  width: 20%;
+}
+@media screen and (max-width: 768px) {
+  /* line 22, ../sass/_section-1.scss */
+  .section-1 .Dialog-box {
+    width: 40%;
+  }
+}
+/* line 31, ../sass/_section-1.scss */
+.section-1 .Dialog-box::before {
+  border-style: solid;
+  border-width: 25px;
+  border-color: #FF0048 transparent transparent;
+  z-index: 1;
+  position: absolute;
+  top: 99%;
+  margin-left: 30px;
+  content: "";
+}
+
+/* line 3, ../sass/_section-2.scss */
+.section-2 {
+  padding: 0 !important;
+}
+/* line 6, ../sass/_section-2.scss */
+.section-2 .img-card {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+/* line 12, ../sass/_section-2.scss */
+.section-2 .img-card figure {
+  width: 100%;
+  margin: 0;
+}
+/* line 17, ../sass/_section-2.scss */
+.section-2 .img-card figure img {
+  width: 100%;
+}
+/* line 25, ../sass/_section-2.scss */
+.section-2 .img-card figure:hover img {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-10deg) translate(-1.5px, -10px);
+}
+/* line 31, ../sass/_section-2.scss */
+.section-2 .img-card figure figcaption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  opacity: 0;
+  padding-top: 35%;
+  font-size: 15px;
+  text-align: center;
+  transition: opacity ease-in-out 1s;
+  transition: font-size ease-in-out 0.5s;
+}
+/* line 46, ../sass/_section-2.scss */
+.section-2 .img-card figure figcaption:hover {
+  font-size: 25px;
+  color: white;
+  width: 100%;
+  height: 100%;
+  background-color: #FF0048;
+  opacity: 0.7;
+}
+
+/* line 4, ../sass/_section-3.scss */
+.section-3 {
+  padding: 0 !important;
+  margin-bottom: 3%;
+}
+@media screen and (max-width: 768px) {
+  /* line 4, ../sass/_section-3.scss */
+  .section-3 {
+    margin-bottom: 17%;
+  }
+}
+/* line 13, ../sass/_section-3.scss */
+.section-3 .Dialog-box-text {
+  color: white;
+}
+/* line 18, ../sass/_section-3.scss */
+.section-3 .Dialog-box {
+  padding: 1%;
+}
+/* line 22, ../sass/_section-3.scss */
+.section-3 .Dialog-box::before {
+  border-style: solid;
+  border-width: 35px;
+  border-color: #FF0048 transparent transparent;
+  z-index: 1;
+  position: absolute;
+  top: 5%;
+  margin-left: 250px;
+  content: "";
+}
+@media screen and (max-width: 414px) {
+  /* line 22, ../sass/_section-3.scss */
+  .section-3 .Dialog-box::before {
+    border-style: solid;
+    border-width: 35px;
+    border-color: #FF0048 transparent transparent;
+    z-index: 1;
+    position: absolute;
+    top: 3%;
+    margin-left: 30%;
+    content: "";
+  }
+}
+/* line 31, ../sass/_section-3.scss */
+.section-3 .title {
+  color: #FF0048;
+}
+/* line 38, ../sass/_section-3.scss */
+.section-3 .row img {
+  width: 295px;
+  height: 295px;
+}
+/* line 43, ../sass/_section-3.scss */
+.section-3 .row a {
+  text-decoration: none;
+  color: white;
+}
+/* line 47, ../sass/_section-3.scss */
+.section-3 .row a:hover {
+  color: #340836;
+}
+/* line 54, ../sass/_section-3.scss */
+.section-3 .btn1 {
+  width: 150px;
+  height: 50px;
+  background: #FF0048;
+  padding-top: 7%;
+  margin-top: 10%;
+}
+/* line 85, ../sass/_section-3.scss */
+.section-3 .photo-card {
+  position: relative;
+  overflow: hidden;
+}
+/* line 101, ../sass/_section-3.scss */
+.section-3 .photo-card .cover-1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  background-color: gray;
+  opacity: 0;
+  right: 100%;
+  transition: opacity ease-out 2s;
+  transition: right ease-out 2s;
+}
+/* line 114, ../sass/_section-3.scss */
+.section-3 .photo-card:hover .cover-1 {
+  opacity: 0.4;
+  right: 0%;
+}
+/* line 133, ../sass/_section-3.scss */
+.section-3 .photo-card .cover-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  background-color: white;
+  opacity: 0;
+  left: 100%;
+  transition: opacity ease-out 2s;
+  transition: left ease-out 2s;
+}
+/* line 146, ../sass/_section-3.scss */
+.section-3 .photo-card:hover .cover-2 {
+  opacity: 0.4;
+  left: 0%;
+}
+/* line 153, ../sass/_section-3.scss */
+.section-3 .photo-card .cover-3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  background-color: white;
+  opacity: 0;
+  right: 100%;
+  transition: opacity ease-out 2s;
+  transition: right ease-out 2s;
+}
+/* line 166, ../sass/_section-3.scss */
+.section-3 .photo-card:hover .cover-3 {
+  opacity: 0.4;
+  right: 0%;
+}
+/* line 173, ../sass/_section-3.scss */
+.section-3 .photo-card .cover-4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  background-color: gray;
+  opacity: 0;
+  left: 100%;
+  transition: opacity ease-out 2s;
+  transition: left ease-out 2s;
+}
+/* line 186, ../sass/_section-3.scss */
+.section-3 .photo-card:hover .cover-4 {
+  opacity: 0.4;
+  left: 0%;
+}
+
+/* line 3, ../sass/_section-4.scss */
+.section-4 {
+  padding: 4%;
+  background: url("../images/bg.jpg");
+  background-position: center;
+  color: white;
+}
+@media screen and (max-width: 375px) {
+  /* line 3, ../sass/_section-4.scss */
+  .section-4 {
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
+}
+/* line 17, ../sass/_section-4.scss */
+.section-4 .row ul li {
+  float: left;
+}
+/* line 21, ../sass/_section-4.scss */
+.section-4 .row .space-block {
+  height: 20vh;
+}
+/* line 27, ../sass/_section-4.scss */
+.section-4 .row a {
+  text-decoration: none;
+  color: #FF0048;
+}
+/* line 31, ../sass/_section-4.scss */
+.section-4 .row a:hover {
+  color: #340836;
+}
+/* line 35, ../sass/_section-4.scss */
+.section-4 .row a .btn2 {
+  width: 150px;
+  height: 50px;
+  background: white;
+  padding-top: 7%;
+}
+
+/* line 3, ../sass/_footer.scss */
+footer {
+  padding: 1.5%;
+  background-color: gray;
+}
+@media screen and (max-width: 414px) {
+  /* line 9, ../sass/_footer.scss */
+  footer span {
+    padding: 1.5%;
+    font-size: 15px;
+  }
+}
+
+/* line 20, ../sass/print.scss */
+body {
+  padding: 0;
+  margin: 0;
+}
