@@ -8,7 +8,10 @@
 
 // work client
 %work_client_size {
-  height: 33.33vh;
+  height: 16.665vh;
+  @media (min-width: 768px) {
+    height: 33.33vh;
+  }
 }
 
 .work_client_1 {

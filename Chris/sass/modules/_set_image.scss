@@ -7,9 +7,8 @@
 }
 
 %hover_zoom_in_background_img {
-  background-size: 100%!important;
   transition: background-size 0.3s;
   &:hover {
-    background-size: 120%!important;
+    background-size: 200%;
   }
 }

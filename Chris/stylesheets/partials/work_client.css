@@ -1,11 +1,10 @@
 /* line 9, ../../sass/modules/_set_image.scss */
 .work_client_1, .work_client_2, .work_client_3, .work_client_4, .work_client_5, .work_client_6, .work_client_7, .work_client_8, .work_client_9, .work_client_10, .work_client_11, .work_client_12 {
-  background-size: 100% !important;
   transition: background-size 0.3s;
 }
-/* line 12, ../../sass/modules/_set_image.scss */
+/* line 11, ../../sass/modules/_set_image.scss */
 .work_client_1:hover, .work_client_2:hover, .work_client_3:hover, .work_client_4:hover, .work_client_5:hover, .work_client_6:hover, .work_client_7:hover, .work_client_8:hover, .work_client_9:hover, .work_client_10:hover, .work_client_11:hover, .work_client_12:hover {
-  background-size: 120% !important;
+  background-size: 200%;
 }
 
 /* line 5, ../../sass/partials/work_client.scss */
@@ -18,10 +17,16 @@
 
 /* line 10, ../../sass/partials/work_client.scss */
 .work_client_1, .work_client_2, .work_client_3, .work_client_4, .work_client_5, .work_client_6, .work_client_7, .work_client_8, .work_client_9, .work_client_10, .work_client_11, .work_client_12 {
-  height: 33.33vh;
+  height: 16.665vh;
+}
+@media (min-width: 768px) {
+  /* line 10, ../../sass/partials/work_client.scss */
+  .work_client_1, .work_client_2, .work_client_3, .work_client_4, .work_client_5, .work_client_6, .work_client_7, .work_client_8, .work_client_9, .work_client_10, .work_client_11, .work_client_12 {
+    height: 33.33vh;
+  }
 }
 
-/* line 14, ../../sass/partials/work_client.scss */
+/* line 17, ../../sass/partials/work_client.scss */
 .work_client_1 {
   background-position: center;
   background-repeat: no-repeat;
@@ -29,7 +34,7 @@
   background-size: cover;
 }
 
-/* line 20, ../../sass/partials/work_client.scss */
+/* line 23, ../../sass/partials/work_client.scss */
 .work_client_2 {
   background-position: center;
   background-repeat: no-repeat;
@@ -37,7 +42,7 @@
   background-size: cover;
 }
 
-/* line 26, ../../sass/partials/work_client.scss */
+/* line 29, ../../sass/partials/work_client.scss */
 .work_client_3 {
   background-position: center;
   background-repeat: no-repeat;
@@ -45,7 +50,7 @@
   background-size: cover;
 }
 
-/* line 32, ../../sass/partials/work_client.scss */
+/* line 35, ../../sass/partials/work_client.scss */
 .work_client_4 {
   background-position: center;
   background-repeat: no-repeat;
@@ -53,7 +58,7 @@
   background-size: cover;
 }
 
-/* line 38, ../../sass/partials/work_client.scss */
+/* line 41, ../../sass/partials/work_client.scss */
 .work_client_5 {
   background-position: center;
   background-repeat: no-repeat;
@@ -61,7 +66,7 @@
   background-size: cover;
 }
 
-/* line 44, ../../sass/partials/work_client.scss */
+/* line 47, ../../sass/partials/work_client.scss */
 .work_client_6 {
   background-position: center;
   background-repeat: no-repeat;
@@ -69,7 +74,7 @@
   background-size: cover;
 }
 
-/* line 50, ../../sass/partials/work_client.scss */
+/* line 53, ../../sass/partials/work_client.scss */
 .work_client_7 {
   background-position: center;
   background-repeat: no-repeat;
@@ -77,7 +82,7 @@
   background-size: cover;
 }
 
-/* line 56, ../../sass/partials/work_client.scss */
+/* line 59, ../../sass/partials/work_client.scss */
 .work_client_8 {
   background-position: center;
   background-repeat: no-repeat;
@@ -85,7 +90,7 @@
   background-size: cover;
 }
 
-/* line 62, ../../sass/partials/work_client.scss */
+/* line 65, ../../sass/partials/work_client.scss */
 .work_client_9 {
   background-position: center;
   background-repeat: no-repeat;
@@ -93,7 +98,7 @@
   background-size: cover;
 }
 
-/* line 68, ../../sass/partials/work_client.scss */
+/* line 71, ../../sass/partials/work_client.scss */
 .work_client_10 {
   background-position: center;
   background-repeat: no-repeat;
@@ -101,7 +106,7 @@
   background-size: cover;
 }
 
-/* line 74, ../../sass/partials/work_client.scss */
+/* line 77, ../../sass/partials/work_client.scss */
 .work_client_11 {
   background-position: center;
   background-repeat: no-repeat;
@@ -109,7 +114,7 @@
   background-size: cover;
 }
 
-/* line 80, ../../sass/partials/work_client.scss */
+/* line 83, ../../sass/partials/work_client.scss */
 .work_client_12 {
   background-position: center;
   background-repeat: no-repeat;
