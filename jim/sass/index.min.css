@@ -1,1 +1,253 @@
-.remove_col_padding{padding:0px}.navigation{text-align:center;background:#280329;color:#fff}.navigation ul{margin-bottom:0px}.navigation ul li{display:inline-block;margin:10px}.navigation ul li:hover{color:#f40064}.billboard{background-image:url("../images/cover.png");background-size:cover;background-repeat:no-repeat}.billboard .billboard_content{text-align:center;font-weight:bold;color:white}.billboard .billboard_content #logo{padding-top:100px;font-size:55px;font-family:serif;font-style:italic}.billboard .billboard_content #logo::after{content:"  folk";letter-spacing:0px;font-size:45px;font-family:cursive}.billboard .billboard_content p:nth-child(2){font-size:25px;letter-spacing:5px}.billboard .billboard_content p:nth-child(3){padding-top:100px;font-size:18px}.billboard .billboard_content .billboard_bottom_up{position:relative;z-index:5;left:50%;transform:translateX(-50%);height:60px;width:300px;background:#888888;background-color:#f40064;text-align:center}.billboard .billboard_content .billboard_bottom_up p{line-height:60px}.billboard .billboard_content .billboard_bottom_up:after{content:"";position:absolute;left:0;right:0;margin:auto;width:0px;height:0px;border-color:#f40064 transparent transparent transparent;border-style:solid solid solid solid;border-width:15px 10px 15px 10px;bottom:-30px}.imgs_list{z-index:-1;padding-bottom:100px}.billboard_bottom_down{position:relative;z-index:5;left:50%;transform:translateX(-50%);height:50px;width:102%;background:#888888;background-color:#f40064;text-align:center;margin-left:0px}.billboard_bottom_down p{color:#fff;letter-spacing:3px;line-height:50px}.billboard_bottom_down:after{content:"";position:absolute;left:0;right:0;margin:auto;width:0px;height:0px;border-color:#f40064 transparent transparent transparent;border-style:solid solid solid solid;border-width:15px 10px 15px 10px;bottom:-30px}.members{text-align:center;padding-bottom:80px}.members p{font-size:11px;color:#6e6e6e;margin-top:0px;padding-bottom:20px}.members h2{color:#f40064;padding-top:15px;margin-bottom:0px}.members h5{padding-top:50px;padding-bottom:50px;color:#f40064}.members #member1,.members #member3{float:right}.members #member2,.members #member4{float:left}.members button{border-style:none;padding-top:8px;width:250px;background:black;color:#fff;line-height:30px}.spirit{color:#fff;background-image:url("../images/bg.jpg");background-size:100%;text-align:center;margin:0px}.spirit #article1,.spirit #article2,.spirit #article3,.spirit #article4{margin:50px;padding-top:20px;font-size:15px;width:370px;text-align:left}.spirit #article1 h2,.spirit #article2 h2,.spirit #article3 h2,.spirit #article4 h2{font-family:serif}.spirit #article1,.spirit #article3{float:right}.spirit #article2,.spirit #article4{float:left}.spirit #article2::before{content:"remain so span here to adjust the height of article";line-height:200px;visibility:hidden}.spirit button{border-style:none;padding-top:8px;margin-bottom:30px;width:250px;background:#fff;color:black;line-height:30px}.footer{background:#ddd}.footer .copyright{margin:0px;line-height:80px;text-align:center}.footer .copyright::after{content:"Wix.com";color:#f40064}
+.remove_col_padding {
+  padding: 0px
+}
+
+.navigation {
+  text-align: center;
+  background: #280329;
+  color: #fff
+}
+
+.navigation ul {
+  margin-bottom: 0px
+}
+
+.navigation ul li {
+  display: inline-block;
+  margin: 10px
+}
+
+.navigation ul li:hover {
+  color: #f40064
+}
+
+.billboard {
+  background-image: url("../images/cover.png");
+  background-size: cover;
+  background-repeat: no-repeat
+}
+
+.billboard .billboard_content {
+  text-align: center;
+  font-weight: bold;
+  color: white
+}
+
+.billboard .billboard_content #logo {
+  padding-top: 100px;
+  font-size: 55px;
+  font-family: serif;
+  font-style: italic
+}
+
+.billboard .billboard_content #logo::after {
+  content: "  folk";
+  letter-spacing: 0px;
+  font-size: 45px;
+  font-family: cursive
+}
+
+.billboard .billboard_content p:nth-child(2) {
+  font-size: 25px;
+  letter-spacing: 5px
+}
+
+.billboard .billboard_content p:nth-child(3) {
+  padding-top: 100px;
+  font-size: 18px
+}
+.billboard .billboard_content #loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.billboard .billboard_content #loading .dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+.billboard .billboard_content .billboard_bottom_up {
+  position: relative;
+  z-index: 5;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 60px;
+  width: 300px;
+  background: #888888;
+  background-color: #f40064;
+  text-align: center
+}
+
+.billboard .billboard_content .billboard_bottom_up p {
+  line-height: 60px
+}
+
+.billboard .billboard_content .billboard_bottom_up:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0px;
+  height: 0px;
+  border-color: #f40064 transparent transparent transparent;
+  border-style: solid solid solid solid;
+  border-width: 15px 10px 15px 10px;
+  bottom: -30px
+}
+
+.imgs_list {
+  z-index: -1;
+  padding-bottom: 100px
+}
+
+.billboard_bottom_down {
+  position: relative;
+  z-index: 5;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  width: 102%;
+  background: #888888;
+  background-color: #f40064;
+  text-align: center;
+  margin-left: 0px
+}
+
+.billboard_bottom_down p {
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 50px
+}
+
+.billboard_bottom_down:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0px;
+  height: 0px;
+  border-color: #f40064 transparent transparent transparent;
+  border-style: solid solid solid solid;
+  border-width: 15px 10px 15px 10px;
+  bottom: -30px
+}
+
+.members {
+  text-align: center;
+  padding-bottom: 80px
+}
+
+.members p {
+  font-size: 11px;
+  color: #6e6e6e;
+  margin-top: 0px;
+  padding-bottom: 20px
+}
+
+.members h2 {
+  color: #f40064;
+  padding-top: 15px;
+  margin-bottom: 0px
+}
+
+.members h5 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #f40064
+}
+
+.members #member1, .members #member3 {
+  float: right
+}
+
+.members #member2, .members #member4 {
+  float: left
+}
+
+.members button {
+  border-style: none;
+  padding-top: 8px;
+  width: 250px;
+  background: black;
+  color: #fff;
+  line-height: 30px
+}
+
+.spirit {
+  color: #fff;
+  background-image: url("../images/bg.jpg");
+  background-size: 100%;
+  text-align: center;
+  margin: 0px
+}
+
+.spirit #article1, .spirit #article2, .spirit #article3, .spirit #article4 {
+  margin: 50px;
+  padding-top: 20px;
+  font-size: 15px;
+  width: 370px;
+  text-align: left
+}
+
+.spirit #article1 h2, .spirit #article2 h2, .spirit #article3 h2, .spirit #article4 h2 {
+  font-family: serif
+}
+
+.spirit #article1, .spirit #article3 {
+  float: right
+}
+
+.spirit #article2, .spirit #article4 {
+  float: left
+}
+
+.spirit #article2::before {
+  content: "remain so span here to adjust the height of article";
+  line-height: 200px;
+  visibility: hidden
+}
+
+.spirit #article1 .loading, .spirit #article2 .loading {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.spirit #article1 .loading .dot, .spirit #article2 .loading .dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 20px;
+}
+.spirit button {
+  border-style: none;
+  padding-top: 8px;
+  margin-bottom: 30px;
+  width: 250px;
+  background: #fff;
+  color: black;
+  line-height: 30px
+}
+
+.footer {
+  background: #ddd
+}
+
+.footer .copyright {
+  margin: 0px;
+  line-height: 80px;
+  text-align: center
+}
+
+.footer .copyright::after {
+  content: "Wix.com";
+  color: #f40064
+}
