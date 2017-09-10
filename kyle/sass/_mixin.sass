@@ -1,0 +1,12 @@
+$imgname:a
+$nameext:b
+$imgpath:"./images/#{$imgname}.#{$nameext}"
+
+%bg-cover
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+
+@mixin img($imgname,$nameext)
+	background-image: url("../images/#{$imgname}.#{$nameext}")
+

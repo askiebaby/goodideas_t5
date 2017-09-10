@@ -1,0 +1,103 @@
+.title
+	height: auto
+	width: 100%
+	background-color: #ff002e
+	text-align: center
+	position: relative
+	margin-bottom: 60px
+	p
+		color: white
+		line-height: 80px
+		font-size: 24px
+		font-family: serif
+		letter-spacing: 5px
+		margin-bottom: 0
+	.triangle-down2
+			width: 0
+			height: 0
+			border-left: 20px solid transparent
+			border-right: 20px solid transparent
+			border-top: 20px solid #ff002e
+			position: absolute
+			left: 0
+			right: 0
+			bottom: -20px
+			margin: 0 auto
+			z-index: 9
+.section3
+	h1
+		color: #ff002e
+		text-align: center
+		margin-bottom: 60px
+.folk1
+	+img(m1,jpg)
+	@extend %bg-cover
+	height: 600px
+	width: 100%
+.folk2
+	+img(m2,jpg)
+	@extend %bg-cover
+	height: 600px
+	width: 100%
+.folk3
+	+img(m3,jpg)
+	@extend %bg-cover
+	height: 600px
+	width: 100%
+.folk4
+	+img(m4,jpg)
+	@extend %bg-cover
+	height: 600px
+	width: 100%
+
+.folk1,.folk2,.folk3,.folk4
+	margin-bottom: 150px
+	position: relative
+	h1
+		color: red
+		font-size: 60px
+		margin-bottom: 0
+		font-family: serif
+		letter-spacing: 3px
+		position: absolute
+		bottom: -80px
+		left: 0
+		right: 0
+		margin: 0 auto
+	p
+		text-align: center
+		color: black
+		font-size: 18px
+		font-family: sans-serif
+		letter-spacing: 3px
+		position: absolute
+		bottom: -100px
+		left: 0
+		right: 0
+		margin: 0 auto
+.contact
+	margin-bottom: 120px
+	.contactUs
+		width: 300px
+		height: 50px
+		background-color: black
+		text-align: center
+		position: absolute
+		left: 0
+		right: 0
+		margin: 0 auto
+		p
+			line-height: 50px
+			color: white
+			font-size: 20px
+			text-align: center
+	
+@media (max-width: 1200px)
+	.title
+		p
+			line-height: 50px
+
+@media (max-width: 340px)
+	.folk2,.folk3
+		p
+			bottom: -120px
