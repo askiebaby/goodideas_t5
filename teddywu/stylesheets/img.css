@@ -1,0 +1,22 @@
+/* line 2, ../sass/img.scss */
+.img img {
+  width: 100%;
+}
+/* line 5, ../sass/img.scss */
+.img figcaption {
+  position: absolute;
+  top: 0;
+  font-size: 2.5vw;
+  font-family: times new roman;
+  color: #fff;
+  background-color: rgba(121, 29, 36, 0.7);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 30%;
+  opacity: 0;
+}
+/* line 18, ../sass/img.scss */
+.img figcaption:hover {
+  opacity: 1;
+}

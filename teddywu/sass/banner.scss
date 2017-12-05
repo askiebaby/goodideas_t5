@@ -1,0 +1,65 @@
+.banner{
+	background: url(../images/banner.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	h1{
+		padding-top: 10vw;
+		margin-bottom: 0;
+		font-style: italic;
+		font-family: serif;
+		span{
+			font-weight: bold;
+		}
+	}
+	h6{
+		font-family: times new roman;
+		letter-spacing: 7px;
+		line-height: 10px;
+	}
+	.banner-content{
+		font-family: times new roman;
+		letter-spacing: 1px;
+		font-size: 19px;
+		margin-top: 10vw;
+	}
+	.point{
+		font-size: 20px;
+		margin-bottom: 0;	
+	}
+	h5{
+		padding: 15px 60px;
+	}
+	.upper-style{
+		position: absolute;
+		left: 50%;
+		margin-left: -20px;
+		margin-top: -1px;
+		z-index: 1;
+	}
+}
+
+.red-title-style{
+	margin-bottom: 0;
+	background-color: #e94043;
+	font-weight: 100;
+	font-family: sans-serif;
+	font-size: 1.5vw;
+	letter-spacing: 3px;
+}
+
+.triangle{
+	border-color: #e94043 transparent transparent transparent;
+	border-style: solid solid solid solid;
+	border-width: 20px 20px 0px 20px;
+}
+
+.second-red-title-style{
+	margin-top:8vw;
+	color: #fff;
+}
+
+.second-triangle-style{
+	width: 0;
+	margin: 0 auto;
+}

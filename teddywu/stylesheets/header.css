@@ -1,0 +1,24 @@
+/* line 1, ../sass/header.scss */
+header {
+  background-color: #360e36;
+  padding-bottom: 8px;
+}
+/* line 4, ../sass/header.scss */
+header a {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 300;
+}
+/* line 8, ../sass/header.scss */
+header a:hover {
+  color: #c54876;
+  text-decoration: none;
+}
+/* line 13, ../sass/header.scss */
+header .home {
+  margin-right: 10px;
+}
+/* line 16, ../sass/header.scss */
+header .contact {
+  margin-left: 10px;
+}
