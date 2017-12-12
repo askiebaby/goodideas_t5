@@ -1,0 +1,1094 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"paddi",
+				"padding-right"
+			],
+			[
+				"ba",
+				"background-size"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"re",
+				"repeat-x"
+			],
+			[
+				"sli",
+				"solid"
+			],
+			[
+				"p",
+				"placeholder	Attr"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"ba-c",
+				"background-color"
+			],
+			[
+				"fon-s",
+				"font-size"
+			],
+			[
+				"r",
+				"repeat-x"
+			],
+			[
+				"marign",
+				"margin"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"al",
+				"align-items"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"fos",
+				"font-size"
+			],
+			[
+				"c",
+				"contain"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"bar",
+				"background-repeat"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"li",
+				"list-style"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"co",
+				"content"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"s",
+				"super"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"con",
+				"componentName"
+			],
+			[
+				"cl",
+				"clearInterval"
+			],
+			[
+				"fa",
+				"false"
+			],
+			[
+				"i",
+				"inline-grid"
+			],
+			[
+				"scro",
+				"scroll"
+			],
+			[
+				"b",
+				"bottom"
+			],
+			[
+				"t",
+				"table-cell"
+			],
+			[
+				"fons",
+				"font-size"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"e",
+				"else"
+			],
+			[
+				"tra",
+				"transition"
+			],
+			[
+				"d",
+				"dashed"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
+				"marig",
+				"margin-left"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"icon",
+				"icon-eye-open"
+			],
+			[
+				"icon-eye",
+				"icon-eye-close"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"pre",
+				"previousSibling"
+			],
+			[
+				"marin",
+				"margin-left"
+			],
+			[
+				"tr",
+				"transition"
+			],
+			[
+				"pading",
+				"padding-top"
+			],
+			[
+				"u",
+				"url()"
+			],
+			[
+				"v",
+				"visibility"
+			],
+			[
+				"ev",
+				"event"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"background",
+				"background-image"
+			],
+			[
+				"he",
+				"hidden"
+			],
+			[
+				"lis",
+				"list-style"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"f",
+				"fixed"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"mysql_num",
+				"mysql_num_rows"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"mari",
+				"margin-top"
+			],
+			[
+				"padding-t",
+				"padding-left"
+			],
+			[
+				"borde",
+				"border"
+			],
+			[
+				"sc",
+				"scroll"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"border-t",
+				"border-right"
+			],
+			[
+				"h",
+				"href	Attr"
+			],
+			[
+				"backgro",
+				"background-size"
+			],
+			[
+				"po",
+				"phone"
+			],
+			[
+				"cla",
+				"className"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"mat",
+				"margin-right"
+			],
+			[
+				"sp",
+				"space-between"
+			],
+			[
+				"border-",
+				"border-bottom"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"ta",
+				"table-row"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"do",
+				"document"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"onc",
+				"onclick	Attr"
+			],
+			[
+				"ch",
+				"checked"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"MARGIN",
+				"margin-bottom"
+			],
+			[
+				"m",
+				"middle"
+			],
+			[
+				"margon",
+				"margin-top"
+			],
+			[
+				"fdm",
+				"fdmap_x0"
+			],
+			[
+				"fdma",
+				"fdmap_x1"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"a",
+				"align	Attr"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"st",
+				"list-style"
+			],
+			[
+				"l",
+				"left"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"w",
+				"width"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 277,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": ".index\n	width: 100px\n	height: 100px\n	a\n		color: #fff\n",
+			"file": "sass/main.sass",
+			"file_size": 52,
+			"file_write_time": 131571965130000000,
+			"settings":
+			{
+				"buffer_size": 53,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "stylesheets/main.css",
+			"settings":
+			{
+				"buffer_size": 136,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "sass",
+		"selected_items":
+		[
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"SFTP",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"liv",
+				"LiveReload: Enable/disable plug-ins"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"package control i",
+				"Package Control: Install Package"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"emment",
+				"Toggle Comment"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/MAC/Desktop/yoyo_t1/yoyo",
+		"/Users/MAC/Desktop/yoyo_t1/yoyo/sass",
+		"/Users/MAC/Desktop/yoyo_t1/yoyo/stylesheets"
+	],
+	"file_history":
+	[
+		"/Users/MAC/Desktop/yoyo_t1/t4/yoyo/index.html",
+		"/Users/MAC/Desktop/yoyo_t1/yoyo/stylesheets/print.css",
+		"/Users/MAC/Desktop/yoyo_t1/t3/yoyo/index.html",
+		"/Users/MAC/Desktop/yoyo_t1/yoyo/js/main.js",
+		"/Users/MAC/Desktop/1205.html",
+		"/Users/MAC/Desktop/yoyo_t1/t2/yoyo/css/normalize.css",
+		"/Users/MAC/Desktop/yoyowarm.github.io/css/reset.css",
+		"/Users/MAC/Desktop/yoyowarm.github.io/index.html",
+		"/Users/MAC/Desktop/vue.js/todolist.html",
+		"/Users/MAC/Desktop/vue.js/vuejs_test.html",
+		"/Users/MAC/Desktop/JavaScript30-master/01 - JavaScript Drum Kit/index-START.html",
+		"/Users/MAC/Desktop/米諾/20170831_首頁+內頁開版/index.css",
+		"/Users/MAC/Desktop/米諾/N17270 興生景觀開發有限公司(多米諾新型RWD企業，5年)/index.css",
+		"/Users/MAC/Desktop/lifelink_daily/8:25/page_builder.php",
+		"/Users/MAC/Desktop/lifelink_daily/8:24/stylesheet.css",
+		"/Users/MAC/Desktop/米諾/N17270 興生景觀開發有限公司(多米諾新型RWD企業，5年)/index.php",
+		"/Users/MAC/Desktop/lifelink_daily/8:17/page_builder.php",
+		"/Users/MAC/Desktop/lifelink_daily/8:21/content-custom-header.php",
+		"/Users/MAC/Desktop/lifelink_daily/8:18/page_builder.php",
+		"/Users/MAC/Desktop/lifelink_daily/8:18/header.php",
+		"/Users/MAC/Desktop/lifelink_daily/8:18/style.css",
+		"/Users/MAC/Desktop/lifelink_daily/8:18/functions.php",
+		"/Users/MAC/Desktop/lifelink_daily/8:17/style.css",
+		"/Users/MAC/Desktop/lifelink_daily/8:14/archive.php",
+		"/Users/MAC/Desktop/lifelink_daily/8:14/content-status.php",
+		"/Users/MAC/Desktop/lifelink_daily/8:14/content-page.php",
+		"/Users/MAC/Desktop/lifelink_daily/8:14/footer.php",
+		"/Users/MAC/Desktop/lifelink_daily/8:14/index.php",
+		"/Users/MAC/Desktop/lifelink_daily/8:14/fb.php",
+		"/Users/MAC/Desktop/終極密碼.html",
+		"/Users/MAC/Desktop/lifelink_daily/8:14/loop-banner.php",
+		"/Users/MAC/Desktop/lifelink_daily/8:14/header.php",
+		"/Users/MAC/Desktop/lifelink_daily/style.css",
+		"/Users/MAC/Desktop/lifelink_daily/content-page.php",
+		"/Users/MAC/Desktop/lifelink_daily/content.php",
+		"/Users/MAC/Desktop/lifelink_daily/single.php",
+		"/Users/MAC/Desktop/lifelink_daily/index.php",
+		"/Users/MAC/Desktop/lifelink_daily/page_builder.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:24/page_builder.php",
+		"/Users/MAC/simple_react_start_kit_2017/src/containers/Home/save.js",
+		"/Users/MAC/simple_react_start_kit_2017/src/containers/Home/user.js",
+		"/Users/MAC/Desktop/react-0.14.3/react_study.html",
+		"/Users/MAC/Desktop/lifelink_daily/7:20/custom_style.css",
+		"/Users/MAC/Desktop/linkcat/blogPage.html",
+		"/Users/MAC/Desktop/lifelink_daily/7:17/style.css",
+		"/Users/MAC/Desktop/lifelink_daily/7:14/style.css",
+		"/Users/MAC/Desktop/lifelink_daily/7:13/bkstyle.css",
+		"/Users/MAC/Desktop/lifelink_daily/7:13/floating.css",
+		"/Users/MAC/Desktop/lifelink_daily/7:13/layout_top.tpl",
+		"/Users/MAC/Desktop/linkcat/js/index.js",
+		"/Users/MAC/Desktop/lifelink_daily/7:11/float_button.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:10/yoyo/style.css",
+		"/Users/MAC/Desktop/lifelink_daily/7:10/yoyo/functions.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:10/yoyo/404.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:10/yoyo/searchform.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:10/yoyo/search.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:10/yoyo/archives.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:10/yoyo/comments.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:10/yoyo/sidebar.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:10/yoyo/page.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:10/yoyo/single.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:10/yoyo/index.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:10/yoyo/footer.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:10/yoyo/header.php",
+		"/Users/MAC/Desktop/lifelink_daily/Cup-signup.php",
+		"/Users/MAC/Desktop/linkcat/tryout.html",
+		"/Users/MAC/Desktop/lifelink_daily/7:3/sahifa/header.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:3/decibel/page.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:3/decibel/header.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:3/decibel/searchform-video.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:3/decibel/searchform.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:3/decibel/sidebar-discography.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:3/decibel/sidebar-footer.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:3/decibel/sidebar-menu.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:3/decibel/sidebar-page.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:3/decibel/sidebar-shop.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:3/decibel/sidebar-video.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:3/decibel/sidebar.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:3/decibel/single-gallery.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:3/decibel/single.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:3/decibel/template-dribbble.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:3/sahifa/category.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:3/sahifa/index.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:3/sahifa/page.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:3/sahifa/single.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:3/sahifa/template-best-reviews.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:3/sahifa/template-blog.php",
+		"/Users/MAC/Desktop/lifelink_daily/7:3/sahifa/template-tags.php",
+		"/Users/MAC/Desktop/fullcalendar/demos/theme.html",
+		"/Users/MAC/Desktop/linkcat/fans.html",
+		"/Users/MAC/Desktop/linkcat/blogManage.html",
+		"/Users/MAC/Desktop/linkcat/index.html",
+		"/Users/MAC/Desktop/linkcat/kanban.html",
+		"/Users/MAC/Desktop/linkcat/message.html",
+		"/Users/MAC/Desktop/linkcat/mobileLink.html",
+		"/Users/MAC/Desktop/linkcat/personHomepage.html",
+		"/Users/MAC/Desktop/linkcat/portfolio-edit.html",
+		"/Users/MAC/Desktop/linkcat/portfolio.html",
+		"/Users/MAC/Desktop/linkcat/post.html",
+		"/Users/MAC/Desktop/linkcat/product.html",
+		"/Users/MAC/Desktop/linkcat/talkover.html",
+		"/Users/MAC/Desktop/linkcat/visitHomepage.html",
+		"/Users/MAC/Desktop/linkcat/css/style.css",
+		"/Users/MAC/Desktop/lifelink_daily/6:29/error_log",
+		"/Users/MAC/Desktop/lifelink_daily/6:29/float_button.php",
+		"/Users/MAC/Desktop/auto-hiding-navigation 2/js/main.js",
+		"/Users/MAC/Desktop/工作日報lifelink/5:26/mall/rgen/catalog/template/layout/layout_top.tpl",
+		"/Users/MAC/Desktop/工作日報lifelink/5:26/mall/rgen/cache/modules/basicslideshow/9091e0621d4dce77295724e13b87f6d3.tpl",
+		"/Users/MAC/Desktop/linkcat/blogHomepage.html",
+		"/Users/MAC/Desktop/lifelink_daily/pdlist.css",
+		"/Users/MAC/Desktop/lifelink_daily/product_list.php",
+		"/Users/MAC/Desktop/lifelink_daily/6:8/style.css",
+		"/Users/MAC/Desktop/linkcat/fonts/style.css",
+		"/Users/MAC/Desktop/linkcat/sftp-config.json",
+		"/Users/MAC/Desktop/linkcat/woocommerce.php",
+		"/Users/MAC/Desktop/linkcat/single.php",
+		"/Users/MAC/Desktop/linkcat/page.php",
+		"/Users/MAC/Desktop/linkcat/index.php",
+		"/Users/MAC/Desktop/尼可貓/css/slider.css",
+		"/Users/MAC/Desktop/尼可貓/js/index.js",
+		"/Users/MAC/Desktop/lifelink_daily/6:1/cc/float_button.php",
+		"/Users/MAC/Desktop/lifelink_daily/6:1/cc/page_builder.php",
+		"/Users/MAC/Desktop/untitled.html",
+		"/Users/MAC/Desktop/lifelink_daily/6:1/sahifa/float_button.php",
+		"/Users/MAC/Desktop/lifelink_daily/5:26/sahifa/float_button.php",
+		"/Users/MAC/Desktop/lifelink_daily/5:26/float_button.php",
+		"/Users/MAC/Desktop/lifelink_daily/mall/catalog/view/theme/rgen-opencart/rgen-menu.js",
+		"/Users/MAC/Desktop/lifelink_daily/mall/catalog/view/theme/rgen-opencart/template/module/vdi_s_category.tpl"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/MAC/Desktop/工作日報lifelink/5:26/mall",
+			"/Users/MAC/Desktop/lifelink_daily/8:21",
+			"/Users/MAC/Desktop/lifelink_daily/8:18",
+			"/Users/MAC/Desktop/lifelink_daily/8:14/js",
+			"/Users/MAC/Desktop/lifelink_daily/7:18/yoyo",
+			"/Users/MAC/Desktop/工作日報lifelink/5:26/mall",
+			"/Users/MAC/Desktop/lifelink_daily/7:3/sahifa",
+			"/Users/MAC/Desktop/工作日報lifelink/5:26/mall",
+			"/Users/MAC/Desktop/linkcat",
+			"/Users/MAC/Desktop/lifelink_daily/mall",
+			"/Users/MAC/Desktop/lifelink_daily/5:22",
+			"/Users/MAC/Desktop/lifelink_daily/mall",
+			"/Users/MAC/Desktop/lifelink_daily/5:15/mall",
+			"/Users/MAC/Desktop/lifelink_daily/mall",
+			"/Users/MAC/Desktop/lifelink_daily/4:21/mall",
+			"/Users/MAC/Desktop/lifelink_daily/5:8/modules",
+			"/Users/MAC/Desktop/lifelink_daily/4:21/mall",
+			"/Users/MAC/Desktop/lifelink_daily/5:2/f站/bonus",
+			"/Users/MAC/Desktop/lifelink_daily/5:2/jarida",
+			"/Users/MAC/Desktop/lifelink_daily/5:2/sahifa",
+			"/Users/MAC/Desktop/lifelink_daily/4:21/mall",
+			"/Users/MAC/Desktop/lifelink_daily/4:21/woocommerce",
+			"/Users/MAC/Desktop/lifelink_daily/4:21/mall",
+			"/Users/MAC/Desktop/lifelink_daily/4:21/woocommerce",
+			"/Users/MAC/Desktop/cmgmall-public_html-20170321",
+			"/Users/MAC/Desktop/lifelink_daily/2:23/hotelmaster",
+			"/Users/MAC/Desktop/lifelink_daily/2:20/comments-from-facebook",
+			"/Users/MAC/Desktop/woocommerce,/Users/MAC/Desktop/工作日報lifelink/1:19/1:19lifepay",
+			"/Users/MAC/Desktop/woocommerce",
+			"/Users/MAC/Desktop/",
+			"/Users/MAC/Desktop/lifelink_daily/1:12/like-box-pro"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"<div class=\"container\">",
+			"row ",
+			"justify-content-end",
+			".inforbox-mail",
+			";\n",
+			".contact-box",
+			".copyright p, li",
+			".banner> div:first-child",
+			"'>\n",
+			"'Oswald', sans-serif",
+			"<div class=\"line\">\n		<p>FREE SHIPPING WOLWIDE</p>\n	</div>",
+			";\n",
+			".icon",
+			"width=\"135px\"",
+			".navbar-scroll",
+			".navbar-scroll.navbar-fixed-top",
+			".subject-p",
+			".logo",
+			".navbar-scroll",
+			"slider",
+			"body",
+			".sect-title",
+			".about-sect",
+			".sect1",
+			".news-list .pic",
+			".sect-title",
+			".site-nav .menu > li > a",
+			":before",
+			".site-nav .menu > li > a",
+			"a:hover",
+			"li:nth-child(n)> a:hover",
+			"li:nth-child(n) > a:hover",
+			".site-nav .menu >",
+			".site-nav .menu > li:nth-child(n) >",
+			".site-nav .menu > li:nth-child(n)",
+			".site-nav .menu > li > a",
+			".site-title .logo",
+			".products-list .btn.detail",
+			".side-nav > li > a:hover, .side-nav > li.active > a",
+			"name=\"product_description[1][name]\"",
+			"商品備忘簿",
+			"商品備忘錄",
+			"class=\"entry-title\"",
+			".site-branding",
+			"class=\"container\"",
+			".widget-area",
+			"sub-menu",
+			"Continue reading",
+			"class=\"container\"",
+			"img",
+			".menu-toggle:before",
+			"'\\f303'",
+			"search-toggle:before",
+			"pre:before, #cancel-comment-reply-link:before, .menu-toggle:before, .main-navigation .menu-item-has-children > a:after, .search-toggle:before, .social-links a:before, .posts .type-page .entry-title:before, .posts .format-image .entry-media:before, .format-link .entry-content a:before, .format-quote:before, .format-status .entry-content p:first-child:before, .entry-meta-element:before, .entry-meta .comments-link a:before, .entry-meta .entry-likes a:before, .post-table-of-contents a:before, .post-table-of-contents .current a:before, .post-table-of-contents .passed a:before, .bypostauthor .comment-author:before, .post-navigation .meta-nav:after, .post-navigation .meta-nav:before, .comment-edit-link:before, .comment-reply-link:before, .widget_archive li:before, .widget_categories li:before, .widget_nav_menu li:before, .widget_pages li:before, .widget_recent_comments li:before, .widget_recent_entries li:before, .widget_zilla_likes_widget li:before",
+			".search-toggle:before",
+			"is_front_page",
+			"wm_has_banner_posts",
+			"#slider ul",
+			".feature img",
+			".ellipsis",
+			"li",
+			".menu li a",
+			"container",
+			".title",
+			"html",
+			"32px !important",
+			".gdlr-fixed-header .gdlr-navigation-wrapper",
+			".gdlr-navigation-wrapper",
+			"gdlr-navigation-wrapper",
+			".flexslider .slides img",
+			"\n			.page-content img {width: 100%}\n		",
+			"17px!important",
+			".tabs-nav li",
+			"tab-4",
+			"profile",
+			"<script",
+			"dialog_open",
+			"floatbutton",
+			"fl",
+			".globalSearch",
+			"src=\"image/lifelink_logo.png\"",
+			"uptoTop",
+			"image/lifelink_logo.png",
+			".sideNavHead div",
+			"sideNavHead visible-xs",
+			"animate",
+			"sliderToggle",
+			"}\n",
+			"setInterval",
+			"verAlign",
+			"sliderOption",
+			"styledCheckbox",
+			"#checkbox",
+			"styledCheckbox",
+			".sideMenu",
+			"sideMenuHead",
+			"sideNavArrow",
+			".sideNav",
+			"deskNav",
+			"dropdown-menu",
+			"pointtip fa fa-plus-square",
+			"bxslider",
+			"col-lg-12 col-md-12 col-xs-12",
+			"scrollTop",
+			"addLog",
+			"scrollTop",
+			"ani",
+			"icon-keep",
+			"class=\"icon-user\"",
+			"portContent",
+			"phone",
+			"$(this",
+			"$this",
+			"phoneNav",
+			".grid-item",
+			"blogHead",
+			"sideMenu",
+			".sideMenu",
+			".sideMenu ul li a",
+			"expBtn",
+			"button",
+			"progressBar",
+			"desc",
+			"#dropdown",
+			"sideNavHead",
+			"deskNav",
+			"badge",
+			"deskNav"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "/Users/MAC/Desktop/yoyo_t1/yoyo"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 277,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								255,
+								255
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "sass/main.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 53,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								53,
+								53
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "stylesheets/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 136,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 224.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 190.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
