@@ -1,0 +1,47 @@
+.purpose {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  padding: 70px 0 0;
+  color: white; }
+
+.purpose-box {
+  margin: 0 auto; }
+
+.purpose-left, .purpose-right {
+  padding: 60px 50px; }
+  .purpose-left h2, .purpose-right h2 {
+    font-family: Didot, serif;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+    line-height: 60px; }
+  .purpose-left p, .purpose-right p {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-family: Noto Sans, sans-serif; }
+
+.purpose-right {
+  padding: 300px 50px 100px; }
+@media(max-width :768px) {
+  .purpose-right {
+    padding-top: 60px; } }
+.dot-order {
+  text-align: center;
+  padding: 60px 0px; }
+  .dot-order i {
+    font-size: 1px;
+    margin: 0 10px; }
+
+.back-top {
+  padding: 20px 0; }
+
+.back-top-box {
+  margin: 0 auto; }
+  .back-top-box button {
+    color: black;
+    background-color: white;
+    border: 0px;
+    padding: 12px 60px; }
+
+/*# sourceMappingURL=purpose.css.map */

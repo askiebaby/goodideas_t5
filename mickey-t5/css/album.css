@@ -1,0 +1,25 @@
+.album {
+  position: relative;
+  padding-bottom: 100px; }
+
+.triangle {
+  border-color: #ed3946 transparent transparent transparent;
+  border-style: solid solid solid solid;
+  border-width: 20px;
+  left: 50%;
+  width: 0%;
+  z-index: 99;
+  position: absolute;
+  margin-left: -20px; }
+
+.album-box {
+  padding: 0;
+  overflow: hidden; }
+  .album-box img {
+    width: 100%;
+    transition: all 0.5s ease 0s; }
+    .album-box img:hover {
+      transform: scale(1.1);
+      opacity: 0.9; }
+
+/*# sourceMappingURL=album.css.map */

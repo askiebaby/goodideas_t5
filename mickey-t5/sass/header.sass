@@ -1,0 +1,32 @@
+$header-color : #370d36
+$hover : #ee5a8a
+$lable-color : #ed3946
+
+// *
+//   outline: blue solid 1px
+
+img 
+  max-width: 100%
+  height: auto
+
+.header
+  padding : 30px 0
+  position: fixed
+  top : 0
+  z-index: 999
+  width: 100%
+  background-color : $header-color
+.items1 
+  line-height: 20px
+  padding: 0
+  text-align: right
+  a 
+    text-decoration : none
+    padding : 0 25px
+    font-size: 15px
+    color : white
+    &:hover 
+      color : $hover
+.items2
+  @extend .items1
+  text-align: left
