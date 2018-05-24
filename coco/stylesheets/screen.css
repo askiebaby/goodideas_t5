@@ -1,0 +1,393 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*------------------------------------------color-picker*/
+/*cannot be put after those who need this variable*/
+/*------------------------------------------header*/
+/*------------------------------------------banner*/
+/*------------------------------------------designers*/
+/*------------------------------------------intro-of-us*/
+/*------------------------------------------footer*/
+/*------------------------------------------others*/
+/*red-box*/
+/*dot*/
+/*------------------------------------------header*/
+/*------------------------------------------banner*/
+/*web-folk*/
+/*dream*/
+/*red-box*/
+/*button*/
+/*------------------------------------------intro-of-us*/
+/*------------------------------------------footer*/
+/*------------------------------------------header*/
+/*------------------------------------------banner*/
+/*web folk & we design studio*/
+/*dream*/
+/*dot*/
+/*------------------------------------------demo*/
+/*red box*/
+/*------------------------------------------designers*/
+/*red box*/
+/*meet the folks*/
+/*designer image*/
+/*designer name*/
+/*designer title*/
+/*contact us*/
+/*------------------------------------------intro-of-us*/
+/*left*/
+/*paragraph*/
+/*dot*/
+/*back-to-top button*/
+#navigation {
+  background-color: #260421;
+}
+#navigation ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  line-height: 60px;
+}
+#navigation ul a {
+  margin: auto 15px;
+}
+#navigation ul a:visited {
+  color: white;
+}
+#navigation ul #active {
+  color: #9b2242;
+}
+
+/*---------------------------------------------banner*/
+/*web folk*/
+/*web design studio*/
+/*we dream*/
+/*red box*/
+/*---------------------------------------------designers*/
+/*red box*/
+/*meet the folk*/
+/*designer name*/
+/*---------------------------------------------intro-of-us*/
+/*four paragraph*/
+/*---------------------------------------------footer*/
+#banner {
+  background-image: url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+#banner #web_folk-studio {
+  padding: 120px 0;
+}
+#banner #web_folk-studio #web-folk {
+  font-size: 60px;
+  line-height: 80px;
+  letter-spacing: 5px;
+  font-family: "Big Caslon";
+  font-style: italic;
+}
+#banner #web_folk-studio #studio {
+  font-size: 30px;
+  letter-spacing: 7px;
+  font-family: "Big Caslon";
+}
+#banner #dream {
+  max-width: 444px;
+  margin: 0 auto;
+  line-height: 28px;
+  font-size: 23px;
+  letter-spacing: 2px;
+  font-family: "Big Caslon";
+}
+#banner #dot-vertical {
+  padding: 50px 0 120px 0;
+}
+#banner #dot-vertical div {
+  background-color: white;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin: 20px auto 3px;
+}
+
+#clients {
+  position: relative;
+  /*red box*/
+  /*images*/
+}
+#clients #work-client {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#clients #work-client #red-box {
+  line-height: 70px;
+  margin: 0 auto;
+  background-color: #f4225a;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-align: center;
+  position: relative;
+}
+#clients #work-client #red-box:after {
+  content: "";
+  position: absolute;
+  border-left: 24px solid transparent;
+  border-right: 24px solid transparent;
+  border-bottom: 24px solid #f4225a;
+  transform: rotate(-180deg) translate(50%);
+  left: 50%;
+  top: 99%;
+  z-index: 1;
+  /*put the pseudo element on the top of all elements*/
+}
+@media only screen and (min-width: 576px) {
+  #clients #work-client {
+    width: 376px;
+  }
+}
+#clients #demo {
+  font-size: 0;
+}
+#clients #demo img {
+  width: 100%;
+}
+
+#designers {
+  text-align: center;
+  /*red box*/
+  /*meet the folk*/
+  /*designer imgs*/
+  /*contact-us button*/
+}
+#designers #designer-intro-box {
+  margin: 100px 0 30px;
+  background-color: #f4225a;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+}
+#designers #designer-intro-box:after {
+  content: "";
+  position: absolute;
+  border-left: 24px solid transparent;
+  border-right: 24px solid transparent;
+  border-bottom: 24px solid #f4225a;
+  transform: rotate(-180deg) translate(50%);
+  left: 50%;
+  top: 99%;
+  z-index: 1;
+  /*put the pseudo element on the top of all elements*/
+}
+@media only screen and (min-width: 925px) {
+  #designers #designer-intro-box {
+    line-height: 70px;
+  }
+}
+@media only screen and (max-width: 925px) {
+  #designers #designer-intro-box {
+    line-height: 30px;
+  }
+}
+#designers #meet-folk {
+  color: #f4225a;
+  margin: 45px 0;
+  font-size: 25px;
+}
+#designers #designer-img {
+  margin: 0 auto;
+  /*designer's name*/
+  /*designer's title*/
+}
+#designers #designer-img .designer-name {
+  color: #f4225a;
+  margin: 16px auto 0;
+  font-size: 50px;
+}
+#designers #designer-img .designer-title {
+  margin: 0 auto 30px;
+}
+@media only screen and (min-width: 576px) {
+  #designers #designer-img {
+    width: 64%;
+  }
+  #designers #designer-img img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #designers #designer-img img {
+    width: 100%;
+  }
+}
+#designers #contact-us {
+  margin: 20px auto 50px;
+  width: 250px;
+}
+#designers #contact-us button {
+  background-color: black;
+  color: white;
+  width: 100%;
+  line-height: 40px;
+}
+
+#intro-of-us {
+  /*background*/
+  background-image: url("../images/sea-horse-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  /*so that the long paragraph could still be seen if the width is too small*/
+  overflow: auto;
+  /*----------------------------------back-to-top button*/
+}
+#intro-of-us #flex-up-down {
+  display: flex;
+  /*---------------------------------left, right*/
+  /*-------------------------------four paragraph area*/
+  /*only on big screen set the width*/
+  /*-----------------------------------dot*/
+}
+#intro-of-us #flex-up-down * {
+  /*set all paragraph element center of the width*/
+  margin: 0 auto;
+}
+@media only screen and (min-width: 992px) {
+  #intro-of-us #flex-up-down #left {
+    align-self: flex-start;
+    margin: 0 auto 300px;
+  }
+  #intro-of-us #flex-up-down #right {
+    align-self: flex-end;
+  }
+}
+#intro-of-us #flex-up-down #what-we-do h1, #intro-of-us #flex-up-down #how-we-work h1, #intro-of-us #flex-up-down #who-we-are h1, #intro-of-us #flex-up-down #what-we-believe h1 {
+  font-size: 45px;
+  font-family: "Big Caslon";
+  margin: 60px auto 0;
+  letter-spacing: 5px;
+}
+#intro-of-us #flex-up-down #what-we-do div, #intro-of-us #flex-up-down #how-we-work div, #intro-of-us #flex-up-down #who-we-are div, #intro-of-us #flex-up-down #what-we-believe div {
+  margin: 20px 0;
+  line-height: 23px;
+}
+@media only screen and (min-width: 992px) {
+  #intro-of-us #flex-up-down #what-we-do, #intro-of-us #flex-up-down #how-we-work, #intro-of-us #flex-up-down #who-we-are, #intro-of-us #flex-up-down #what-we-believe {
+    width: 410px;
+  }
+}
+#intro-of-us #flex-up-down #dot-horizontal {
+  text-align: center;
+  /*center the dot in the block*/
+}
+#intro-of-us #flex-up-down #dot-horizontal div {
+  display: inline-flex;
+  /*make the dot horizontal*/
+  background-color: white;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin: auto 10px;
+}
+@media only screen and (min-width: 992px) {
+  #intro-of-us #flex-up-down #dot-horizontal {
+    margin: 120px auto 0;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #intro-of-us #flex-up-down #dot-horizontal {
+    margin: 60px auto 0;
+  }
+}
+#intro-of-us #back-to-top {
+  margin: 100px auto 25px;
+  width: 250px;
+}
+#intro-of-us #back-to-top button {
+  background-color: white;
+  color: black;
+  width: 100%;
+  line-height: 40px;
+}
+
+@media only screen and (min-width: 413px) {
+  #copyright {
+    line-height: 100px;
+  }
+}
+@media only screen and (max-width: 413px) {
+  #copyright {
+    line-height: 30px;
+  }
+}
+#copyright {
+  background-color: #b3b3b3;
+  text-align: center;
+  font-size: 17px;
+}
+#copyright a:visited {
+  color: #f81d66;
+}

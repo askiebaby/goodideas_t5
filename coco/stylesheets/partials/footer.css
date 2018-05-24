@@ -1,0 +1,48 @@
+/*------------------------------------------color-picker*/
+/*cannot be put after those who need this variable*/
+/*------------------------------------------header*/
+/*------------------------------------------banner*/
+/*------------------------------------------designers*/
+/*------------------------------------------intro-of-us*/
+/*------------------------------------------footer*/
+/*------------------------------------------others*/
+/*red-box*/
+/*dot*/
+/*------------------------------------------header*/
+/*------------------------------------------banner*/
+/*web-folk*/
+/*dream*/
+/*red-box*/
+/*button*/
+/*------------------------------------------intro-of-us*/
+/*------------------------------------------footer*/
+/*---------------------------------------------banner*/
+/*web folk*/
+/*web design studio*/
+/*we dream*/
+/*red box*/
+/*---------------------------------------------designers*/
+/*red box*/
+/*meet the folk*/
+/*designer name*/
+/*---------------------------------------------intro-of-us*/
+/*four paragraph*/
+/*---------------------------------------------footer*/
+@media only screen and (min-width: 413px) {
+  #copyright {
+    line-height: 100px;
+  }
+}
+@media only screen and (max-width: 413px) {
+  #copyright {
+    line-height: 30px;
+  }
+}
+#copyright {
+  background-color: #b3b3b3;
+  text-align: center;
+  font-size: 17px;
+}
+#copyright a:visited {
+  color: #f81d66;
+}

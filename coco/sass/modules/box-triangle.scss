@@ -1,0 +1,24 @@
+@import "colors";
+@import "text-style";
+
+@mixin box($letter-spacing, $box-color, $box-text-color) {
+    background-color: $box-color;
+    color: $box-text-color;
+    font-size: $box-font-size;
+    letter-spacing: $letter-spacing;
+    text-align: center;
+}
+@mixin triangle($triangle-color) {
+  position: relative;
+  &:after {
+    content: "";
+    position:absolute;
+    border-left: 24px solid transparent;
+    border-right: 24px solid transparent;
+    border-bottom: 24px solid $triangle-color;
+    transform:rotate(-180deg) translate(50%);
+    left:50%;
+    top: 99%;
+    z-index: 1; /*put the pseudo element on the top of all elements*/
+  }
+}

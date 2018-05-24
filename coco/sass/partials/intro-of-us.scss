@@ -1,0 +1,85 @@
+@import "modules/dot";
+@import "modules/button";
+@import "modules/_colors";
+@import "modules/_line-height";
+@import "modules/_margin-padding";
+@import "modules/_text-style";
+
+#intro-of-us {
+  /*background*/
+  background-image: url("../images/sea-horse-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  color: $intro-of-us-text-color;
+  /*so that the long paragraph could still be seen if the width is too small*/
+  overflow: auto;
+
+  #flex-up-down {
+    display: flex;
+    * {
+      /*set all paragraph element center of the width*/
+      margin: $four-paragraph-outside-margin;
+    }
+
+    /*---------------------------------left, right*/
+    @media only screen and (min-width: 992px) {
+      #left {
+        align-self: flex-start;
+        margin: $left-paragraph-margin;
+        }
+      #right {
+        align-self: flex-end;
+      } 
+    }
+
+    /*-------------------------------four paragraph area*/
+    #what-we-do {
+      h1 {
+        font-size: $four-paragraph-h1-font-size;
+        font-family: $four-paragraph-h1-font-family;
+        margin: $four-paragraph-h1-margin;
+        letter-spacing: $four-paragraph-h1-letter-space;
+      }
+      div {
+        margin: $four-paragraph-div-margin;
+        line-height: $four-paragraph-div-line-height;
+      }
+    }
+    /*only on big screen set the width*/
+    @media only screen and (min-width: 992px) {
+      #what-we-do {
+        width: 410px;
+      }
+    }
+    #how-we-work, #who-we-are, #what-we-believe {
+      @extend #what-we-do ;
+    }
+
+    /*-----------------------------------dot*/
+    #dot-horizontal {
+      text-align: center;  /*center the dot in the block*/
+      div {
+        display: inline-flex; /*make the dot horizontal*/
+        @include dot($dot-horizontal-between-margin);
+      }
+    }
+    @media only screen and (min-width: 992px) {
+      #dot-horizontal {
+        margin: $dot-horizontal-outside-margin-big-screen;
+      }
+    }
+    @media only screen and (max-width: 992px) {
+      #dot-horizontal {
+        margin: $dot-horizontal-outside-margin-small-screen;
+      }
+    }
+  }
+  
+  /*----------------------------------back-to-top button*/
+  #back-to-top {
+    margin: $back-to-top-button-margin;
+    @include button($back-to-top-button-color, $back-to-top-text-color);
+  }
+}

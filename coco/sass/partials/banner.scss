@@ -1,0 +1,46 @@
+@import "modules/dot";
+@import "modules/_colors";
+@import "modules/_line-height";
+@import "modules/_margin-padding";
+@import "modules/_text-style";
+
+#banner{
+  background-image: url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: $banner-text-color;
+
+  #web_folk-studio {
+    padding: $web_folk-studio-padding;
+
+    #web-folk {
+      font-size: $web-folk-font-size;
+      line-height: $web-folk-line-height;
+      letter-spacing: $web-folk-letter-space;
+      font-family: $web-folk-font-family;
+      font-style: italic;
+    }
+    #studio {
+      font-size: $studio-font-size;
+      letter-spacing: $studio-letter-space;
+      font-family: $studio-font-family;
+    }
+  }
+
+  #dream {
+    max-width: 444px;
+    margin: $dream-margin;
+    line-height: $dream-line-height;
+    font-size: $dream-font-size;
+    letter-spacing: $dream-letter-space;
+    font-family: $dream-font-family;
+  }
+
+  #dot-vertical {
+    padding: $dot-vertical-outside-margin;
+    div {
+      @include dot($dot-vertical-between-margin);
+    }
+  }
+}
