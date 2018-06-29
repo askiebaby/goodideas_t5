@@ -63,8 +63,53 @@ table {
   border-spacing: 0;
 }
 
-/* line 1, ../sass/_title.scss */
-h1 {
-  color: red;
-  font-size: 36px;
+/* line 1, ../sass/_header.scss */
+.header {
+  background-color: #7a0f8d;
+  justify-content: center;
+  display: flex;
+}
+/* line 6, ../sass/_header.scss */
+.header ul {
+  display: flex;
+}
+/* line 9, ../sass/_header.scss */
+.header ul li {
+  margin: 20px;
+}
+/* line 12, ../sass/_header.scss */
+.header ul li a {
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+/* line 19, ../sass/_header.scss */
+.header ul li a:hover {
+  color: #ea5387;
+}
+
+/* line 1, ../sass/_slides.scss */
+.slides_background {
+  height: 300px;
+  background-image: url("../image/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 9, ../sass/_slides.scss */
+.row {
+  display: flex;
+  font-size: 0;
+}
+/* line 13, ../sass/_slides.scss */
+.row .row_img {
+  width: 25%;
+}
+/* line 16, ../sass/_slides.scss */
+.row .row_img img {
+  width: 100%;
+  height: auto;
 }
