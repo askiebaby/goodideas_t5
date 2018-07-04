@@ -1,0 +1,206 @@
+/* line 1, ../sass/style.sass */
+.template {
+  width: 100%;
+  height: auto;
+  opacity: 0.2;
+  position: absolute;
+  top: -11px;
+  left: -8px;
+  display: none;
+}
+
+/* line 9, ../sass/style.sass */
+.header {
+  background-color: #3C0036;
+  color: white;
+}
+/* line 12, ../sass/style.sass */
+.header .headerlist {
+  max-width: 200px;
+  margin: 0 auto;
+  line-height: 3.5;
+  text-align: center;
+}
+/* line 18, ../sass/style.sass */
+.header .headerlist span {
+  padding: 0 10px;
+  letter-spacing: 2px;
+}
+/* line 21, ../sass/style.sass */
+.header .headerlist :nth-child(2) {
+  color: #F2287D;
+}
+
+/* line 23, ../sass/style.sass */
+.banner {
+  background-image: url(../image/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+/* line 30, ../sass/style.sass */
+.banner .bannerTitle {
+  padding-top: 10%;
+  margin-bottom: 28px;
+}
+/* line 34, ../sass/style.sass */
+.banner .bannerTitle h1 {
+  font-family: serif;
+  font-size: 6vw;
+  margin: 0;
+}
+/* line 38, ../sass/style.sass */
+.banner .bannerTitle span {
+  font-family: sans-serif;
+}
+/* line 40, ../sass/style.sass */
+.banner .bannerTitle h2 {
+  font-family: monospace;
+  letter-spacing: 8px;
+  font-size: 1.8vw;
+}
+/* line 44, ../sass/style.sass */
+.banner .bannerTitle h3 {
+  padding-top: 9%;
+  font-size: 1.5vw;
+  line-height: 1.5;
+  font-family: monospace;
+  padding-bottom: 26px;
+}
+/* line 50, ../sass/style.sass */
+.banner .bannerTitle .black-dot {
+  padding: 6px 0;
+}
+/* line 52, ../sass/style.sass */
+.banner .wandc {
+  background-color: #FF0032;
+  width: 28%;
+  margin: 0 auto;
+  padding: 23px 0;
+}
+/* line 57, ../sass/style.sass */
+.banner .wandc h3 {
+  font-size: 1.5vw;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 5px;
+  font-weight: 100;
+}
+
+/* line 64, ../sass/style.sass */
+.picwall :nth-child(1) {
+  position: relative;
+}
+
+/* line 67, ../sass/style.sass */
+.picwall img {
+  width: 100%;
+}
+/* line 70, ../sass/style.sass */
+.picwall .triangle {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 20px);
+  z-index: 1;
+  border-top: 20px solid #FF0032;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
+/* line 80, ../sass/style.sass */
+#design-box {
+  position: relative;
+  color: white;
+  background-color: #FF0032;
+  text-align: center;
+  font-size: 1.5vw;
+  padding: 13px 0;
+  margin-top: 115px;
+  letter-spacing: 3px;
+  font-weight: 200;
+}
+
+/* line 90, ../sass/style.sass */
+#design-box::after {
+  content: " ";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 99%;
+  left: calc(50% - 20px);
+  z-index: 1;
+  border-top: 20px solid #FF0032;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
+/* line 101, ../sass/style.sass */
+#meet-folk {
+  color: #FF0032;
+  text-align: center;
+  margin: 50px 0;
+  font-size: 2.1vw;
+  letter-spacing: 3px;
+  font-family: serif;
+}
+
+/* line 109, ../sass/style.sass */
+#designer-img {
+  width: 63%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 114, ../sass/style.sass */
+#designer-img img {
+  width: 100%;
+}
+/* line 116, ../sass/style.sass */
+#designer-img .designer-name {
+  padding: 18px 0;
+  margin-bottom: 27px;
+}
+/* line 119, ../sass/style.sass */
+#designer-img .designer-name h1 {
+  color: #FF0032;
+  margin: 0;
+  font-family: serif;
+  font-size: 3vw;
+  letter-spacing: 7px;
+}
+/* line 125, ../sass/style.sass */
+#designer-img .designer-name span {
+  letter-spacing: 1px;
+}
+
+/* line 127, ../sass/style.sass */
+#contact {
+  text-align: center;
+  margin-bottom: 55px;
+}
+/* line 130, ../sass/style.sass */
+#contact button {
+  background-color: black;
+  color: white;
+  font-weight: 200;
+  font-size: 1.5vw;
+  width: 17vw;
+  font-size: 1.5vw;
+  padding: 6px 0;
+}
+
+/* line 138, ../sass/style.sass */
+#intro-us-bg {
+  background-image: url(../image/bg.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  margin: 0 -15px;
+}
+/* line 143, ../sass/style.sass */
+#intro-us-bg #intro-us {
+  max-width: 990px;
+  margin: 0 auto;
+  color: white;
+}
