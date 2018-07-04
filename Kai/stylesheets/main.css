@@ -92,24 +92,94 @@ table {
 
 /* line 1, ../sass/_slides.scss */
 .slides_background {
-  height: 300px;
   background-image: url("../image/banner.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+/* line 11, ../sass/_slides.scss */
+.slides_background h1 {
+  font-size: 48px;
+  margin-top: 150px;
+}
+/* line 16, ../sass/_slides.scss */
+.slides_background h2 {
+  font-size: 32px;
+  margin-bottom: 150px;
+}
+/* line 21, ../sass/_slides.scss */
+.slides_background p {
+  font-size: 24px;
+}
+/* line 25, ../sass/_slides.scss */
+.slides_background .slides_slgon {
+  margin: 30px auto 0;
+  width: 200px;
+  font-size: 24px;
+  padding: 20px 60px;
+  background-color: #d93b6d;
+  font-family: sans-serif;
+  position: relative;
+}
+/* line 32, ../sass/_slides.scss */
+.slides_background .slides_slgon::before {
+  position: absolute;
+  margin: 0 auto;
+  bottom: -40px;
+  left: 50%;
+  content: '';
+  border-top: 20px solid #d93b6d;
+  border-bottom: 20px solid transparent;
+  border-left: 24px solid transparent;
+  border-right: 24px solid transparent;
+  z-index: 1;
 }
 
-/* line 9, ../sass/_slides.scss */
+/* line 38, ../sass/_slides.scss */
 .row {
   display: flex;
   font-size: 0;
 }
-/* line 13, ../sass/_slides.scss */
+/* line 42, ../sass/_slides.scss */
 .row .row_img {
   width: 25%;
 }
-/* line 16, ../sass/_slides.scss */
+/* line 45, ../sass/_slides.scss */
 .row .row_img img {
   width: 100%;
   height: auto;
+  opacity: 1.0;
+}
+/* line 50, ../sass/_slides.scss */
+.row .row_img img:hover {
+  opacity: 0.5;
+}
+
+/* line 2, ../sass/_lecturer.scss */
+.lecturer h1 {
+  text-align: center;
+  color: #fff;
+  margin-top: 100px;
+  padding: 15px 0;
+  font-size: 24px;
+  background-color: #d93b6d;
+  font-family: sans-serif;
+  position: relative;
+}
+/* line 10, ../sass/_lecturer.scss */
+.lecturer h1::before {
+  position: absolute;
+  margin: 0 auto;
+  bottom: -40px;
+  left: 50%;
+  content: '';
+  border-top: 20px solid #d93b6d;
+  border-bottom: 20px solid transparent;
+  border-left: 24px solid transparent;
+  border-right: 24px solid transparent;
+  z-index: 1;
 }

@@ -1,9 +1,38 @@
 .slides_background {
-  height: 300px;
   background-image: url("../image/banner.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  font-family: sans-serif;
+
+  h1 {
+    font-size: 48px;
+    margin-top: 150px;
+  }
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 150px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+  .slides_slgon {
+    margin: 30px auto 0;
+    width: 200px;
+    font-size: 24px;
+    padding: 20px 60px;
+    @include slogon;
+
+    &::before {
+      @include arrow;
+    }
+  }
 }
 
 .row {
@@ -16,6 +45,11 @@
     img {
       width: 100%;
       height: auto;
+      opacity: 1.0;
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
 }
