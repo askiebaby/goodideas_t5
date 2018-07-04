@@ -101,21 +101,21 @@ table {
   overflow: hidden;
   font-family: sans-serif;
 }
-/* line 11, ../sass/_slides.scss */
+/* line 5, ../sass/_slides.scss */
 .slides_background h1 {
   font-size: 48px;
   margin-top: 150px;
 }
-/* line 16, ../sass/_slides.scss */
+/* line 10, ../sass/_slides.scss */
 .slides_background h2 {
   font-size: 32px;
   margin-bottom: 150px;
 }
-/* line 21, ../sass/_slides.scss */
+/* line 15, ../sass/_slides.scss */
 .slides_background p {
   font-size: 24px;
 }
-/* line 25, ../sass/_slides.scss */
+/* line 19, ../sass/_slides.scss */
 .slides_background .slides_slgon {
   margin: 30px auto 0;
   width: 200px;
@@ -125,7 +125,7 @@ table {
   font-family: sans-serif;
   position: relative;
 }
-/* line 32, ../sass/_slides.scss */
+/* line 26, ../sass/_slides.scss */
 .slides_background .slides_slgon::before {
   position: absolute;
   margin: 0 auto;
@@ -139,22 +139,22 @@ table {
   z-index: 1;
 }
 
-/* line 38, ../sass/_slides.scss */
+/* line 32, ../sass/_slides.scss */
 .row {
   display: flex;
   font-size: 0;
 }
-/* line 41, ../sass/_slides.scss */
+/* line 35, ../sass/_slides.scss */
 .row .row_img {
   width: 25%;
 }
-/* line 44, ../sass/_slides.scss */
+/* line 38, ../sass/_slides.scss */
 .row .row_img img {
   width: 100%;
   height: auto;
   opacity: 1.0;
 }
-/* line 49, ../sass/_slides.scss */
+/* line 43, ../sass/_slides.scss */
 .row .row_img img:hover {
   opacity: 0.5;
 }
@@ -190,7 +190,7 @@ table {
 .lecturer p {
   color: #d93b6d;
   font-size: 32px;
-  margin: 50px 0;
+  margin-top: 50px;
   font-family: sans-serif;
 }
 /* line 23, ../sass/_lecturer.scss */
@@ -200,33 +200,100 @@ table {
 }
 /* line 26, ../sass/_lecturer.scss */
 .lecturer .row img {
+  margin-top: 50px;
   width: 100%;
 }
-/* line 30, ../sass/_lecturer.scss */
+/* line 31, ../sass/_lecturer.scss */
 .lecturer .row .row_null {
   width: 25%;
 }
-/* line 34, ../sass/_lecturer.scss */
+/* line 35, ../sass/_lecturer.scss */
 .lecturer .row .row_left {
   width: 25%;
   text-align: right;
 }
-/* line 39, ../sass/_lecturer.scss */
+/* line 40, ../sass/_lecturer.scss */
 .lecturer .row .row_right {
   width: 25%;
   text-align: left;
 }
-/* line 44, ../sass/_lecturer.scss */
+/* line 45, ../sass/_lecturer.scss */
 .lecturer .row h1 {
-  margin-top: 10px;
+  margin-top: 20px;
   text-align: center;
   font-size: 48px;
   color: #d93b6d;
 }
-/* line 51, ../sass/_lecturer.scss */
+/* line 52, ../sass/_lecturer.scss */
 .lecturer .row p {
   text-align: center;
   color: #000;
-  font-size: 24px;
+  font-size: 18px;
   margin: 0;
+}
+/* line 60, ../sass/_lecturer.scss */
+.lecturer .lecturer_button {
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  font-family: sans-serif;
+  width: 150px;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+/* line 1, ../sass/_intr.scss */
+.intr {
+  background-image: url("../image/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+/* line 5, ../sass/_intr.scss */
+.intr .row {
+  display: flex;
+  font-size: 0;
+}
+/* line 9, ../sass/_intr.scss */
+.intr .intr_info {
+  font-size: 20px;
+  width: 50%;
+}
+/* line 13, ../sass/_intr.scss */
+.intr .intr_info:last-child {
+  margin-top: 200px;
+}
+/* line 17, ../sass/_intr.scss */
+.intr .intr_info .intr_info_1 {
+  text-align: justify;
+  text-justify: inter-ideograph;
+  padding: 50px 100px 100px;
+}
+/* line 23, ../sass/_intr.scss */
+.intr .intr_info .intr_info_2 {
+  text-align: justify;
+  text-justify: inter-ideograph;
+  padding: 50px 100px 100px;
+}
+/* line 29, ../sass/_intr.scss */
+.intr .intr_info p {
+  font-size: 36px;
+  font-weight: bold;
+}
+/* line 34, ../sass/_intr.scss */
+.intr .intr_info h1 {
+  text-align: left;
+  font-size: 40px;
+}
+/* line 40, ../sass/_intr.scss */
+.intr .intr_button {
+  background-color: #fff;
+  color: #000;
+  width: 200px;
+  margin: 0 auto;
+  padding: 10px;
 }

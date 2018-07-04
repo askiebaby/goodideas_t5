@@ -1,0 +1,47 @@
+.intr {
+  background-image: url("../image/bg.jpg");
+  @include background_style;
+
+  .row {
+    @include row;
+  }
+
+  .intr_info {
+    font-size: 20px;
+    width: 50%;
+
+    &:last-child {
+      margin-top: 200px;
+    }
+
+    .intr_info_1 {
+      text-align: justify;
+      text-justify: inter-ideograph;
+      padding: 50px 100px 100px;
+    }
+
+    .intr_info_2 {
+      text-align: justify;
+      text-justify: inter-ideograph;
+      padding: 50px 100px 100px;
+    }
+
+    p {
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    h1 {
+      text-align: left;
+      font-size: 40px;
+    }
+  }
+
+  .intr_button {
+    background-color: #fff;
+    color: #000;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+}

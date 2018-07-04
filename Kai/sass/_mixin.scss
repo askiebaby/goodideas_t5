@@ -22,3 +22,12 @@
   border-right: 24px solid transparent;
   z-index: 1;
 }
+@mixin background_style {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  font-family: sans-serif;
+}

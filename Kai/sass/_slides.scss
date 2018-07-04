@@ -1,12 +1,6 @@
 .slides_background {
   background-image: url("../image/banner.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  color: #fff;
-  overflow: hidden;
-  font-family: sans-serif;
+  @include background_style;
 
   h1 {
     font-size: 48px;
