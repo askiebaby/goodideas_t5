@@ -36,8 +36,7 @@
 }
 
 .row {
-  display: flex;
-  font-size: 0;
+  @include row;
 
   .row_img {
     width: 25%;

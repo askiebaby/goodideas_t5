@@ -1,6 +1,10 @@
 @mixin main_font_color {
   color: #d93b6d;
 }
+@mixin row {
+  display: flex;
+  font-size: 0;
+}
 @mixin slogon {
   background-color: #d93b6d;
   font-family: sans-serif;
