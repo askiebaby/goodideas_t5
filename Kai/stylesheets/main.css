@@ -292,31 +292,30 @@ table {
 /* line 17, ../sass/_intr.scss */
 .intr .intr_info .intr_info_1 {
   text-align: justify;
-  text-justify: inter-ideograph;
   padding: 50px 100px 100px;
 }
-/* line 23, ../sass/_intr.scss */
+/* line 22, ../sass/_intr.scss */
 .intr .intr_info .intr_info_2 {
   text-align: justify;
   text-justify: inter-ideograph;
   padding: 50px 100px 100px;
 }
-/* line 29, ../sass/_intr.scss */
+/* line 28, ../sass/_intr.scss */
 .intr .intr_info p {
   margin: 20px 0;
   font-size: 18px;
   font-weight: bold;
 }
-/* line 35, ../sass/_intr.scss */
+/* line 34, ../sass/_intr.scss */
 .intr .intr_info h1 {
   text-align: left;
   font-size: 40px;
 }
-/* line 40, ../sass/_intr.scss */
+/* line 39, ../sass/_intr.scss */
 .intr .intr_info h2 {
   font-size: 36px;
 }
-/* line 45, ../sass/_intr.scss */
+/* line 44, ../sass/_intr.scss */
 .intr .intr_button {
   background-color: #fff;
   color: #000;
@@ -335,4 +334,21 @@ table {
 /* line 7, ../sass/_footer.scss */
 .footer span {
   color: #d93b6d;
+}
+
+@media screen and (max-width: 1024px) {
+  /* line 55, ../sass/_intr.scss */
+  .intr .intr_info .intr_info_1 {
+    padding: 50px;
+  }
+  /* line 59, ../sass/_intr.scss */
+  .intr .intr_info .intr_info_2 {
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 75, ../sass/_slides.scss */
+  .row .row_img {
+    width: 33.333333333333333333%;
+  }
 }

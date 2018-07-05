@@ -16,7 +16,6 @@
 
     .intr_info_1 {
       text-align: justify;
-      text-justify: inter-ideograph;
       padding: 50px 100px 100px;
     }
 
@@ -48,5 +47,18 @@
     width: 200px;
     margin: 50px auto;
     padding: 10px;
+  }
+}
+@mixin media_intr_1024() {
+  .intr {
+    .intr_info {
+      .intr_info_1 {
+        padding: 50px;
+      }
+
+      .intr_info_2 {
+        padding: 50px;
+      }
+    }
   }
 }
