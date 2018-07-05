@@ -22,6 +22,7 @@
 
   .row {
     justify-content: center;
+    font-size: 0;
 
     img {
       margin-top: 50px;
@@ -29,11 +30,13 @@
     }
 
     .row_left {
+      display: inline-block;
       width: 25%;
       text-align: right;
     }
 
     .row_right {
+      display: inline-block;
       width: 25%;
       text-align: left;
     }
@@ -61,5 +64,53 @@
     width: 150px;
     margin: 50px auto;
     padding: 10px;
+  }
+}
+@mixin lecturer_in_768() {
+  .lecturer {
+    .title {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 24px;
+    }
+
+    .row {
+      .row_left {
+        width: 50%;
+      }
+
+      .row_right {
+        width: 50%;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      p {}
+    }
+  }
+}
+@mixin lecturer_in_540() {
+  .lecturer {
+    .row {
+      .row_left {
+        width: 95%;
+      }
+
+      .row_right {
+        width: 95%;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
   }
 }

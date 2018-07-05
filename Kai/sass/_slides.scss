@@ -36,11 +36,11 @@
 }
 
 .row {
-  @include row;
+  font-size: 0;
 
   .row_img {
+    display: inline-block;
     width: 25%;
-    position: relative;
 
     p {
       text-align: center;
@@ -73,7 +73,7 @@
 @mixin row_img_in_768() {
   .row {
     .row_img {
-      width: 33.333333333333333333%;
+      width: 50%;
     }
   }
 }
