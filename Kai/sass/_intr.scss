@@ -3,41 +3,37 @@
   @include background_style;
 
   .row {
-    @include row;
-  }
+    display: inline-flex;
 
-  .intr_info {
-    font-size: 20px;
-    width: 50%;
+    .intr_info {
+      &:last-child {
+        margin-top: 200px;
+      }
 
-    &:last-child {
-      margin-top: 200px;
-    }
+      .intr_info_1 {
+        text-align: justify;
+        padding: 50px 100px 100px;
+      }
 
-    .intr_info_1 {
-      text-align: justify;
-      padding: 50px 100px 100px;
-    }
+      .intr_info_2 {
+        text-align: justify;
+        padding: 50px 100px 100px;
+      }
 
-    .intr_info_2 {
-      text-align: justify;
-      text-justify: inter-ideograph;
-      padding: 50px 100px 100px;
-    }
+      p {
+        margin: 20px 0;
+        font-size: 18px;
+        font-weight: bold;
+      }
 
-    p {
-      margin: 20px 0;
-      font-size: 18px;
-      font-weight: bold;
-    }
+      h1 {
+        text-align: left;
+        font-size: 40px;
+      }
 
-    h1 {
-      text-align: left;
-      font-size: 40px;
-    }
-
-    h2 {
-      font-size: 36px;
+      h2 {
+        font-size: 36px;
+      }
     }
   }
 
@@ -49,16 +45,24 @@
     padding: 10px;
   }
 }
-@mixin media_intr_1024() {
+@mixin intr_in_1024() {
   .intr {
-    .intr_info {
-      .intr_info_1 {
-        padding: 50px;
-      }
+    .row {
+      .intr_info {
+        .intr_info_1 {
+          padding: 50px;
+        }
 
-      .intr_info_2 {
-        padding: 50px;
+        .intr_info_2 {
+          padding: 50px;
+        }
       }
+    }
+
+    .intr_button {
+      margin: 20px auto;
     }
   }
 }
+@mixin intr_in_768() {}
+@mixin intr_in_540() {}

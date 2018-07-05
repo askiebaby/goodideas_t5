@@ -39,6 +39,7 @@
   font-size: 0;
 
   .row_img {
+    position: relative;
     display: inline-block;
     width: 25%;
 
@@ -74,6 +75,10 @@
   .row {
     .row_img {
       width: 50%;
+
+      p {
+        display: none;
+      }
     }
   }
 }

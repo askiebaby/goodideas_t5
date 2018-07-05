@@ -1,5 +1,5 @@
 @media screen and (max-width:1024px) {
-  @include media_intr_1024();
+  @include intr_in_1024();
 }
 @media screen and (max-width:768px) {
   @include row_img_in_768();
