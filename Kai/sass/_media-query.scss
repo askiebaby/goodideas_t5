@@ -4,6 +4,7 @@
 @media screen and (max-width:768px) {
   @include row_img_in_768();
   @include lecturer_in_768();
+  @include intr_in_768()
 }
 @media screen and (max-width:540px) {
   @include lecturer_in_540();

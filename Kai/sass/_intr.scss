@@ -10,11 +10,7 @@
         margin-top: 200px;
       }
 
-      .intr_info_1 {
-        text-align: justify;
-        padding: 50px 100px 100px;
-      }
-
+      .intr_info_1,
       .intr_info_2 {
         text-align: justify;
         padding: 50px 100px 100px;
@@ -49,10 +45,7 @@
   .intr {
     .row {
       .intr_info {
-        .intr_info_1 {
-          padding: 50px;
-        }
-
+        .intr_info_1,
         .intr_info_2 {
           padding: 50px;
         }
@@ -64,5 +57,21 @@
     }
   }
 }
-@mixin intr_in_768() {}
-@mixin intr_in_540() {}
+@mixin intr_in_768() {
+  .intr {
+    .row {
+      display: block;
+
+      .intr_info {
+        &:last-child {
+          margin-top: 0;
+        }
+
+        .intr_info_1,
+        .intr_info_2 {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
