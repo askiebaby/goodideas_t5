@@ -7,5 +7,7 @@
   @include intr_in_768()
 }
 @media screen and (max-width:540px) {
+  @include slides_in_540();
   @include lecturer_in_540();
+  @include footer_in_540();
 }

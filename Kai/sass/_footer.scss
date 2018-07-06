@@ -8,3 +8,8 @@
     @include main_font_color;
   }
 }
+@mixin footer_in_540() {
+  .footer {
+    font-size: 14px;
+  }
+}
