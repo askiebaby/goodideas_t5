@@ -98,7 +98,7 @@ table {
   background-position: center;
   text-align: center;
   color: #fff;
-  overflow: hidden;
+  overflow: auto;
   font-family: sans-serif;
 }
 /* line 5, ../sass/_slides.scss */
@@ -272,7 +272,7 @@ table {
   background-position: center;
   text-align: center;
   color: #fff;
-  overflow: hidden;
+  overflow: auto;
   font-family: sans-serif;
 }
 /* line 5, ../sass/_intr.scss */
