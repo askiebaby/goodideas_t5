@@ -21,6 +21,7 @@
   border-bottom: 20px solid transparent;
   border-left: 24px solid transparent;
   border-right: 24px solid transparent;
+  z-index: 1;
 }
 @mixin background_style {
   background-repeat: no-repeat;
@@ -28,6 +29,5 @@
   background-position: center;
   text-align: center;
   color: #fff;
-  overflow: auto;
   font-family: sans-serif;
 }

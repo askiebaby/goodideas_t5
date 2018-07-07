@@ -3,7 +3,7 @@
   @include background_style;
 
   .slides_title {
-    margin: 15% 0;
+    padding: 15% 0;
 
     h1 {
       font-size: 48px;
@@ -19,21 +19,22 @@
   }
 
   .slides_slgon {
+    position: absolute;
+    bottom: 100%;
     margin: 30px auto 0;
     width: 30%;
     font-size: 24px;
     padding: 20px 60px;
     @include slogon;
+
+    &::after {
+      @include arrow;
+    }
   }
 }
 
 .slides_img {
   position: relative;
-
-  &::after {
-    @include arrow;
-    top: 0;
-  }
 }
 
 .row {
