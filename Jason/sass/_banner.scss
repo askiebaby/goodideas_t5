@@ -24,10 +24,12 @@
 
 .banner__content--layout {
     width: 320px;
-    margin: 0 auto 20px;
+    margin: 0 auto;
 }
-.banner__dot-vertical {
-    
+.banner__dot--vertical {
+    width: 10px;
+    position: relative;
+    margin: 20px auto;
 }
 
 .banner__dot {
@@ -35,6 +37,5 @@
     height: 10px;
     background-color: #ffffff;
     border-radius: 50%;
-    position: relative;
-    margin: 0 auto 15px;
+    
 }
