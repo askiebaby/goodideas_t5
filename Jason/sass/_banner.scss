@@ -1,0 +1,16 @@
+#banner {
+    text-align: center;
+}
+.banner--bg {
+    background: url(../images/banner.png);
+    position: relative;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+
+h1 span {
+    font-style: italic;
+}

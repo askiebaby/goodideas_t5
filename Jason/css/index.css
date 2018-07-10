@@ -11,6 +11,10 @@ a:hover {
   text-decoration: none;
 }
 
+body {
+  color: white;
+}
+
 /* navigation內的對齊(flex) */
 #navigation ul {
   display: flex;
@@ -25,13 +29,31 @@ a:hover {
 }
 
 /* 修改li的顏色 */
-.navigation__li--color {
+.navigation__li--color a {
   color: white;
 }
 
-.navigation__li--color:hover {
+.navigation__li--color a:hover {
   color: #ea334e;
   cursor: pointer;
+}
+
+#banner {
+  text-align: center;
+}
+
+.banner--bg {
+  background: url(../images/banner.png);
+  position: relative;
+}
+
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 700;
+}
+
+h1 span {
+  font-style: italic;
 }
 
 /*# sourceMappingURL=index.css.map */

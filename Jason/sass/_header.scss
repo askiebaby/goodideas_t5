@@ -11,10 +11,10 @@
     flex-basis: 10%;
 }
 /* 修改li的顏色 */
-.navigation__li--color {
+.navigation__li--color a {
     color: $main-color;
 }
-.navigation__li--color:hover {
+.navigation__li--color a:hover {
     color: $sub-color;
     cursor: pointer;
 }
