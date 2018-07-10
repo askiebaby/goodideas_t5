@@ -21,69 +21,62 @@ body {
 }
 
 /* navigation內的對齊(flex) */
-#navigation ul {
+#navigation .navigation__unlist--layout {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 70px;
   background-color: #310c34;
+  /* 修改li的顏色 */
 }
-
-.navigation__home--flex {
+#navigation .navigation__unlist--layout .navigation__home--flex {
   flex-basis: 10%;
 }
-
-/* 修改li的顏色 */
-.navigation__li--color a {
+#navigation .navigation__unlist--layout .navigation__li--color a {
   color: white;
 }
-
-.navigation__li--color a:hover {
+#navigation .navigation__unlist--layout .navigation__li--color a:hover {
   color: #ea334e;
   cursor: pointer;
 }
 
 #banner {
   text-align: center;
-}
-
-.banner--bg {
   background: url(../images/banner.png) 0 0/cover no-repeat;
   position: relative;
+  /* banner title */
+  /* dot's style */
 }
-
-.banner__title--font {
+#banner .banner__title--layout {
+  padding: 80px 0;
+}
+#banner .banner__title--layout .banner__title--font {
   font-family: fantasy;
   font-weight: 700;
   text-transform: uppercase;
 }
-
-.banner__title--font span {
+#banner .banner__title--layout .banner__title--font span {
   font-family: Comic Sans MS;
   font-style: italic;
   text-transform: none;
 }
-
-.banner__title--layout {
-  padding: 80px 0;
-}
-
-.banner__content--layout {
+#banner .banner__content--layout {
   width: 320px;
   margin: 0 auto;
 }
-
-.banner__dot--vertical {
+#banner .banner__dot--horizontal {
   width: 10px;
   position: relative;
   margin: 20px auto;
 }
-
-.banner__dot {
+#banner .banner__dot--horizontal .banner__dot {
   width: 10px;
   height: 10px;
   background-color: #ffffff;
   border-radius: 50%;
+}
+#banner .banner__dot--horizontal .banner__dot--layout {
+  margin: 15px 0;
 }
 
 /*# sourceMappingURL=index.css.map */
