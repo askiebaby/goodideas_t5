@@ -18,13 +18,13 @@
     }
     .banner__content--layout {
         width: 320px;
-        margin: 0 auto;
+        @include hori-align;
     }
     /* dot's style */
     .banner__dot--horizontal {
         width: 10px;
         position: relative;
-        margin: 20px auto;
+        @include hori-align(20px, 20px);
         .banner__dot {
             width: 10px;
             height: 10px;
@@ -32,7 +32,7 @@
             border-radius: 50%;
         }
         .banner__dot--layout {
-            margin: 15px 0;
+            @include hori-align(15px, 15px);
         }
     }
     
