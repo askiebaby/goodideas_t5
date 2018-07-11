@@ -1,3 +1,28 @@
+@mixin buttons($bgcolor,$fontcolor)
+	background-color: $bgcolor
+	color: $fontcolor
+	font-weight: 200
+	font-size: 1.2vw
+	width: 17vw
+	padding: 10px 0
+@mixin size($point)
+	@if $point == pad
+		@media screen and (min-width: 768px) and (max-width: 1199px)
+			@content
+	@else if $point == mobile
+		@media screen and (min-width: 300px) and (max-width: 767px)
+			@content
+%all-triangle
+	width: 0px
+	height: 0px
+	left: calc(50% - 20px)
+	z-index: 1
+	border-top: 20px solid #FF0032
+	border-left: 20px solid transparent
+	border-right: 20px solid transparent
+@mixin triangleAttr($top)
+	top: $top
+	position: absolute
 .template
 	width: 100%
 	height: auto
@@ -21,64 +46,57 @@
 	.headerlist :nth-child(2)
 		color: #F2287D
 .banner
-	background-image: url(../image/banner.png) 
-	background-repeat: no-repeat 
+	background-image: url(../image/banner.png)
+	background-repeat: no-repeat
 	background-size: cover
 	// padding-top: 50%
 	color: white
 	text-align: center
-	.bannerTitle
-		padding-top: 10%
-		margin-bottom: 28px
-		// outline: solid
-		h1
-			font-family: serif
-			font-size: 6vw
-			margin: 0
-		span
-			font-family: sans-serif
-		h2
-			font-family: monospace
-			letter-spacing: 8px
-			font-size: 1.8vw
-		h3
-			padding-top: 9%
-			font-size: 1.5vw
-			line-height: 1.5
-			font-family: monospace
-			padding-bottom: 26px
-		.black-dot
-			padding: 6px 0
-	.wandc
-		background-color: #FF0032
-		width: 28%
-		margin: 0 auto
-		padding: 23px 0
-		h3
-			font-size: 1.5vw
-			line-height: 1.5
-			margin: 0
-			letter-spacing: 5px
-			font-weight: 100
+.bannerTitle
+	padding-top: 10%
+	margin-bottom: 36px
+	// outline: solid
+	h1
+		font-family: serif
+		font-size: 6vw
+		margin: 0
+	span
+		font-family: sans-serif
+	h2
+		font-family: monospace
+		letter-spacing: 8px
+		font-size: 1.8vw
+	h3
+		padding-top: 9%
+		font-size: 1.5vw
+		line-height: 1.5
+		font-family: monospace
+		padding-bottom: 26px
+	.black-dot
+		padding: 6px 0
+.wandc
+	background-color: #FF0032
+	width: 28%
+	margin: 0 auto
+	padding: 23px 0
+	h3
+		font-size: 1.5vw
+		line-height: 1.5
+		margin: 0
+		letter-spacing: 5px
+		font-weight: 100
 
 .picwall :nth-child(1)
-	position: relative 
+	position: relative
 .picwall
 	img
 		width: 100%
 		// visibility: hidden
 	.triangle
-		width: 0px
-		height: 0px
-		position: absolute
-		top: 0
-		left: calc(50% - 20px)
-		z-index: 1
-		border-top: 20px solid #FF0032
-		border-left: 20px solid transparent
-		border-right: 20px solid transparent
+		+triangleAttr(0)
+		@extend %all-triangle
 #design-box
-	position: relative 
+	position: relative
 	color: white
 	background-color: #FF0032
 	text-align: center
@@ -89,21 +107,14 @@
 	font-weight: 200
 #design-box::after
 	content: " "
-	width: 0px
-	height: 0px
-	position: absolute
-	top: 99%
-	left: calc(50% - 20px)
-	z-index: 1
-	border-top: 20px solid #FF0032
-	border-left: 20px solid transparent
-	border-right: 20px solid transparent
+	+triangleAttr(99%)
+	@extend %all-triangle
 #meet-folk
 	color: #FF0032
 	text-align: center
 	// outline: solid
 	margin: 50px 0
-	font-size: 2.1vw
+	font-size: 30px
 	letter-spacing: 3px
 	font-family: serif
 #designer-img
@@ -120,27 +131,74 @@
 			color: #FF0032
 			margin: 0
 			font-family: serif
-			font-size: 3vw
+			font-size: 45px
 			letter-spacing: 7px
 		span
 			letter-spacing: 1px
 #contact
 	text-align: center
 	margin-bottom: 55px
+	margin-top: 4px
 	button
-		background-color: black
-		color: white
-		font-weight: 200
-		font-size: 1.5vw
-		width: 17vw
-		font-size: 1.5vw
-		padding: 6px 0
+		+buttons(black,white)
 #intro-us-bg
-	background-image: url(../image/bg.jpg) 
-	background-repeat: repeat 
+	background-image: url(../image/bg.jpg)
+	background-repeat: no-repeat
 	background-size: cover
+	background-position: center
 	margin: 0 -15px
+	// padding-top: 100vw
 	#intro-us
 		max-width: 990px
 		margin: 0 auto
 		color: white
+		padding-top: 80px
+		h1
+			font-weight: 200
+			letter-spacing: 6px
+			font-family: serif
+			font-size: 45px
+		#left
+			padding: 0 80px 0 0
+			+size(mobile)
+				padding: 0 15px
+			// outline: solid
+			#dot-horizontal
+				margin: 115px 0 61px
+				text-align: center
+				div
+					display: inline-block
+					margin: 0 10px
+					background: white
+					width: 10px
+					height: 10px
+					border-radius: 50%
+		#right
+			padding-left: 80px
+			padding-top: 290px
+			+size(mobile)
+				padding: 200px 15px 0
+			// outline: solid
+			// align-self: flex-end
+			#dot-horizontal
+				text-align: center
+				margin: 96px 0 61px
+				div
+					display: inline-block
+					margin: 0 10px
+					background: white
+					width: 10px
+					height: 10px
+					border-radius: 50%
+	#back-to-top
+		text-align: center
+		margin: 140px 0 0
+		padding-bottom: 25px
+		button
+			+buttons(white,black)
+#footer
+	text-align: center
+	line-height: 7
+	letter-spacing: 2.5px
+	a
+		color: #F2287D
