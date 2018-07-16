@@ -51,9 +51,10 @@
             color: $main-color;
             width: 180px;
             margin-bottom: 50px;
+            line-height: 2;
         }
     }
-    @media (min-width:576px) {
+    @media (min-width: 576px) {
         .folks__container {
             width: 64%;
             margin: 0 auto;
