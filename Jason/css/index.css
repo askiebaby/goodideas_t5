@@ -245,12 +245,23 @@ body {
   background-color: black;
   color: white;
   width: 180px;
+  margin-bottom: 50px;
 }
 @media (min-width: 576px) {
   #folks .folks__container {
     width: 64%;
     margin: 0 auto;
   }
+}
+
+.our-info__background {
+  background: url(../images/sea-horse-bg.jpg) 0 0/cover no-repeat fixed;
+}
+.our-info__background .container {
+  padding-top: 100px;
+}
+.our-info__background .container p {
+  margin-top: 16px;
 }
 
 /*# sourceMappingURL=index.css.map */
