@@ -67,7 +67,9 @@ body {
 #banner .banner__dot--horizontal {
   width: 10px;
   position: relative;
-  margin: 20px auto 20px;
+  margin: 30px auto 0;
+  padding-bottom: 130px;
+  /* padding-bottom後面的值隨下方.banner__work-and-clients--absolute的height value */
 }
 #banner .banner__dot--horizontal .banner__dot {
   width: 10px;
@@ -77,6 +79,33 @@ body {
 }
 #banner .banner__dot--horizontal .banner__dot--layout {
   margin: 15px auto 15px;
+}
+#banner .banner__work-and-clients--absolute {
+  position: relative;
+  margin: 0 auto 0;
+  width: 300px;
+  height: 100px;
+  background-color: #ea334e;
+}
+#banner .banner__work-and-clients--absolute .banner__work-and-clients--font {
+  line-height: 100px;
+  font-size: 24px;
+  letter-spacing: 6px;
+}
+#banner::after {
+  content: "";
+  border-top: solid #ea334e 24px;
+  border-right: solid transparent 24px;
+  border-bottom: solid transparent 0;
+  border-left: solid transparent 24px;
+  /* 參數：border的(上顏色,下顏色,上長度,右長度,下長度,左長度) */
+  position: absolute;
+  bottom: -24px;
+  left: calc(50% - 12px);
+}
+
+#pics img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */

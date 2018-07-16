@@ -1,3 +1,10 @@
 @mixin hori-align ($top: 0, $bottom: 0) {
     margin: $top auto $bottom;
 }
+
+@mixin triangle-y ($color-top, $color-bottom, $leight-top, $leight-right, $leight-bottom, $leight-left) {
+    border-top: solid $color-top $leight-top;
+    border-right: solid transparent $leight-right;
+    border-bottom: solid $color-bottom $leight-bottom;
+    border-left: solid transparent $leight-left;
+}
