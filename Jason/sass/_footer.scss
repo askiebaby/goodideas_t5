@@ -1,0 +1,10 @@
+.footer__copyright {
+    text-align: center;
+    line-height: 100px;
+    color: rgb(43, 43, 43);
+    background-color: gray;
+    letter-spacing: 2px;
+    a {
+        color: $sub-color;
+    }
+}

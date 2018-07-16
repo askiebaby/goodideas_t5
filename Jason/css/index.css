@@ -259,7 +259,7 @@ body {
   background: url(../images/sea-horse-bg.jpg) 0 0/cover no-repeat fixed;
 }
 .our-info__background .container {
-  padding: 100px 0;
+  padding: 100px 0 30px;
 }
 .our-info__background .container p {
   margin-top: 16px;
@@ -289,13 +289,24 @@ body {
 }
 .our-info__background .container .our-info__back-to-top {
   width: 180px;
-  margin: 30px auto 0;
+  margin: 100px auto 0;
   background-color: white;
   text-align: center;
 }
 .our-info__background .container .our-info__back-to-top a {
   line-height: 2;
   color: black;
+}
+
+.footer__copyright {
+  text-align: center;
+  line-height: 100px;
+  color: #2b2b2b;
+  background-color: gray;
+  letter-spacing: 2px;
+}
+.footer__copyright a {
+  color: #ea334e;
 }
 
 /*# sourceMappingURL=index.css.map */
