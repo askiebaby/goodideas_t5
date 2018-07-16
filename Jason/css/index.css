@@ -83,7 +83,7 @@ body {
 #banner .banner__dot--vertical .banner__dot {
   width: 10px;
   height: 10px;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 50%;
 }
 #banner .banner__dot--vertical .banner__dot--layout {
@@ -271,12 +271,20 @@ body {
 .our-info__background .container .our-info__dot--horizontal .our-info__dot {
   width: 10px;
   height: 10px;
-  background-color: #ffffff;
+  background-color: white;
   border-radius: 50%;
   margin-right: 30px;
 }
 .our-info__background .container .our-info__dot--horizontal .our-info__dot:last-child {
   margin-right: 0;
+}
+@media (min-width: 768px) {
+  .our-info__background .container .our-info__who-we-are {
+    padding-top: 260px;
+  }
+  .our-info__background .container .our-info__dot--rwd {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
