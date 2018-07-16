@@ -20,6 +20,11 @@ p {
   margin: 0;
 }
 
+button {
+  border-style: none;
+  background-color: white;
+}
+
 body {
   color: white;
 }
@@ -235,6 +240,11 @@ body {
 }
 #folks .folks__container .folks__staff .folks__skills {
   color: #747474;
+}
+#folks .folks__container button {
+  background-color: black;
+  color: white;
+  width: 180px;
 }
 @media (min-width: 576px) {
   #folks .folks__container {

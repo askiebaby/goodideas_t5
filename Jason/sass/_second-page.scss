@@ -46,6 +46,11 @@
                 color: rgb(116, 116, 116);
             }
         }
+        button {
+            background-color: black;
+            color: $main-color;
+            width: 180px;
+        }
     }
     @media (min-width:576px) {
         .folks__container {
