@@ -8,3 +8,14 @@
     border-bottom: solid $color-bottom $leight-bottom;
     border-left: solid transparent $leight-left;
 }
+
+@mixin a-hover ($color: rgba(255, 255, 255,.5), $hover-color: rgba(255, 255, 255, 1)) {
+    a{
+        color: $color;
+        transition: all .5s ease-in-out;
+        &:hover {
+            color: $hover-color;
+        }
+    }
+
+}

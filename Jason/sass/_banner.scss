@@ -37,7 +37,7 @@
             @include hori-align(15px, 15px);
         }
     }
-    .banner__work-and-clients--absolute {
+    .banner__work-and-clients--relative {
         position: relative;
         @include hori-align;
         width: 300px;
@@ -48,6 +48,7 @@
             font-size: 24px;
             letter-spacing: 6px;
         }
+        @include a-hover;
     }
     &::after {
         content: "";
