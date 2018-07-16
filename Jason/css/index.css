@@ -97,10 +97,12 @@ body {
   letter-spacing: 6px;
 }
 #banner .banner__work-and-clients--relative a {
-  color: rgba(255, 255, 255, 0.5);
+  color: white;
+  opacity: .5;
   transition: all .5s ease-in-out;
 }
 #banner .banner__work-and-clients--relative a:hover {
+  opacity: 1;
   color: white;
 }
 #banner::after {
@@ -175,21 +177,23 @@ body {
 #second-page {
   position: relative;
 }
-#second-page .second-page__title--relative {
+#second-page .second-page__link--relative {
   position: relative;
   height: 60px;
   background-color: #ea334e;
 }
-#second-page .second-page__title--relative .second-page__title--font {
+#second-page .second-page__link--relative .second-page__link--font {
   line-height: 60px;
   letter-spacing: 2px;
   text-align: center;
 }
-#second-page .second-page__title--relative .second-page__title--font a {
-  color: rgba(255, 255, 255, 0.5);
+#second-page .second-page__link--relative .second-page__link--font a {
+  color: white;
+  opacity: .5;
   transition: all .5s ease-in-out;
 }
-#second-page .second-page__title--relative .second-page__title--font a:hover {
+#second-page .second-page__link--relative .second-page__link--font a:hover {
+  opacity: 1;
   color: white;
 }
 #second-page::after {
@@ -203,6 +207,40 @@ body {
   bottom: -24px;
   left: calc(50% - 24px);
   z-index: 1;
+}
+
+#folks {
+  margin-top: 50px;
+}
+#folks .folks__title {
+  font-size: 36px;
+  color: #ea334e;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#folks .folks__container {
+  width: 100%;
+  text-align: center;
+}
+#folks .folks__container .folks__staff {
+  margin-bottom: 20px;
+}
+#folks .folks__container .folks__staff img {
+  width: 100%;
+}
+#folks .folks__container .folks__staff .folks__name {
+  color: #ea334e;
+  font-weight: 700;
+  font-size: 36px;
+}
+#folks .folks__container .folks__staff .folks__skills {
+  color: #747474;
+}
+@media (min-width: 576px) {
+  #folks .folks__container {
+    width: 64%;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
