@@ -21,7 +21,7 @@
         @include hori-align;
     }
     /* dot's style */
-    .banner__dot--horizontal {
+    .banner__dot--vertical{
         width: 10px;
         position: relative;
         @include hori-align(30px,0);

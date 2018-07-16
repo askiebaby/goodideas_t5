@@ -73,20 +73,20 @@ body {
   width: 320px;
   margin: 0 auto 0;
 }
-#banner .banner__dot--horizontal {
+#banner .banner__dot--vertical {
   width: 10px;
   position: relative;
   margin: 30px auto 0;
   padding-bottom: 130px;
   /* padding-bottom後面的值隨下方.banner__work-and-clients--absolute的height value */
 }
-#banner .banner__dot--horizontal .banner__dot {
+#banner .banner__dot--vertical .banner__dot {
   width: 10px;
   height: 10px;
   background-color: #ffffff;
   border-radius: 50%;
 }
-#banner .banner__dot--horizontal .banner__dot--layout {
+#banner .banner__dot--vertical .banner__dot--layout {
   margin: 15px auto 15px;
 }
 #banner .banner__work-and-clients--relative {
@@ -258,10 +258,25 @@ body {
   background: url(../images/sea-horse-bg.jpg) 0 0/cover no-repeat fixed;
 }
 .our-info__background .container {
-  padding-top: 100px;
+  padding: 100px 0;
 }
 .our-info__background .container p {
   margin-top: 16px;
+}
+.our-info__background .container .our-info__dot--horizontal {
+  display: flex;
+  width: 100px;
+  margin: 80px auto;
+}
+.our-info__background .container .our-info__dot--horizontal .our-info__dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+.our-info__background .container .our-info__dot--horizontal .our-info__dot:last-child {
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=index.css.map */
