@@ -202,29 +202,29 @@ body {
   opacity: 0.5;
 }
 
-#second-page {
+#folks {
   position: relative;
 }
-#second-page .second-page__link--relative {
+#folks .folks__link--relative {
   position: relative;
   height: 60px;
   background-color: #ea334e;
 }
-#second-page .second-page__link--relative .second-page__link--font {
+#folks .folks__link--relative .folks__link--font {
   line-height: 60px;
   letter-spacing: 2px;
   text-align: center;
 }
-#second-page .second-page__link--relative .second-page__link--font a {
+#folks .folks__link--relative .folks__link--font a {
   color: white;
   opacity: .5;
   transition: all .5s ease-in-out;
 }
-#second-page .second-page__link--relative .second-page__link--font a:hover {
+#folks .folks__link--relative .folks__link--font a:hover {
   opacity: 1;
   color: white;
 }
-#second-page::after {
+#folks::after {
   content: "";
   border-top: solid #ea334e 24px;
   border-right: solid transparent 24px;
@@ -232,19 +232,15 @@ body {
   border-left: solid transparent 24px;
   /* 參數：border的(上顏色,下顏色,上長度,右長度,下長度,左長度) */
   position: absolute;
-  bottom: -24px;
+  top: 60px;
   left: calc(50% - 24px);
   z-index: 1;
-}
-
-#folks {
-  margin-top: 50px;
 }
 #folks .folks__title {
   font-size: 36px;
   color: #ea334e;
   text-align: center;
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 #folks .folks__container {
   width: 100%;
