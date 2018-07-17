@@ -8,6 +8,7 @@
             line-height: 60px;
             letter-spacing: 2px;
             text-align: center;
+            font-family: $sub-font-family;
             @include a-hover;
         }
     }
@@ -42,6 +43,7 @@
             }
             .folks__skills{
                 color: rgb(116, 116, 116);
+                font-family: $sub-font-family;
             }
         }
         button {

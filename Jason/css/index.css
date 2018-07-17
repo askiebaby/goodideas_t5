@@ -28,10 +28,12 @@ button {
 #folks .folks__container button, .our-info__background .container .our-info__back-to-top {
   width: 180px;
   line-height: 2;
+  font-family: geometric;
 }
 
 body {
   color: white;
+  font-family: Georgia;
 }
 
 /* navigation內的對齊(flex) */
@@ -87,8 +89,8 @@ body {
   padding: 80px 0;
 }
 #banner .banner__title--layout .banner__title--font {
-  font-family: fantasy;
-  font-weight: 700;
+  font-family: Baskerville;
+  font-weight: 300;
   text-transform: uppercase;
 }
 #banner .banner__title--layout .banner__title--font span {
@@ -134,6 +136,7 @@ body {
 #pics .banner__work-and-clients--relative .banner__work-and-clients--font {
   line-height: 100px;
   font-size: 24px;
+  font-family: geometric;
   letter-spacing: 6px;
 }
 #pics .banner__work-and-clients--relative a {
@@ -219,6 +222,7 @@ body {
   line-height: 60px;
   letter-spacing: 2px;
   text-align: center;
+  font-family: geometric;
 }
 #folks .folks__link--relative .folks__link--font a {
   color: white;
@@ -264,6 +268,7 @@ body {
 }
 #folks .folks__container .folks__staff .folks__skills {
   color: #747474;
+  font-family: geometric;
 }
 #folks .folks__container button {
   background-color: black;
@@ -292,6 +297,7 @@ body {
 }
 .our-info__background .container p {
   margin-top: 16px;
+  font-family: geometric;
 }
 .our-info__background .container .our-info__dot--horizontal {
   display: flex;
@@ -332,6 +338,7 @@ body {
   line-height: 100px;
   color: #2b2b2b;
   background-color: gray;
+  font-family: geometric;
   letter-spacing: 2px;
 }
 .footer__copyright a {
