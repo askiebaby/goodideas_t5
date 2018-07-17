@@ -256,7 +256,14 @@ body {
 }
 
 .our-info__background {
-  background: url(../images/sea-horse-bg.jpg) 0 0/cover no-repeat fixed;
+  background: url(../images/sea-horse-bg.jpg) -270px center/cover no-repeat fixed;
+  padding: 0 10px;
+}
+@media (min-width: 768px) {
+  .our-info__background {
+    padding: 0;
+    background: url(../images/sea-horse-bg.jpg) center center/cover no-repeat fixed;
+  }
 }
 .our-info__background .container {
   padding: 100px 0 30px;
