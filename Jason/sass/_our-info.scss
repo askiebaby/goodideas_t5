@@ -34,13 +34,14 @@
             }
         }
         .our-info__back-to-top {
-            width: 180px;
+            @extend %btn-style;
             margin: 100px auto 0;
             background-color: white;
             text-align: center;
             a {
-            line-height: 2;
             color: black;
+            display: inline-block;
+            width: 100%;
             }
         }
     }

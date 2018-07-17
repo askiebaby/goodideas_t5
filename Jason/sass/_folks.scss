@@ -45,11 +45,10 @@
             }
         }
         button {
+            @extend %btn-style;
             background-color: black;
             color: $main-color;
-            width: 180px;
             margin-bottom: 50px;
-            line-height: 2;
         }
     }
     @media (min-width: 576px) {

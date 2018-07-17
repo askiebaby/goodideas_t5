@@ -25,6 +25,11 @@ button {
   background-color: white;
 }
 
+#folks .folks__container button, .our-info__background .container .our-info__back-to-top {
+  width: 180px;
+  line-height: 2;
+}
+
 body {
   color: white;
 }
@@ -263,9 +268,7 @@ body {
 #folks .folks__container button {
   background-color: black;
   color: white;
-  width: 180px;
   margin-bottom: 50px;
-  line-height: 2;
 }
 @media (min-width: 576px) {
   #folks .folks__container {
@@ -314,14 +317,14 @@ body {
   }
 }
 .our-info__background .container .our-info__back-to-top {
-  width: 180px;
   margin: 100px auto 0;
   background-color: white;
   text-align: center;
 }
 .our-info__background .container .our-info__back-to-top a {
-  line-height: 2;
   color: black;
+  display: inline-block;
+  width: 100%;
 }
 
 .footer__copyright {
