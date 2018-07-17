@@ -18,16 +18,16 @@
             letter-spacing: 6px;
         }
         @include a-hover;
+        &::before {
+            content: "";
+            @include triangle-y($sub-color, transparent, 24px, 24px, 0, 24px); // 參數：border的(上顏色,下顏色,上長度,右長度,下長度,左長度)
+            position: absolute;
+            bottom: -24px;
+            left: calc(50% - 24px);
+            z-index: 1;
+        }
     }
-    &::before {
-        content: "";
-        @include triangle-y($sub-color, transparent, 24px, 24px, 0, 24px);
-        // 參數：border的(上顏色,下顏色,上長度,右長度,下長度,左長度)
-        position: absolute;
-        top: 0;
-        left: calc(50% - 24px);
-        z-index: 1;
-    }
+    
 
     .pic__pic1 {
         background: url(../images/p1.jpg) center center /cover no-repeat;

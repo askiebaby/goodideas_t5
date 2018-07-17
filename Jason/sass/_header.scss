@@ -14,6 +14,7 @@
         /* 修改li的顏色 */
         .navigation__li--color a {
             color: $main-color;
+            font-family: $sub-font-family;
         }
         .navigation__li--color a:hover {
             color: $sub-color;

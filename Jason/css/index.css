@@ -50,6 +50,7 @@ body {
 }
 #navigation .navigation__unlist--layout .navigation__li--color a {
   color: white;
+  font-family: geometric;
 }
 #navigation .navigation__unlist--layout .navigation__li--color a:hover {
   color: #ea334e;
@@ -148,14 +149,14 @@ body {
   opacity: 1;
   color: white;
 }
-#pics::before {
+#pics .banner__work-and-clients--relative::before {
   content: "";
   border-top: solid #ea334e 24px;
   border-right: solid transparent 24px;
   border-bottom: solid transparent 0;
   border-left: solid transparent 24px;
   position: absolute;
-  top: 0;
+  bottom: -24px;
   left: calc(50% - 24px);
   z-index: 1;
 }
@@ -233,7 +234,7 @@ body {
   opacity: 1;
   color: white;
 }
-#folks::after {
+#folks .folks__link--relative::after {
   content: "";
   border-top: solid #ea334e 24px;
   border-right: solid transparent 24px;
