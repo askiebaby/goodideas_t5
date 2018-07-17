@@ -83,12 +83,12 @@
             opacity: 0;
             font-size: 36px;
             line-height: 200px;
+            background-color: red;
         }
     }
     .pics__pic--hover:hover {
-        opacity: 0.3;
         .pics__title {
-            opacity: 1;
+            opacity: 0.5;
         }
     }
 }
