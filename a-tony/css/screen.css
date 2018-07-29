@@ -1,0 +1,203 @@
+#nav {
+  background-color: #360836;
+}
+#nav nav button {
+  border: 1px solid white;
+}
+#nav nav button span {
+  background: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") no-repeat center;
+}
+#nav nav a {
+  text-transform: capitalize;
+  color: #FF5E8B;
+  transition: 0.5s;
+}
+#nav nav a:hover {
+  color: white;
+  transition: 1s;
+}
+
+#cover {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#cover img {
+  width: 100%;
+  height: auto;
+}
+#cover .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -140%);
+  outline: 1px solid blue;
+}
+#cover .title h1 {
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 60px;
+}
+#cover .title h1 span {
+  text-transform: lowercase;
+  font-family: 'lobster',cursive;
+}
+#cover .title p {
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  font-size: 24px;
+}
+#cover .dot-group {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  outline: 1px solid green;
+}
+#cover .dot-group .dot {
+  border: 5px solid white;
+  border-radius: 5px;
+  margin: 20px auto;
+  width: 0;
+}
+
+#client {
+  position: relative;
+}
+#client .title {
+  position: absolute;
+  top: -38px;
+  left: 0;
+  right: 0;
+  font-size: 19px;
+  font-family: sans-serif;
+  color: white;
+  letter-spacing: 0.2em;
+}
+#client .title h4 {
+  width: 250px;
+  background-color: #ff0048;
+  padding: 5px 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+#client .title .downarrow {
+  position: absolute;
+  bottom: -29px;
+  border-top: 30px solid #ff0048;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  z-index: 1;
+}
+#client .client {
+  position: relative;
+}
+#client .client img {
+  width: 100%;
+  height: auto;
+}
+#client .client .client-text {
+  outline: 1px solid red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 0;
+  padding: 20px;
+  text-align: center;
+  background-color: #ff0048;
+  opacity: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  transition: 0.5s;
+}
+#client .client .client-text:hover {
+  opacity: 1;
+  transition: 1s;
+}
+
+#members {
+  position: relative;
+}
+#members .title {
+  position: relative;
+  left: 0;
+  right: 0;
+}
+#members .title h4 {
+  background-color: #ff0048;
+  padding: 5px 20px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-size: 19px;
+  font-family: sans-serif;
+}
+#members .title .downarrow {
+  position: absolute;
+  bottom: -29px;
+  border-top: 30px solid #ff0048;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  z-index: 1;
+}
+#members .member {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #ff0048;
+  text-transform: capitalize;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#members .member h3 {
+  font-size: 24px;
+  padding: 40px;
+}
+#members .member .card {
+  border: none;
+}
+#members .member .card h5 {
+  font-size: 40px;
+}
+#members .member .card p {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: #000;
+}
+#members .member .contact {
+  padding: 10px 60px;
+  margin: 30px;
+  background-color: #000;
+  color: white;
+  font-size: 16px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+#members .member .contact:hover {
+  background-color: #ff0048;
+  transition: 0.5s;
+}
+
+footer {
+  background-color: rgba(170, 168, 168, 0.3);
+  text-align: center;
+}
+footer p {
+  padding: 30px;
+  margin-bottom: 0;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  font-family: sans-serif;
+}
