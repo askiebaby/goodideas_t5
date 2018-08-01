@@ -1,0 +1,12 @@
+#footer {
+    background-color: $bg-gray;
+    .copyright {
+        letter-spacing: 2px;
+        padding: 40px 10px;
+        text-align: center;
+
+        span {
+            color: $text-red;
+        }
+    }
+}

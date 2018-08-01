@@ -1,0 +1,30 @@
+a {
+    color: $text-white;
+}
+
+header {
+    background-color: $bg-purple-dark;
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        li {
+            padding: 15px;
+
+            a:hover {
+                color: $text-purple;
+            }
+
+            &:first-child {
+                justify-self: end;
+            }
+            &:last-child {
+                justify-self: start;
+            }
+        }
+
+        
+        
+
+
+    }
+}

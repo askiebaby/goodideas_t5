@@ -1,0 +1,78 @@
+@mixin img-fluid {
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@mixin section-heading {
+    .section-heading {
+        position: relative;
+        
+        .section-heading-text {
+            display: inline-block;
+            background-color: $bg-red;
+            color: $text-white;
+            font-size: 20px;
+        }
+
+        .arrow-down {
+            width: 0;
+            height: 0;
+            border-top: 18px solid $bg-red;
+            border-left: 18px solid transparent;
+            border-right: 18px solid transparent;
+            border-bottom: 18px solid transparent;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@mixin btn($bg-color, $text-color) {
+    .button {
+        text-align: center;
+
+        .btn {
+            display: inline-block;
+            background-color: $bg-color;
+            color: $text-color;
+            text-align: center;
+            padding: 15px 70px;
+        }
+    }
+}
+
+@mixin col-6 {
+    float: left;
+    width: 50%;
+    &:first-child {
+        padding-right: 75px;
+    }
+    &:last-child {
+        padding-left: 75px;
+    }
+}
+
+@mixin clearfix {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin dots {
+    .dots {
+        .dot {
+            background-color: #fff;
+            border-radius: 50%; 
+            display: inline-block;
+            height: 8px;
+            width: 8px;
+        }
+    }
+}
