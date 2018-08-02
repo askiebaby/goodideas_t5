@@ -64,12 +64,12 @@
   }
   button {
     @include X-center();
-    @include font($color:$color-less,$ff:sans-serif,$tt:uppercase);
+    @include font($color:$color-less,$font-family:sans-serif,$text-transform:uppercase);
     @include botton(10px, 50px, $color: $color-default);
     font-size: 16px;
     margin-bottom: 40px;
     transition: 0.5s;
-    @include hover($color:$color-default,$color-bg:$color-hot);
+    @include hover($color:$color-default,$color-background:$color-hot);
   }
 }
 

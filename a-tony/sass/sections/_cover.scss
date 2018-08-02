@@ -6,7 +6,7 @@
     @include X-center;
     padding-top: 20vh;
     h1 {
-      @include font($tt:uppercase,$fs:italic);
+      @include font($text-transform:uppercase,$font-style:italic);
       font-size: $header-size;
       span {
         text-transform: lowercase;

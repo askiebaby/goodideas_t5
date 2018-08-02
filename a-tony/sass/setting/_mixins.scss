@@ -8,17 +8,17 @@
   }
 }
 
-@mixin font($color:$color-default, $ff:$font-family-default, $tt:capitalize ,$fs:normal) {
+@mixin font($color:$color-default, $font-family:$font-family-default, $text-transform:capitalize ,$font-style:normal) {
   color: $color;
-  font-family: $ff;
-  text-transform: $tt;
-  font-style: $fs;
+  font-family: $font-family;
+  text-transform: $text-transform;
+  font-style: $font-style;
 }
 
-@mixin hover($color,$color-bg:transparent,$opacity:1){
+@mixin hover($color,$color-background:transparent,$opacity:1){
   &:hover {
     opacity: $opacity;
-    background-color: $color-bg;
+    background-color: $color-background;
     color: $color;
     transition:1s;
     cursor: pointer;
@@ -33,20 +33,20 @@
   width: 0;
 }
 
-@mixin dot($display:block,$radius:5px,$color:$color-default,$mY: 20px, $mX: auto){
+@mixin dot($display:block,$radius:5px,$color:$color-default,$margin-Y: 20px, $margin-X: auto){
   .dot {
     display: $display;
     border: $radius solid $color-default;
     border-radius: $radius;
-    margin: $mY $mX;
+    margin: $margin-Y $margin-X;
     width: 0;
   }
 }
 
-@mixin X-center($pY:0,$pX:0,$mY:0,$mX:auto,$ta:center){
-  padding: $pY $pX;
-  margin: $mY $mX;
-  text-align: $ta;
+@mixin X-center($padding-Y:0,$padding-X:0,$margin-Y:0,$margin-X:auto,$text-align:center){
+  padding: $padding-Y $padding-X;
+  margin: $margin-Y $margin-X;
+  text-align: $text-align;
 }
 
 @mixin overlay(){
@@ -65,8 +65,8 @@
   bottom: 100%;
 }
 
-@mixin botton($pY,$pX,$color:$color-hot,$border:none){
-  padding: $pY $pX;
+@mixin botton($padding-Y,$padding-X,$color:$color-hot,$border:none){
+  padding: $padding-Y $padding-X;
   background-color: $color;
   border:$border;
 }
@@ -89,5 +89,5 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-  @include dot($display:inline-block,$mX:20px);
+  @include dot($display:inline-block,$margin-X:20px);
 }
