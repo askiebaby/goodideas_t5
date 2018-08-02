@@ -1,0 +1,94 @@
+#mission {
+    background-image: url(../images/sea-horse-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 25px;
+
+    @include dots;
+    .dots {
+        text-align: center;
+        padding: 110px 0 50px 0;
+
+        .dot {
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    @include btn(#fff, #000);
+    .button {
+        padding-top: 120px;
+
+        .btn:hover {
+            background-color: $bg-red;
+            color: $text-white;
+        }
+    }
+    
+}
+
+.mission-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    @include clearfix;
+}
+
+.col-6 {
+    @include col-6
+    &:last-child {
+        padding-top: 300px;
+    }
+}
+
+.mission-item {
+    color: $text-white;
+
+    &:first-child::after {
+        content: '';
+    }
+
+    h2 {
+        font-family: $title-font;
+        font-weight: normal;
+        font-size: 40px;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 900px) {
+    #mission {
+        .dots {
+            display: block;
+        }
+    }
+
+    .col-6 {
+        float: none;
+        margin: 0 auto;
+        width: 80%;
+
+        &:first-child, &:last-child {
+            padding: 0;
+        }
+    }   
+}
+
+@media (max-width: 480px) {
+    .col-6 {
+        width: 90%;
+    }
+
+    .mission-item {
+        h2 {
+            font-size: 28px;
+        }
+    }
+}
