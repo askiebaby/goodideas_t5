@@ -1,0 +1,12 @@
+#nav {
+  background-color: $bg-nav;
+  nav {
+    @include collapse-nav-btn;
+    a {
+      @include font();
+      transition: 0.5s;
+
+      @include hover($color-hot);
+    }
+  }
+}

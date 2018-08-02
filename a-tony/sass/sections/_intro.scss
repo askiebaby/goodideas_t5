@@ -1,0 +1,110 @@
+
+@import 'setting/mixins';
+
+#intro {
+  background: url(../img/bg.jpg) no-repeat center;
+  background-size: cover;
+  min-height:960px;
+  text-align: center;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: $color-default;
+    margin: 0 auto;
+    text-align: left;
+    max-width: 900px;
+    
+    .text {
+      max-width: 400px;
+      padding: 60px 0;
+      h1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 40px;
+        letter-spacing: 0.1em;
+      }
+      p {
+        font-size: 16px;
+        font-family: sans-serif;
+      }
+    }
+    .who {
+      margin-top: 200px;
+      }
+    .how {
+      margin-top: -200px;
+    }
+    .how{
+      position: relative;
+      .dot-group.md{
+        @extend %dot-vertical-group;
+      }
+    }
+
+    .believe{
+      position: relative;
+      .dot-group.md{
+        @extend %dot-vertical-group;
+      }
+      .dot-group.sm{
+        @extend %dot-vertical-group;
+        position: none;
+        top:100%;
+        display: none;
+      }
+    }
+
+    .what {
+      position: relative;
+      .dot-group.sm{
+        @extend %dot-vertical-group;
+        display: none;
+      }
+    }
+  }
+  button {
+    @include X-center();
+    @include font($color:$color-less,$ff:sans-serif,$tt:uppercase);
+    @include botton(10px, 50px, $color: $color-default);
+    font-size: 16px;
+    margin-bottom: 40px;
+    transition: 0.5s;
+    @include hover($color:$color-default,$color-bg:$color-hot);
+  }
+}
+
+@media (max-width: 800px) {
+  #intro{
+    .container{
+      justify-content: center;
+      
+      .who {
+        margin-top: 0;
+      }
+      .how {
+        margin-top: 0px;
+        .dot-group.md{
+          display: none;
+        }
+      }
+      .believe {
+        .dot-group.md{
+          display: none;
+        }
+        .dot-group.sm{
+          display: flex;
+          // margin-bottom: 30px;
+        }
+      }
+      .what{
+        margin-top: 60px;
+        .dot-group.sm{
+          display: flex;
+        }
+      }
+    }
+    button {
+      margin-top: 60px;
+    }
+  }
+}

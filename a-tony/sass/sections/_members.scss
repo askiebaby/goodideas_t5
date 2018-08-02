@@ -1,0 +1,49 @@
+
+#members {
+  position: relative;
+  
+  .title {
+    position: relative;
+    
+    h4 {
+      background-color: $color-hot;
+      @include X-center(10px,0px,0px);
+      @include font($ff:$font-family-p,$tt:none);
+      font-size: 19px;
+    }
+    .downarrow {
+      @extend %down-arrow;
+    }
+  }
+
+  .member {
+    max-width: 800px;
+    @include X-center();
+    @include font($color:$color-hot);
+    h3 {
+      font-size: 24px;
+      padding: 40px;
+    }
+    .card {
+      border: none;
+      h5 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 16px;
+        @include font($color: $color-less, $ff:sans-serif);
+      }
+    }
+    .contact {
+      padding: 10px 60px;
+      margin: 30px 0px 80px;
+      background-color: $color-less;
+
+      @include font($ff:sans-serif, $tt:uppercase);
+      font-size: 16px;
+      transition: 0.5s;
+
+      @include hover($color-default, $color-bg:$color-hot);
+    }
+  }
+}

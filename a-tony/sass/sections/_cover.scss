@@ -1,0 +1,28 @@
+#cover {
+  background:url(../img/banner.png) no-repeat center;
+  background-size: cover;
+  @include font();
+  .title {
+    @include X-center;
+    padding-top: 20vh;
+    h1 {
+      @include font($tt:uppercase,$fs:italic);
+      font-size: $header-size;
+      span {
+        text-transform: lowercase;
+        font-family: 'lobster',cursive;
+      }
+    }
+    p {
+      letter-spacing: 5px;
+      font-size: 24px;
+    }
+  }
+  .dot-group {
+    @include X-center;
+    padding: 15vh 0 10vh;
+    text-transform: none;
+    // outline: 1px solid green;
+    @include dot;
+  }
+}
