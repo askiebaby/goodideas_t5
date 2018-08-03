@@ -1,3 +1,6 @@
+@import 'variable';
+@import 'mixin';
+
 #mission {
     background-image: url(../images/sea-horse-bg.jpg);
     background-position: center center;
@@ -27,7 +30,16 @@
             color: $text-white;
         }
     }
-    
+
+    @media (max-width: 900px) {
+        .dots {
+            display: block;
+        }
+    }
+
+    @media (max-width: 768px) {
+        background-attachment: fixed;
+    }
 }
 
 .mission-wrap {
@@ -36,11 +48,25 @@
     @include clearfix;
 }
 
-.col-6 {
-    @include col-6
+.column-2 {
+    @include column-2(left, 50%);
     &:last-child {
         padding-top: 300px;
     }
+
+    @media (max-width: 900px) {
+        @include column-2(none, 80%);
+        margin: 0 auto;
+
+        &:first-child, &:last-child {
+            padding: 0;
+        }
+    }
+
+    @media (max-width: 480px) {
+        width: 90%;
+    }
+
 }
 
 .mission-item {
@@ -61,32 +87,8 @@
     p {
         line-height: 1.5;
     }
-}
 
-@media (max-width: 900px) {
-    #mission {
-        .dots {
-            display: block;
-        }
-    }
-
-    .col-6 {
-        float: none;
-        margin: 0 auto;
-        width: 80%;
-
-        &:first-child, &:last-child {
-            padding: 0;
-        }
-    }   
-}
-
-@media (max-width: 480px) {
-    .col-6 {
-        width: 90%;
-    }
-
-    .mission-item {
+    @media (max-width: 480px) {
         h2 {
             font-size: 28px;
         }

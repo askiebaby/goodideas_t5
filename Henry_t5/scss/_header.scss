@@ -1,13 +1,15 @@
+@import 'variable';
+
 a {
     color: $text-white;
 }
 
 header {
     background-color: $bg-purple-dark;
-    .navbar {
+    #nav {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        li {
+        .nav-item {
             padding: 15px;
 
             a:hover {
@@ -21,10 +23,5 @@ header {
                 justify-self: start;
             }
         }
-
-        
-        
-
-
     }
 }

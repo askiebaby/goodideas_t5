@@ -46,9 +46,9 @@
     }
 }
 
-@mixin col-6 {
-    float: left;
-    width: 50%;
+@mixin column-2 ($float-direction, $width-percentage) {
+    float: $float-direction;
+    width: $width-percentage;
     &:first-child {
         padding-right: 75px;
     }

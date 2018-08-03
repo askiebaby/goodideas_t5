@@ -1,3 +1,6 @@
+@import 'variable';
+@import 'mixin';
+
 #works {
     padding-bottom: 155px;
     @include section-heading;
@@ -45,7 +48,7 @@
             vertical-align: middle;
         }
         .overlay-text {
-            color: white;
+            color: $text-white;
             font-family: $title-font;
             font-size: 28px;
             display: inline-block;

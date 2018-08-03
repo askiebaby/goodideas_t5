@@ -1,7 +1,10 @@
+@import 'variable';
+@import 'mixin';
+
 #folks {
     padding-bottom: 50px;
     
-  @include section-heading;
+    @include section-heading;
     .section-heading-text {
         width: 100%;
         letter-spacing: 2px;
