@@ -1,0 +1,57 @@
+%container--fluid{
+  width: 100%;
+}
+%container--fixed{
+  width: 100%;
+  margin: 0 auto;
+  @include mediaquery_phone{
+    max-width: $width--phone;
+  }
+  @include mediaquery_minipad{
+    max-width: $width--minipad;
+  }
+  @include mediaquery_pad{
+    max-width: $width--pad;
+  }
+  @include mediaquery_pc{
+    max-width: $width--pc*0.95;
+  }
+}
+%circle{
+  background-color: white;
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  @include mediaquery_minipad{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+  }
+}
+%dialogstyle{
+  background-color: $maincolor;
+  margin: 0 auto;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 4px;
+  font-family: $font-family--sans-serif;
+  @include mediaquery_minipad{
+    font-size: 18px;
+  }
+  @include mediaquery_pad{
+    font-size: 26px;
+  }
+}
+.triangle{
+  box-sizing: border-box;
+  width: 0px;
+  height: 0px;
+  border-color: $maincolor transparent transparent transparent;
+  border-width: 20px;
+  border-style: solid;
+  margin: 0 auto;
+  @include mediaquery_minipad{
+    border-width: 30px;
+  }
+}

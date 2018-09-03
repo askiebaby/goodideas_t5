@@ -1,0 +1,80 @@
+@import "../modules/normalize.scss";
+@import "../modules/variables-color.scss";
+@import "../modules/variables-font.scss";
+@import "../modules/variables-width.scss";
+@import "../modules/mixin-mediaquery.scss";
+@import "../modules/extendclass.scss";
+.webwork {
+   background-color: white;
+   padding-bottom: 50px;
+   position: relative;
+   @include mediaquery_minipad {
+      padding-bottom: 150px;
+   }
+   @extend %container--fluid;
+   &__title {
+      position: absolute;
+      top: -56px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      @include mediaquery_minipad {
+         top: -93px;
+      }
+      @include mediaquery_pad {
+         top: -103px;
+      }
+   }
+   .headline {
+      padding: 20px 5px;
+      @extend %dialogstyle;
+      @include mediaquery_minipad {
+         padding: 36px 100px;
+      }
+      @include mediaquery_pad {
+         padding: 36px 130px;
+      }
+   }
+   &__sample {
+      display: flex;
+      flex-wrap: wrap;
+   }
+   &__sample__img {
+      width: 50%;
+      position: relative;
+      @include mediaquery_minipad {
+         width: 25%;
+      }
+      .curtain{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left: 0;
+        background-color: $maincolor;
+        opacity: 0.4;
+        color: white;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bolder;
+        @include mediaquery_pc {
+           font-size: 35px;
+        }
+      }
+      img {
+         width: 100%;
+         height: 100%;
+      }
+      a {
+        display:block;
+        width: 100%;
+        height: 100%;
+        &:hover+.curtain{
+          display: flex;
+          pointer-events: none;
+        }
+      }
+   }
+}

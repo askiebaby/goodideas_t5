@@ -1,0 +1,127 @@
+@import "../modules/normalize.scss";
+@import "../modules/variables-color.scss";
+@import "../modules/variables-font.scss";
+@import "../modules/variables-width.scss";
+@import "../modules/mixin-mediaquery.scss";
+@import "../modules/extendclass.scss";
+.articles {
+   background: url("../img/sea-horse-bg.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   @extend %container--fluid;
+   padding: 50px 0 35px;
+   color: white;
+   @include mediaquery_minipad {
+      padding-top: 105px;
+   }
+   &__container {
+      @extend %container--fixed;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      @include mediaquery_minipad {
+         justify-content: space-between;
+      }
+   }
+   &__first {
+      width: 95%;
+      @include mediaquery_minipad {
+         width: 42%;
+      }
+      article:nth-child(1) {
+         margin-bottom: 70px;
+         @include mediaquery_minipad {
+            margin-bottom: 160px;
+         }
+      }
+      article:nth-child(3) {
+         margin-top: 70px;
+      }
+   }
+   &__second {
+      padding-top: 70px;
+      width: 95%;
+      @include mediaquery_minipad {
+         width: 42%;
+         padding-top: 375px;
+      }
+      article:nth-child(2) {
+         margin-bottom: 70px;
+         @include mediaquery_minipad {
+            margin-bottom: 120px;
+         }
+      }
+      article:nth-child(4) {
+         margin: 80px 0 70px;
+         @include mediaquery_minipad {
+            margin-bottom: 170px;
+         }
+      }
+      .circlegroup_level:nth-child(1){
+        margin-bottom: 70px;
+        @include mediaquery_minipad {
+           display: none;
+             margin-bottom: 0;
+        }
+      }
+   }
+   h2 {
+      font-size: 33px;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+      text-align: center;
+      @include mediaquery_minipad {
+         font-size: 35px;
+         letter-spacing: 4px;
+         text-align: left;
+      }
+      @include mediaquery_pad {
+         font-size: 40px;
+      }
+      @include mediaquery_pc {
+         font-size: 55px;
+      }
+   }
+   p {
+      font-size: 16px;
+      line-height: 29px;
+      font-family: $font-family--sans-serif;
+      margin-bottom: 35px;
+      @include mediaquery_minipad {
+         font-size: 22px;
+      }
+   }
+   .circlegroup_level {
+      display: flex;
+      justify-content: center;
+      .circle_level {
+         @extend%circle;
+         margin-right: 30px;
+      }
+      .circle_leve:nth-child(1) {
+         margin-right: 0;
+      }
+   }
+   .backbutton {
+      width: 100%;
+      text-align: center;
+   }
+   button {
+      border: none;
+      text-align: center;
+      &:hover {
+         background-color: $maincolor;
+      }
+      a{
+        display: block;
+        color: black;
+        font-size: 10px;
+        padding: 20px 10px;
+        @include mediaquery_minipad {
+           font-size: 20px;
+           padding: 20px 90px;
+        }
+      }
+   }
+}

@@ -1,0 +1,30 @@
+@import "../modules/normalize.scss";
+@import "../modules/variables-color.scss";
+@import "../modules/variables-font.scss";
+@import "../modules/variables-width.scss";
+@import "../modules/mixin-mediaquery.scss";
+@import "../modules/extendclass.scss";
+footer{
+  background-color: $footercolor;
+  padding: 20px 0;
+  text-align: center;
+  @extend %container--fluid;
+  @include mediaquery_minipad{
+    padding: 65px 0;
+  }
+  div{
+    font-size: 12px;
+    letter-spacing: 0px;
+    font-family: $font-family--sans-serif;
+    @include mediaquery_minipad{
+      font-size: 22px;
+      letter-spacing: 4px;
+    }
+    a{
+      color:$maincolor;
+      &:hover{
+        color: darken( $maincolor, 20%);
+      }
+    }
+  }
+}
