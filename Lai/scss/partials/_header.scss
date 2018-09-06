@@ -1,0 +1,27 @@
+@import "../modules/normalize.scss";
+@import "../modules/variables-color.scss";
+@import "../modules/variables-font.scss";
+@import "../modules/variables-width.scss";
+@import "../modules/mixin-mediaquery.scss";
+@import "../modules/extendclass.scss";
+header{
+  background-color: $navcolor;
+  padding: 27px 0 23px;
+  @extend %container--fluid;
+  nav{
+    display: flex;
+    justify-content: center;
+    @extend %container--fixed;
+  }
+  li{
+    margin: 0 20px;
+  }
+  a{
+    color: white;
+    font-size: 21px;
+    font-family: $font-family--sans-serif;
+    &:hover{
+      color: $maincolor;
+    }
+  }
+}
