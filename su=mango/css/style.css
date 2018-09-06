@@ -1,0 +1,281 @@
+@charset "UTF-8";
+/* line 8, ../sass/style.scss */
+.studio-slogan, .studio-designer-container > h2, .designers-container h2, .studio-introduction-container h2 {
+  font-family: Georgia;
+}
+
+/* line 12, ../sass/style.scss */
+header, footer {
+  display: flex;
+  justify-content: center;
+}
+
+/* line 16, ../sass/style.scss */
+.studio-slogan::after, .studio-introduction-container .dot::after, .studio-introduction-container .dot::before {
+  content: "...";
+  display: block;
+  font-size: 32px;
+  letter-spacing: 16px;
+}
+
+/* line 22, ../sass/style.scss */
+.case-word-balloons::after, .designer-word-balloons::after {
+  content: "";
+  display: block;
+  width: 0;
+  /*  箭頭位置調整  */
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /*  箭頭樣式大小  */
+  border-top: 20px solid #ea334e;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+/* line 36, ../sass/style.scss */
+.studio-designer-container a, .studio-introduction-container a {
+  padding: 10px 30px;
+  font-size: 16px;
+}
+
+/* line 65, ../sass/style.scss */
+body {
+  color: #fff;
+  font-family: geometric;
+}
+
+/***** star header *****/
+/* line 71, ../sass/style.scss */
+header {
+  background: #310c34;
+  padding: 20px;
+}
+/* line 75, ../sass/style.scss */
+header .navigation {
+  display: flex;
+}
+/* line 78, ../sass/style.scss */
+header li:not(.nav-last-one) {
+  padding-right: 10px;
+}
+/* line 81, ../sass/style.scss */
+header a {
+  color: #fff;
+}
+/* line 84, ../sass/style.scss */
+header a:hover {
+  color: #ea334e;
+}
+
+/***** end header *****/
+/***** star main *****/
+/* line 91, ../sass/style.scss */
+main section:not(.studio-introduction-container) {
+  text-align: center;
+}
+/* line 94, ../sass/style.scss */
+main img {
+  width: 100%;
+}
+
+/* line 98, ../sass/style.scss */
+.studio-slogan {
+  background: url(../img/banner.png) center/cover no-repeat;
+  padding: 20px 20px 80px 20px;
+}
+/* line 103, ../sass/style.scss */
+.studio-slogan h1 {
+  font-size: 40px;
+  font-weight: 300;
+  font-style: italic;
+}
+/* line 108, ../sass/style.scss */
+.studio-slogan *:nth-child(odd) {
+  padding-top: 40px;
+}
+/* line 111, ../sass/style.scss */
+.studio-slogan::after {
+  letter-spacing: 0;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  margin: 0 auto;
+}
+
+/* line 119, ../sass/style.scss */
+.studio-case-container {
+  position: relative;
+}
+
+/* line 122, ../sass/style.scss */
+.case-word-balloons {
+  background: #ea334e;
+  position: absolute;
+  padding: 10px;
+  width: 50%;
+  top: -42px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/* line 131, ../sass/style.scss */
+.case-word-balloons::after {
+  top: 42px;
+}
+
+@media (min-width: 700px) {
+  /* line 136, ../sass/style.scss */
+  .studio-case {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* line 140, ../sass/style.scss */
+  .studio-case img {
+    width: 25%;
+    height: 100%;
+  }
+}
+
+/* line 146, ../sass/style.scss */
+.studio-designer-container {
+  margin: 10px 0;
+}
+/* line 148, ../sass/style.scss */
+.studio-designer-container > h2 {
+  color: #ea334e;
+  font-weight: 300;
+  font-size: 16px;
+}
+/* line 154, ../sass/style.scss */
+.studio-designer-container a {
+  background: #000;
+  color: #fff;
+  display: inline-block;
+}
+
+/* line 161, ../sass/style.scss */
+.designer-word-balloons {
+  width: 100%;
+  position: relative;
+  background: #ea334e;
+  padding: 10px;
+  margin: 50px 0;
+}
+/* line 167, ../sass/style.scss */
+.designer-word-balloons::after {
+  bottom: -20px;
+}
+
+/* line 172, ../sass/style.scss */
+.designers-container {
+  margin: 30px 0;
+}
+/* line 174, ../sass/style.scss */
+.designers-container div:nth-child(n) {
+  margin-bottom: 30px;
+}
+/* line 177, ../sass/style.scss */
+.designers-container h2 {
+  color: #ea334e;
+  font-weight: 300;
+  margin-top: 10px;
+}
+/* line 183, ../sass/style.scss */
+.designers-container small {
+  color: #2b2b2b;
+}
+@media (min-width: 700px) {
+  /* line 172, ../sass/style.scss */
+  .designers-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10%;
+  }
+  /* line 190, ../sass/style.scss */
+  .designers-container .designer {
+    width: 50%;
+  }
+}
+
+/* line 195, ../sass/style.scss */
+.studio-introduction-container {
+  background: url(../img/sea-horse-bg.jpg) no-repeat fixed;
+  background-position: -310px center;
+  background-size: cover;
+  background-color: #000;
+  padding: 50px 15px 40px;
+}
+/* line 201, ../sass/style.scss */
+.studio-introduction-container .grid-column {
+  padding: 0 20px;
+}
+/* line 204, ../sass/style.scss */
+.studio-introduction-container h2 {
+  font-weight: 300;
+}
+/* line 208, ../sass/style.scss */
+.studio-introduction-container p {
+  margin: 20px 0;
+}
+/* line 211, ../sass/style.scss */
+.studio-introduction-container a {
+  background: #fff;
+  color: #000;
+  display: block;
+  width: 169.31px;
+  margin: 0 auto;
+}
+/* line 219, ../sass/style.scss */
+.studio-introduction-container .dot::after, .studio-introduction-container .dot::before {
+  text-align: center;
+  padding: 20px 0 40px;
+}
+/* line 224, ../sass/style.scss */
+.studio-introduction-container .WhatWeBelieve-text::after {
+  color: transparent;
+}
+@media (min-width: 700px) {
+  /* line 195, ../sass/style.scss */
+  .studio-introduction-container {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: auto;
+  }
+  /* line 234, ../sass/style.scss */
+  .studio-introduction-container .WhoWeAre-text {
+    margin-top: 250px;
+  }
+  /* line 237, ../sass/style.scss */
+  .studio-introduction-container a {
+    grid-column: 1/-1;
+  }
+  /* line 240, ../sass/style.scss */
+  .studio-introduction-container .dot::after {
+    color: transparent;
+  }
+}
+
+/***** end main *****/
+/***** star footer *****/
+/* line 247, ../sass/style.scss */
+footer {
+  color: #2b2b2b;
+  background: #747474;
+  padding: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+/* line 254, ../sass/style.scss */
+footer a {
+  color: #ea334e;
+}
+/* line 257, ../sass/style.scss */
+footer a:hover {
+  color: #fff;
+}
+
+/***** end footer *****/

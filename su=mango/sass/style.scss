@@ -1,0 +1,261 @@
+$arrow-size:20px;
+$padding:20px;
+$margin:20px;
+$font-size:16px;
+$font-weight:300;
+$letter-spacing:2px;
+$primary-font:(geometric);
+%secondary-font{
+  // 因為很多區塊的標題都用到這字型，用@extend比較快
+  font-family: Georgia;
+}
+%flex-container{
+  display: flex;
+  justify-content: center;
+}
+%dot-content{
+  content: "...";
+  display: block;
+  font-size: $font-size*2;
+  letter-spacing: $letter-spacing*8;
+}
+%down-triangle{
+  content:"";
+  display:block;
+  width: 0;
+  /*  箭頭位置調整  */
+  position:absolute;
+  left:0;
+  right:0;
+  margin:auto;
+  /*  箭頭樣式大小  */
+  border-top:$arrow-size solid #ea334e;
+  border-left:$arrow-size/2 solid rgba(0,0,0,0);
+  border-right:$arrow-size/2 solid rgba(0,0,0,0);
+}
+%link-button-style{
+  padding: $padding/2 $padding*1.5;
+  font-size: $font-size;
+}
+$colors:(
+// primary主要，secondary次要，tertiary第三
+/*1st = primary, 2nd = secondary,
+3rd = tertiary, 4th = quaternary,
+5th = quinary, 6th = senary,
+7th = septenary, 8th = octonary,
+9th = nonary, 10th = denary,
+12th = duodenary and 20th = vigenary.*/
+    primary-color:#fff,
+    secondary-color:#ea334e,
+    tertiary-color:#747474,
+    tertiary-darkcolor:#2b2b2b,
+    quaternary:#310c34,
+);
+@function color-function($color-name){
+  @return map-get($colors,$color-name)
+}
+
+$desktop-width:700px;
+@mixin desktop{
+  @media (min-width: #{$desktop-width}){
+    @content;
+  }
+}
+
+body {
+  color: color-function(primary-color);
+  font-family: $primary-font;
+}
+
+/***** star header *****/
+header{
+  background: color-function(quaternary);
+  padding: $padding;
+  @extend %flex-container;
+  .navigation{
+    display: flex;
+  }
+  li:not(.nav-last-one){
+    padding-right: $padding/2;
+  }
+  a{
+    color: color-function(primary-color);
+  }
+  a:hover{
+    color: color-function(secondary-color);
+  }
+}
+/***** end header *****/
+/***** star main *****/
+main{
+  section:not(.studio-introduction-container){
+    text-align: center;
+  }
+  img{
+    width: 100%;
+  }
+}
+.studio-slogan{
+  // background:center/cover表示bg-position/bg-size
+  background: url(../img/banner.png) center/cover no-repeat;
+  padding: $padding $padding $padding*4 $padding;
+  @extend %secondary-font;
+  h1{
+    font-size: $font-size*2.5;
+    font-weight: $font-weight;
+    font-style: italic;
+  }
+  *:nth-child(odd){
+    padding-top: $padding*2;
+  }
+  &::after{
+    @extend %dot-content;
+    letter-spacing: 0;
+    writing-mode: vertical-rl;//書寫模式:垂直由到左(ㄧ格一個單字，只是將單字右轉90度，要歪頭閱讀)
+    text-orientation: upright;//文字方向:直立(一格一個字母)
+    margin: 0 auto;
+  }
+}
+.studio-case-container{
+  position: relative;
+}
+.case-word-balloons {
+  background: color-function(secondary-color);
+  position: absolute;
+  padding: $padding/2;
+  width: 50%;
+  top: -42px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  &::after{
+    @extend %down-triangle;
+    top:42px;//箭頭位置調整
+  }
+}
+.studio-case{
+  @include desktop{
+    display: flex;
+    flex-wrap: wrap;
+    img{
+      width: 25%;
+      height: 100%;
+    }
+  }
+}
+.studio-designer-container{
+  margin: $margin/2 0;
+  &>h2{
+    color: color-function(secondary-color);
+    font-weight: $font-weight;
+    font-size: $font-size;
+    @extend %secondary-font;
+  }
+  a{
+    background: #000;
+    color: #fff;
+    display: inline-block;
+    @extend %link-button-style;
+  }
+}
+.designer-word-balloons {
+  width: 100%;
+  position: relative;
+  background: color-function(secondary-color);
+  padding: $padding/2;
+  margin: $margin*2.5 0;
+  &::after{
+    @extend %down-triangle;
+    bottom: -20px;//箭頭位置調整
+  }
+}
+.designers-container{
+  margin: $margin*1.5 0;
+  div:nth-child(n){
+    margin-bottom: $margin*1.5;
+  }
+  h2{
+    color: color-function(secondary-color);
+    font-weight: $font-weight;
+    margin-top: $margin/2;
+    @extend %secondary-font;
+  }
+  small{
+    color: color-function(tertiary-darkcolor);
+  }
+  @include desktop{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10%;
+    .designer{
+      width: 50%;
+    }
+  }
+}
+.studio-introduction-container{
+  background: url(../img/sea-horse-bg.jpg) no-repeat fixed;
+  background-position: -310px center;
+  background-size: cover;
+  background-color: #000;
+  padding: $padding*2.5 $padding*0.75 $padding*2;
+  .grid-column{
+    padding: 0 $padding;
+  }
+  h2{
+    @extend %secondary-font;
+    font-weight: $font-weight;
+  }
+  p{
+    margin: $margin 0;
+  }
+  a{
+    background: #fff;
+    color: #000;
+    display: block;
+    width: 169.31px;
+    margin: 0 auto;
+    @extend %link-button-style;
+  }
+  .dot::after,.dot::before{
+    @extend %dot-content;
+    text-align: center;
+    padding: $padding 0 $padding*2;
+  }
+  .WhatWeBelieve-text::after{
+    color:rgba(0,0,0,0);
+  }
+  @include desktop{
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: auto;
+    .WhoWeAre-text{
+      margin-top: 250px;
+    }
+    a{
+      grid-column: 1/-1;
+    }
+    .dot::after{
+      color: rgba(0,0,0,0);
+    }
+  }
+}
+/***** end main *****/
+/***** star footer *****/
+footer{
+  color: color-function(tertiary-darkcolor);
+  background: color-function(tertiary-color);
+  padding: $padding;
+  letter-spacing: $letter-spacing;
+  text-align: center;
+  @extend %flex-container;
+  a{
+    color: color-function(secondary-color);
+  }
+  a:hover{
+    color: color-function(primary-color);
+  }
+}
+/***** end footer *****/
