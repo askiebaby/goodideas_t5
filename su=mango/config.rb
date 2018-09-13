@@ -9,13 +9,14 @@ images_dir = "img"
 javascripts_dir = "js"
 
 # You can select your preferred output style here (can be overridden via the command line):
+# expanded(一般，有斷行) / nested(像scss巢狀) / compact(class們之間會斷行，有空白，style會自己ㄧ行) / compressed(最佳化，沒有空白跟斷行)
 # output_style = :expanded or :nested or :compact or :compressed
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
-# line_comments = false
+line_comments = false
 
 
 # If you prefer the indented syntax, you might want to regenerate this
