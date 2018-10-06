@@ -1,0 +1,17 @@
+@import 'variable';
+
+header {
+  background-color: $purple;
+  nav {
+    text-align:center;
+    padding:1rem 0;
+  }
+  a {
+    padding:0 10px;
+    color: $pink;
+    font:normal normal normal 15px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif;
+  }
+  a:hover {
+    color: $white;
+  }
+}

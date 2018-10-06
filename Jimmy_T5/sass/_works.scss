@@ -1,0 +1,60 @@
+@import 'variable';
+@import 'mixin';
+@import 'extend';
+
+.works_heading {
+  position: relative;
+}
+
+.works_heading_text {
+  font: normal normal normal 19px/1.4em din-next-w01-light, din-next-w02-light, din-next-w10-light, sans-serif;
+  background-color: $red;
+  letter-spacing: 0.2rem;
+  padding: 21px 89px;
+  top: -68.42px;
+  @extend %align_center;
+}
+@media (max-width: 768px) {
+  .works_heading_text {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+#works{
+  margin-bottom: 125px;
+}
+.works_img {
+  @include img_fluid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+}
+
+.work_item {
+  position: relative;
+
+
+  a {
+    background-color: $red;
+    color: $white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    text-align: center;
+    display: grid;
+
+    p {
+      font-size: 1.75rem;
+      align-self: center;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

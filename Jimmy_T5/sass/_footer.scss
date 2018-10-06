@@ -1,0 +1,13 @@
+@import 'variable';
+
+
+footer {
+  font:$main_font;
+  letter-spacing:0.1em;
+  text-align: center;
+  background-color:#DDDDDD;
+  padding: 3rem 0;
+  a{
+    color: $red;
+  }
+}

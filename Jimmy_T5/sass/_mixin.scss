@@ -1,0 +1,46 @@
+@import 'variable';
+@import 'extend';
+
+@mixin background_img($url, $position:center) {
+  background-image: url($url);
+  background-position: $position;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@mixin img_fluid {
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@mixin dots($direction:horizontal) {
+  .dots {
+    @if $direction !=horizontal {
+      display: inline-block;
+    }
+
+    @else {
+      padding: 100px 0 50px 0;
+      text-align: center;
+    }
+
+    .dot {
+      background-color: $white;
+      border-radius: 50%;
+      height: 8px;
+      width: 8px;
+
+      @if $direction !=horizontal {
+        margin-bottom: 25px;
+      }
+
+      @else {
+        display: inline-block;
+        margin-right: 25px;
+      }
+    }
+  }
+}
