@@ -1,24 +1,66 @@
 @charset "UTF-8";
-/* line 8, ../sass/style.scss */
-.studio-slogan, .studio-designer-container > h2, .designers-container h2, .studio-introduction-container h2 {
-  font-family: Georgia;
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
 }
 
-/* line 12, ../sass/style.scss */
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a:link {
+  /* a連結底線消失 */
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+button {
+  border: none;
+  /* cursor: pointer;把滑鼠游標變成手指形狀 */
+  cursor: pointer;
+}
+
+/*主要 = primary, 次要 = secondary,
+3rd = tertiary, 4th = quaternary,*/
+/************************************
+排版用
+------------------------------------*/
 header, footer {
   display: flex;
   justify-content: center;
 }
 
-/* line 16, ../sass/style.scss */
+/************************************/
+/************************************
+文字樣式
+------------------------------------*/
+.studio-slogan, .studio-designer-container > h2, .designers-container h2, .studio-introduction-container h2 {
+  font-family: 'Georgia';
+}
+
+/************************************/
+/************************************
+圓點樣式
+------------------------------------*/
 .studio-slogan::after, .studio-introduction-container .dot::after, .studio-introduction-container .dot::before {
   content: "...";
   display: block;
   font-size: 32px;
-  letter-spacing: 16px;
 }
 
-/* line 22, ../sass/style.scss */
+/************************************/
+/************************************
+對話框下倒三角形樣式
+------------------------------------*/
 .case-word-balloons::after, .designer-word-balloons::after {
   content: "";
   display: block;
@@ -29,196 +71,214 @@ header, footer {
   right: 0;
   margin: auto;
   /*  箭頭樣式大小  */
-  border-top: 20px solid #ea334e;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
+  border-top: 25px solid #ea334e;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
 }
 
-/* line 36, ../sass/style.scss */
+/************************************/
+/************************************
+<a>的按鈕樣式
+------------------------------------*/
 .studio-designer-container a, .studio-introduction-container a {
   padding: 10px 30px;
   font-size: 16px;
 }
 
-/* line 65, ../sass/style.scss */
+/************************************/
 body {
   color: #fff;
-  font-family: geometric;
+  font-family: "geometric";
 }
 
 /***** star header *****/
-/* line 71, ../sass/style.scss */
 header {
   background: #310c34;
   padding: 20px;
 }
-/* line 75, ../sass/style.scss */
 header .navigation {
   display: flex;
 }
-/* line 78, ../sass/style.scss */
 header li:not(.nav-last-one) {
-  padding-right: 10px;
+  padding-right: 3vw;
 }
-/* line 81, ../sass/style.scss */
 header a {
   color: #fff;
 }
-/* line 84, ../sass/style.scss */
 header a:hover {
   color: #ea334e;
 }
 
 /***** end header *****/
 /***** star main *****/
-/* line 91, ../sass/style.scss */
 main section:not(.studio-introduction-container) {
   text-align: center;
 }
-/* line 94, ../sass/style.scss */
 main img {
   width: 100%;
 }
 
-/* line 98, ../sass/style.scss */
 .studio-slogan {
   background: url(../img/banner.png) center/cover no-repeat;
   padding: 20px 20px 80px 20px;
+  /* >div:first-child{
+     letter-spacing: 8px;
+   }*/
 }
-/* line 103, ../sass/style.scss */
 .studio-slogan h1 {
   font-size: 40px;
   font-weight: 300;
   font-style: italic;
+  margin-top: 30px;
 }
-/* line 108, ../sass/style.scss */
-.studio-slogan *:nth-child(odd) {
-  padding-top: 40px;
+.studio-slogan div:nth-of-type(1) {
+  letter-spacing: 8px;
 }
-/* line 111, ../sass/style.scss */
+.studio-slogan :last-child {
+  width: 70vw;
+  margin: 30px auto;
+  letter-spacing: 5px;
+}
 .studio-slogan::after {
-  letter-spacing: 0;
   writing-mode: vertical-rl;
   text-orientation: upright;
   margin: 0 auto;
 }
+@media only screen and (min-width: 760px) {
+  .studio-slogan {
+    padding: 120px 0;
+  }
+  .studio-slogan h1 {
+    font-size: 56px;
+  }
+  .studio-slogan div {
+    font-size: 25.6px;
+  }
+  .studio-slogan > div:last-child {
+    margin: 40px auto;
+    font-size: 20.8px;
+  }
+}
 
-/* line 119, ../sass/style.scss */
 .studio-case-container {
   position: relative;
 }
 
-/* line 122, ../sass/style.scss */
 .case-word-balloons {
   background: #ea334e;
   position: absolute;
-  padding: 10px;
-  width: 50%;
-  top: -42px;
+  padding: 20px 0;
+  width: 60%;
+  top: -62px;
   left: 0;
   right: 0;
   margin: auto;
+  letter-spacing: 5px;
 }
-/* line 131, ../sass/style.scss */
 .case-word-balloons::after {
-  top: 42px;
+  top: 62px;
+}
+@media only screen and (min-width: 760px) {
+  .case-word-balloons {
+    width: 40%;
+  }
+}
+@media (min-width: 1020px) {
+  .case-word-balloons {
+    width: 30%;
+  }
 }
 
-@media (min-width: 700px) {
-  /* line 136, ../sass/style.scss */
+@media only screen and (min-width: 760px) {
   .studio-case {
     display: flex;
     flex-wrap: wrap;
   }
-  /* line 140, ../sass/style.scss */
+  .studio-case img {
+    width: 50%;
+    height: 100%;
+  }
+}
+@media (min-width: 1020px) {
   .studio-case img {
     width: 25%;
     height: 100%;
   }
 }
 
-/* line 146, ../sass/style.scss */
 .studio-designer-container {
   margin: 10px 0;
 }
-/* line 148, ../sass/style.scss */
 .studio-designer-container > h2 {
   color: #ea334e;
   font-weight: 300;
-  font-size: 16px;
 }
-/* line 154, ../sass/style.scss */
 .studio-designer-container a {
   background: #000;
   color: #fff;
   display: inline-block;
 }
 
-/* line 161, ../sass/style.scss */
 .designer-word-balloons {
   width: 100%;
   position: relative;
   background: #ea334e;
   padding: 10px;
   margin: 50px 0;
+  letter-spacing: 2px;
 }
-/* line 167, ../sass/style.scss */
 .designer-word-balloons::after {
   bottom: -20px;
 }
 
-/* line 172, ../sass/style.scss */
 .designers-container {
   margin: 30px 0;
+  padding: 0 40px;
 }
-/* line 174, ../sass/style.scss */
 .designers-container div:nth-child(n) {
   margin-bottom: 30px;
 }
-/* line 177, ../sass/style.scss */
 .designers-container h2 {
   color: #ea334e;
   font-weight: 300;
   margin-top: 10px;
 }
-/* line 183, ../sass/style.scss */
+@media only screen and (min-width: 760px) {
+  .designers-container h2 {
+    font-size: 32px;
+  }
+}
 .designers-container small {
   color: #2b2b2b;
 }
-@media (min-width: 700px) {
-  /* line 172, ../sass/style.scss */
+@media only screen and (min-width: 760px) {
   .designers-container {
     display: flex;
     flex-wrap: wrap;
     padding: 0 10%;
   }
-  /* line 190, ../sass/style.scss */
   .designers-container .designer {
     width: 50%;
   }
 }
 
-/* line 195, ../sass/style.scss */
 .studio-introduction-container {
   background: url(../img/sea-horse-bg.jpg) no-repeat fixed;
-  background-position: -310px center;
+  background-position: -270px center;
   background-size: cover;
   background-color: #000;
-  padding: 50px 15px 40px;
+  padding: 70px 15px 20px;
 }
-/* line 201, ../sass/style.scss */
 .studio-introduction-container .grid-column {
   padding: 0 20px;
 }
-/* line 204, ../sass/style.scss */
 .studio-introduction-container h2 {
   font-weight: 300;
+  letter-spacing: 5px;
 }
-/* line 208, ../sass/style.scss */
 .studio-introduction-container p {
   margin: 20px 0;
 }
-/* line 211, ../sass/style.scss */
 .studio-introduction-container a {
   background: #fff;
   color: #000;
@@ -226,34 +286,36 @@ main img {
   width: 169.31px;
   margin: 0 auto;
 }
-/* line 219, ../sass/style.scss */
 .studio-introduction-container .dot::after, .studio-introduction-container .dot::before {
   text-align: center;
+  letter-spacing: 16px;
   padding: 20px 0 40px;
 }
-/* line 224, ../sass/style.scss */
 .studio-introduction-container .WhatWeBelieve-text::after {
   color: transparent;
 }
-@media (min-width: 700px) {
-  /* line 195, ../sass/style.scss */
+@media only screen and (min-width: 760px) {
+  .studio-introduction-container {
+    padding: 70px 80px 20px;
+    background-position: center;
+    background-size: auto;
+  }
+  .studio-introduction-container h2 {
+    font-size: 32px;
+  }
+}
+@media (min-width: 1020px) {
   .studio-introduction-container {
     display: grid;
     grid-column-gap: 20px;
     grid-template-columns: 1fr 1fr;
-    background-position: center;
-    background-attachment: scroll;
-    background-size: auto;
   }
-  /* line 234, ../sass/style.scss */
   .studio-introduction-container .WhoWeAre-text {
     margin-top: 250px;
   }
-  /* line 237, ../sass/style.scss */
   .studio-introduction-container a {
     grid-column: 1/-1;
   }
-  /* line 240, ../sass/style.scss */
   .studio-introduction-container .dot::after {
     color: transparent;
   }
@@ -261,7 +323,6 @@ main img {
 
 /***** end main *****/
 /***** star footer *****/
-/* line 247, ../sass/style.scss */
 footer {
   color: #2b2b2b;
   background: #747474;
@@ -269,11 +330,9 @@ footer {
   letter-spacing: 2px;
   text-align: center;
 }
-/* line 254, ../sass/style.scss */
 footer a {
   color: #ea334e;
 }
-/* line 257, ../sass/style.scss */
 footer a:hover {
   color: #fff;
 }
