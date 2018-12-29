@@ -8,15 +8,17 @@ header {
   padding: 15px 0;
 }
 
-.headerMenu a {
-  color: $navLinkColor;
-  padding: .5rem;
-}
+.headerMenu {
+  a {
+    color: $navLinkColor;
+    padding: .5rem;
+  }
 
-.headerMenu a + a {
-  margin-left: 15px;
-}
+  a + a {
+    margin-left: 15px;
+  }
 
-.headerMenu .now {
-  color: $navLinkNowColor;
+  .now {
+    color: $navLinkNowColor;
+  }
 }

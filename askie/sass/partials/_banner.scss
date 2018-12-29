@@ -1,0 +1,64 @@
+@import '../modules/extendFont';
+
+.banner {
+  background: image-url('banner.png') no-repeat center center / cover;
+  padding: 100px 0;
+  text-align: center;
+  color: $secondaryColor;
+  @extend %titleFontFamily;
+
+  h1 {
+    
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2.5rem;
+    letter-spacing: .1rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    letter-spacing: .25rem;
+    margin-bottom: 100px;
+    font-weight: 500;
+  }
+
+  p {
+    letter-spacing: .1rem;
+    font-size: .9rem;
+    margin: 0 auto 80px;
+    max-width: 400px;
+  }
+
+  .banner__highlightWord {
+    @extend %highlightFontFamily;
+    margin-left: .75rem;
+    text-transform: lowercase;
+  }
+
+  .banner__paragraphSeparator, .banner__paragraphSeparator::before, .banner__paragraphSeparator::after {
+    width: 5px;
+    height: 5px;
+    display: block;
+    border-radius: 5px;
+    background: $secondaryColor;
+    margin: auto;
+  }
+
+  .banner__paragraphSeparator {
+    position: relative;
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: 25px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 25px;
+    }
+  }
+}

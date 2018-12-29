@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster|Noto+Sans|Noto+Serif");
 html {
   box-sizing: border-box;
 }
@@ -19,6 +20,18 @@ a {
   text-decoration: none;
 }
 
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
 /* base */
 /* header */
 /* banner */
@@ -32,11 +45,69 @@ header {
   color: #fff;
   padding: .5rem;
 }
-
 .headerMenu a + a {
   margin-left: 15px;
 }
-
 .headerMenu .now {
   color: #fc5988;
+}
+
+.banner {
+  font-family: 'Noto Serif', serif;
+}
+
+.banner .banner__highlightWord {
+  font-family: 'Lobster', cursive;
+}
+
+.banner {
+  background: url('/images/banner.png?1543846315') no-repeat center center/cover;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+}
+.banner h1 {
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 2.5rem;
+  letter-spacing: .1rem;
+}
+.banner h2 {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  letter-spacing: .25rem;
+  margin-bottom: 100px;
+  font-weight: 500;
+}
+.banner p {
+  letter-spacing: .1rem;
+  font-size: .9rem;
+  margin: 0 auto 80px;
+  max-width: 400px;
+}
+.banner .banner__highlightWord {
+  margin-left: .75rem;
+  text-transform: lowercase;
+}
+.banner .banner__paragraphSeparator, .banner .banner__paragraphSeparator::before, .banner .banner__paragraphSeparator::after {
+  width: 5px;
+  height: 5px;
+  display: block;
+  border-radius: 5px;
+  background: #fff;
+  margin: auto;
+}
+.banner .banner__paragraphSeparator {
+  position: relative;
+}
+.banner .banner__paragraphSeparator::before {
+  content: '';
+  position: absolute;
+  top: 25px;
+}
+.banner .banner__paragraphSeparator::after {
+  content: '';
+  position: absolute;
+  bottom: 25px;
 }
