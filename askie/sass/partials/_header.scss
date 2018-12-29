@@ -1,0 +1,22 @@
+@import '../modules/variblesBreakPoint';
+@import '../modules/variblesColors';
+
+
+header {
+  background: $headerBackgroundColor;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.headerMenu a {
+  color: $navLinkColor;
+  padding: .5rem;
+}
+
+.headerMenu a + a {
+  margin-left: 15px;
+}
+
+.headerMenu .now {
+  color: $navLinkNowColor;
+}

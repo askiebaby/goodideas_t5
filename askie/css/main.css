@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* base */
+/* header */
+/* banner */
+header {
+  background: #370537;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.headerMenu a {
+  color: #fff;
+  padding: .5rem;
+}
+
+.headerMenu a + a {
+  margin-left: 15px;
+}
+
+.headerMenu .now {
+  color: #fc5988;
+}

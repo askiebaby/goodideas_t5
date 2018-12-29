@@ -1,0 +1,25 @@
+@include mixinMediaQueries;
+
+@mixin media-xs() {
+  @media all and (min-width: $media-xs) {
+      @content;
+  }
+}
+
+@mixin media-sm() {
+  @media all and (min-width: $media-sm) {
+      @content;
+  }
+}
+
+@mixin media-md() {
+  @media all and (min-width: $media-md) {
+      @content;
+  }
+}
+
+@mixin media-lg() {
+  @media all and (min-width: $media-lg) {
+      @content;
+  }
+}
