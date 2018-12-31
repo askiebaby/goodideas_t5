@@ -1,45 +1,52 @@
 @import '../modules/extendFont';
+@import '../modules/minxinMediaQueries';
 
 .banner {
   background: image-url('banner.png') no-repeat center center / cover;
-  padding: 100px 0;
-  text-align: center;
+  @extend %mainTitleFontFamily;
+  font-size: 1rem;
   color: $secondaryColor;
-  @extend %titleFontFamily;
+  text-align: center;
+  min-height: calc(100vh - 52px);
+  padding-bottom: 15vh;
+
+  .banner__mainTitle {
+    padding: 15vh 0;
+  }
 
   h1 {
     
     font-style: italic;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 2.5rem;
-    letter-spacing: .1rem;
+    font-size: 2.8em;
+    letter-spacing: .1em;
   }
 
   h2 {
-    font-size: 1.25rem;
+    font-size: 1.2em;
     text-transform: capitalize;
-    letter-spacing: .25rem;
-    margin-bottom: 100px;
+    letter-spacing: .3em;
     font-weight: 500;
   }
 
   p {
-    letter-spacing: .1rem;
-    font-size: .9rem;
-    margin: 0 auto 80px;
-    max-width: 400px;
+    letter-spacing: .1em;
+    font-size: .9em;
+    margin: 0 auto 12.5vh;
+    max-width: 450px;
+    line-height: 1.5em;
   }
 
   .banner__highlightWord {
     @extend %highlightFontFamily;
-    margin-left: .75rem;
+    margin-left: .5em;
     text-transform: lowercase;
   }
 
   .banner__paragraphSeparator, .banner__paragraphSeparator::before, .banner__paragraphSeparator::after {
-    width: 5px;
-    height: 5px;
+    width: 7px;
+    height: 7px;
     display: block;
     border-radius: 5px;
     background: $secondaryColor;
@@ -61,4 +68,21 @@
       bottom: 25px;
     }
   }
+
+  @include media-xs {
+    font-size: 1.15rem;
+  }
+
+  @include media-sm {
+    font-size: 1.2rem;
+  }
+
+  @include media-md {
+    font-size: 1.25rem;
+  }
+
+  @include media-lg {
+    font-size: 1.5rem;
+  }
+
 }

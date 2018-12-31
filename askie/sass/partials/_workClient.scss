@@ -1,0 +1,76 @@
+.workClient {
+  position: relative;
+  font-size: 1rem;
+
+  h2 {
+    position: absolute;
+    background: $primaryColor;
+    color: $secondaryColor;
+    top: -64px;
+    padding: 20px 0;
+    font-size: 1.2em;
+    left: 20%;
+    right: 20%;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    @extend %subTitleFontFamily;
+
+    @include media-xs {
+      top: -69px;
+    }
+
+    @include media-md {
+      top: -71px;
+      left: 35.5%;
+      right: auto;
+      padding: 20px 80px;
+    }
+  
+    @include media-lg {
+      top: -76px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      bottom: -10px;
+      left: 48%;
+      background: $primaryColor;
+      transform: rotate(45deg);
+    }
+}
+  .workClients__gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr) ) ;
+    font-size: 0;
+  }
+  .workClients__gridItem {}
+
+  .workClients__snapshot {
+    width: 100%;
+  }
+  .workClients__description {
+    display: none;
+    font-size: 1em;
+    @extend %mainTitleFontFamily;
+  }
+
+  @include media-xs {
+    font-size: 1.15rem;
+  }
+
+  @include media-sm {
+    font-size: 1.2rem;
+  }
+
+  @include media-md {
+    font-size: 1.25rem;
+  }
+
+  @include media-lg {
+    font-size: 1.5rem;
+  }
+}

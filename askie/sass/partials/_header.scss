@@ -6,12 +6,16 @@ header {
   background: $headerBackgroundColor;
   text-align: center;
   padding: 15px 0;
+  @extend %subTitleFontFamily;
 }
 
 .headerMenu {
   a {
     color: $navLinkColor;
     padding: .5rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: .05rem;
   }
 
   a + a {

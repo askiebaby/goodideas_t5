@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lobster|Noto+Sans|Noto+Serif");
+@import url("https://fonts.googleapis.com/css?family=Lobster|Noto+Sans|Noto+Serif|Source+Sans+Pro:300");
 html {
   box-sizing: border-box;
 }
@@ -20,14 +20,6 @@ a {
   text-decoration: none;
 }
 
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-}
-
 h1, h2, h3, p {
   margin: 0;
 }
@@ -44,6 +36,9 @@ header {
 .headerMenu a {
   color: #fff;
   padding: .5rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: .05rem;
 }
 .headerMenu a + a {
   margin-left: 15px;
@@ -52,8 +47,12 @@ header {
   color: #fc5988;
 }
 
-.banner {
+.banner, .workClient .workClients__description {
   font-family: 'Noto Serif', serif;
+}
+
+header, .workClient h2 {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .banner .banner__highlightWord {
@@ -62,37 +61,42 @@ header {
 
 .banner {
   background: url('/images/banner.png?1543846315') no-repeat center center/cover;
-  padding: 100px 0;
-  text-align: center;
+  font-size: 1rem;
   color: #fff;
+  text-align: center;
+  min-height: calc(100vh - 52px);
+  padding-bottom: 15vh;
+}
+.banner .banner__mainTitle {
+  padding: 15vh 0;
 }
 .banner h1 {
   font-style: italic;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 2.5rem;
-  letter-spacing: .1rem;
+  font-size: 2.8em;
+  letter-spacing: .1em;
 }
 .banner h2 {
-  font-size: 1.25rem;
+  font-size: 1.2em;
   text-transform: capitalize;
-  letter-spacing: .25rem;
-  margin-bottom: 100px;
+  letter-spacing: .3em;
   font-weight: 500;
 }
 .banner p {
-  letter-spacing: .1rem;
-  font-size: .9rem;
-  margin: 0 auto 80px;
-  max-width: 400px;
+  letter-spacing: .1em;
+  font-size: .9em;
+  margin: 0 auto 12.5vh;
+  max-width: 450px;
+  line-height: 1.5em;
 }
 .banner .banner__highlightWord {
-  margin-left: .75rem;
+  margin-left: .5em;
   text-transform: lowercase;
 }
 .banner .banner__paragraphSeparator, .banner .banner__paragraphSeparator::before, .banner .banner__paragraphSeparator::after {
-  width: 5px;
-  height: 5px;
+  width: 7px;
+  height: 7px;
   display: block;
   border-radius: 5px;
   background: #fff;
@@ -110,4 +114,102 @@ header {
   content: '';
   position: absolute;
   bottom: 25px;
+}
+@media all and (min-width: 576px) {
+  .banner {
+    font-size: 1.15rem;
+  }
+}
+@media all and (min-width: 768px) {
+  .banner {
+    font-size: 1.2rem;
+  }
+}
+@media all and (min-width: 992px) {
+  .banner {
+    font-size: 1.25rem;
+  }
+}
+@media all and (min-width: 1200px) {
+  .banner {
+    font-size: 1.5rem;
+  }
+}
+
+.workClient {
+  position: relative;
+  font-size: 1rem;
+}
+.workClient h2 {
+  position: absolute;
+  background: #ff0043;
+  color: #fff;
+  top: -64px;
+  padding: 20px 0;
+  font-size: 1.2em;
+  left: 20%;
+  right: 20%;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: .1rem;
+}
+@media all and (min-width: 576px) {
+  .workClient h2 {
+    top: -69px;
+  }
+}
+@media all and (min-width: 992px) {
+  .workClient h2 {
+    top: -71px;
+    left: 35.5%;
+    right: auto;
+    padding: 20px 80px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .workClient h2 {
+    top: -76px;
+  }
+}
+.workClient h2::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: -10px;
+  left: 48%;
+  background: #ff0043;
+  transform: rotate(45deg);
+}
+.workClient .workClients__gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  font-size: 0;
+}
+.workClient .workClients__snapshot {
+  width: 100%;
+}
+.workClient .workClients__description {
+  display: none;
+  font-size: 1em;
+}
+@media all and (min-width: 576px) {
+  .workClient {
+    font-size: 1.15rem;
+  }
+}
+@media all and (min-width: 768px) {
+  .workClient {
+    font-size: 1.2rem;
+  }
+}
+@media all and (min-width: 992px) {
+  .workClient {
+    font-size: 1.25rem;
+  }
+}
+@media all and (min-width: 1200px) {
+  .workClient {
+    font-size: 1.5rem;
+  }
 }

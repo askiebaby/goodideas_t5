@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster|Noto+Sans|Noto+Serif');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Noto+Sans|Noto+Serif|Source+Sans+Pro:300');
 
 // family
 
-%titleFontFamily {
+%mainTitleFontFamily {
   font-family: 'Noto Serif', serif;
+}
+
+%subTitleFontFamily {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 %highlightFontFamily {

@@ -1,4 +1,4 @@
-@include mixinMediaQueries;
+@import './variblesBreakPoint';
 
 @mixin media-xs() {
   @media all and (min-width: $media-xs) {
