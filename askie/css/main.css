@@ -36,7 +36,8 @@ header {
 .headerMenu a {
   color: #fff;
   padding: .5rem;
-  font-size: 1.15rem;
+  font-size: 18;
+  font-size: 1.125rem;
   font-weight: 600;
   letter-spacing: .05rem;
 }
@@ -61,6 +62,7 @@ header, .workClient h2 {
 
 .banner {
   background: url('/images/banner.png?1543846315') no-repeat center center/cover;
+  font-size: 16;
   font-size: 1rem;
   color: #fff;
   text-align: center;
@@ -117,58 +119,74 @@ header, .workClient h2 {
 }
 @media all and (min-width: 576px) {
   .banner {
-    font-size: 1.15rem;
+    font-size: 18;
+    font-size: 1.125rem;
   }
 }
 @media all and (min-width: 768px) {
   .banner {
-    font-size: 1.2rem;
+    font-size: 19;
+    font-size: 1.1875rem;
   }
 }
 @media all and (min-width: 992px) {
   .banner {
+    font-size: 20;
     font-size: 1.25rem;
   }
 }
 @media all and (min-width: 1200px) {
   .banner {
+    font-size: 24;
     font-size: 1.5rem;
   }
 }
 
 .workClient {
   position: relative;
+  font-size: 16;
   font-size: 1rem;
+  margin-bottom: 120px;
 }
-.workClient h2 {
+.workClient .workClient__titleContainer {
   position: absolute;
-  background: #ff0043;
-  color: #fff;
-  top: -64px;
-  padding: 20px 0;
-  font-size: 1.2em;
-  left: 20%;
-  right: 20%;
+  top: -60px;
+  left: 0;
+  right: 0;
   text-align: center;
-  font-weight: 500;
-  letter-spacing: .1rem;
 }
 @media all and (min-width: 576px) {
-  .workClient h2 {
-    top: -69px;
+  .workClient .workClient__titleContainer {
+    top: -63px;
+  }
+}
+@media all and (min-width: 768px) {
+  .workClient .workClient__titleContainer {
+    top: -64px;
   }
 }
 @media all and (min-width: 992px) {
-  .workClient h2 {
-    top: -71px;
-    left: 35.5%;
-    right: auto;
-    padding: 20px 80px;
+  .workClient .workClient__titleContainer {
+    top: -65px;
   }
 }
 @media all and (min-width: 1200px) {
+  .workClient .workClient__titleContainer {
+    top: -71px;
+  }
+}
+.workClient h2 {
+  background: #ff0043;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: .25rem;
+  display: inline-block;
+  padding: 20px 60px;
+}
+@media all and (min-width: 576px) {
   .workClient h2 {
-    top: -76px;
+    padding: 20px 90px;
   }
 }
 .workClient h2::after {
@@ -177,21 +195,42 @@ header, .workClient h2 {
   width: 20px;
   height: 20px;
   bottom: -10px;
-  left: 48%;
+  left: calc(50% - 10px);
   background: #ff0043;
   transform: rotate(45deg);
+  z-index: 1;
 }
 .workClient .workClients__gridContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   font-size: 0;
+}
+.workClient .workClients__gridItem {
+  position: relative;
+}
+.workClient .workClients__gridItem:hover .workClients__description {
+  visibility: visible;
+  opacity: 1;
 }
 .workClient .workClients__snapshot {
   width: 100%;
 }
 .workClient .workClients__description {
-  display: none;
-  font-size: 1em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  color: #fff;
+  background: rgba(255, 0, 67, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
 }
 @media all and (min-width: 576px) {
   .workClient {

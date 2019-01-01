@@ -1,6 +1,6 @@
 @import '../modules/variblesBreakPoint';
 @import '../modules/variblesColors';
-
+@import '../modules/mixinFontSize';
 
 header {
   background: $headerBackgroundColor;
@@ -13,7 +13,7 @@ header {
   a {
     color: $navLinkColor;
     padding: .5rem;
-    font-size: 1.15rem;
+    @include font-size(18);
     font-weight: 600;
     letter-spacing: .05rem;
   }

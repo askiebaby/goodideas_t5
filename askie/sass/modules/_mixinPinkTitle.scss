@@ -1,0 +1,22 @@
+@mixin pinkTitle ($status: block){
+  background: $primaryColor;
+  color: $secondaryColor;
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: .25rem;
+  @extend %subTitleFontFamily;
+
+  @if ( $status == inline-block ) {
+    display: inline-block;
+    padding: 20px 60px;
+    @include media-xs {
+      padding: 20px 90px;
+    }
+  }
+
+  @if ( $status == block ) {
+    display: block;
+    padding: 15px 0;
+  }
+
+}

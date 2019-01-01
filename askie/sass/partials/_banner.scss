@@ -1,10 +1,11 @@
 @import '../modules/extendFont';
 @import '../modules/minxinMediaQueries';
+@import '../modules/mixinFontSize';
 
 .banner {
   background: image-url('banner.png') no-repeat center center / cover;
   @extend %mainTitleFontFamily;
-  font-size: 1rem;
+  @include font-size(16);
   color: $secondaryColor;
   text-align: center;
   min-height: calc(100vh - 52px);
@@ -70,19 +71,19 @@
   }
 
   @include media-xs {
-    font-size: 1.15rem;
+    @include font-size(18);
   }
 
   @include media-sm {
-    font-size: 1.2rem;
+    @include font-size(19);
   }
 
   @include media-md {
-    font-size: 1.25rem;
+    @include font-size(20);
   }
 
   @include media-lg {
-    font-size: 1.5rem;
+    @include font-size(24);
   }
 
 }
