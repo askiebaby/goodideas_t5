@@ -3,12 +3,12 @@
 @import '../modules/mixinFontSize';
 
 
-.workClient {
+.workClients {
   position: relative;
   @include font-size(16);
   margin-bottom: 120px;
 
-  .workClient__titleContainer {
+  &__titleContainer {
     position: absolute;
     top: -60px;
     left: 0;
@@ -35,40 +35,29 @@
 
   h2 {
     @include pinkTitle(inline-block);
-
-    &::after {
-      content: '';
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      bottom: -10px;
-      left: calc(50% - 10px);
-      background: $primaryColor;
-      transform: rotate(45deg);
-      z-index: 1;
-    }
 }
-  .workClients__gridContainer {
+  &__gridContainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr) ) ;
     font-size: 0;
   }
-  .workClients__gridItem {
+
+  &__gridItem {
     position: relative;
   }
 
-  .workClients__gridItem:hover {
+  &__gridItem:hover {
     .workClients__description {
       visibility: visible;
       opacity: 1;
     }
   }
 
-  .workClients__snapshot {
+  &__snapshot {
     width: 100%;
   }
 
-  .workClients__description {
+  &__description {
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -88,18 +77,18 @@
   }
 
   @include media-xs {
-    font-size: 1.15rem;
+    @include font-size(18);
   }
 
   @include media-sm {
-    font-size: 1.2rem;
+    @include font-size(19);
   }
 
   @include media-md {
-    font-size: 1.25rem;
+    @include font-size(20);
   }
 
   @include media-lg {
-    font-size: 1.5rem;
+    @include font-size(24);
   }
 }

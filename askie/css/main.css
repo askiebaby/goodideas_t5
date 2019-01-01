@@ -36,7 +36,7 @@ header {
 .headerMenu a {
   color: #fff;
   padding: .5rem;
-  font-size: 18;
+  font-size: 18px;
   font-size: 1.125rem;
   font-weight: 600;
   letter-spacing: .05rem;
@@ -48,11 +48,11 @@ header {
   color: #fc5988;
 }
 
-.banner, .workClient .workClients__description {
+.banner, .workClients__description, .team h3 {
   font-family: 'Noto Serif', serif;
 }
 
-header, .workClient h2 {
+header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -62,7 +62,7 @@ header, .workClient h2 {
 
 .banner {
   background: url('/images/banner.png?1543846315') no-repeat center center/cover;
-  font-size: 16;
+  font-size: 16px;
   font-size: 1rem;
   color: #fff;
   text-align: center;
@@ -119,36 +119,36 @@ header, .workClient h2 {
 }
 @media all and (min-width: 576px) {
   .banner {
-    font-size: 18;
+    font-size: 18px;
     font-size: 1.125rem;
   }
 }
 @media all and (min-width: 768px) {
   .banner {
-    font-size: 19;
+    font-size: 19px;
     font-size: 1.1875rem;
   }
 }
 @media all and (min-width: 992px) {
   .banner {
-    font-size: 20;
+    font-size: 20px;
     font-size: 1.25rem;
   }
 }
 @media all and (min-width: 1200px) {
   .banner {
-    font-size: 24;
+    font-size: 24px;
     font-size: 1.5rem;
   }
 }
 
-.workClient {
+.workClients {
   position: relative;
-  font-size: 16;
+  font-size: 16px;
   font-size: 1rem;
   margin-bottom: 120px;
 }
-.workClient .workClient__titleContainer {
+.workClients__titleContainer {
   position: absolute;
   top: -60px;
   left: 0;
@@ -156,40 +156,36 @@ header, .workClient h2 {
   text-align: center;
 }
 @media all and (min-width: 576px) {
-  .workClient .workClient__titleContainer {
+  .workClients__titleContainer {
     top: -63px;
   }
 }
 @media all and (min-width: 768px) {
-  .workClient .workClient__titleContainer {
+  .workClients__titleContainer {
     top: -64px;
   }
 }
 @media all and (min-width: 992px) {
-  .workClient .workClient__titleContainer {
+  .workClients__titleContainer {
     top: -65px;
   }
 }
 @media all and (min-width: 1200px) {
-  .workClient .workClient__titleContainer {
+  .workClients__titleContainer {
     top: -71px;
   }
 }
-.workClient h2 {
+.workClients h2 {
+  position: relative;
   background: #ff0043;
   color: #fff;
   font-size: 1em;
   font-weight: 500;
-  letter-spacing: .25rem;
   display: inline-block;
   padding: 20px 60px;
+  letter-spacing: .2em;
 }
-@media all and (min-width: 576px) {
-  .workClient h2 {
-    padding: 20px 90px;
-  }
-}
-.workClient h2::after {
+.workClients h2::after {
   content: '';
   position: absolute;
   width: 20px;
@@ -200,22 +196,35 @@ header, .workClient h2 {
   transform: rotate(45deg);
   z-index: 1;
 }
-.workClient .workClients__gridContainer {
+@media all and (min-width: 992px) {
+  .workClients h2::after {
+    width: 30px;
+    height: 30px;
+    bottom: -15px;
+    left: calc(50% - 15px);
+  }
+}
+@media all and (min-width: 576px) {
+  .workClients h2 {
+    padding: 20px 90px;
+  }
+}
+.workClients__gridContainer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   font-size: 0;
 }
-.workClient .workClients__gridItem {
+.workClients__gridItem {
   position: relative;
 }
-.workClient .workClients__gridItem:hover .workClients__description {
+.workClients__gridItem:hover .workClients__description {
   visibility: visible;
   opacity: 1;
 }
-.workClient .workClients__snapshot {
+.workClients__snapshot {
   width: 100%;
 }
-.workClient .workClients__description {
+.workClients__description {
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -233,22 +242,141 @@ header, .workClient h2 {
   transition: visibility 0s, opacity 0.3s linear;
 }
 @media all and (min-width: 576px) {
-  .workClient {
-    font-size: 1.15rem;
+  .workClients {
+    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 @media all and (min-width: 768px) {
-  .workClient {
-    font-size: 1.2rem;
+  .workClients {
+    font-size: 19px;
+    font-size: 1.1875rem;
   }
 }
 @media all and (min-width: 992px) {
-  .workClient {
+  .workClients {
+    font-size: 20px;
     font-size: 1.25rem;
   }
 }
 @media all and (min-width: 1200px) {
-  .workClient {
+  .workClients {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
+
+.team {
+  font-size: 16px;
+  font-size: 1rem;
+  text-align: center;
+}
+.team h2 {
+  position: relative;
+  background: #ff0043;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+  display: block;
+  padding: 15px 0;
+  text-align: center;
+  letter-spacing: .05em;
+}
+.team h2::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: -10px;
+  left: calc(50% - 10px);
+  background: #ff0043;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+@media all and (min-width: 992px) {
+  .team h2::after {
+    width: 30px;
+    height: 30px;
+    bottom: -15px;
+    left: calc(50% - 15px);
+  }
+}
+.team h3 {
+  color: #ff0043;
+}
+.team__mainTitle {
+  padding: 50px 0;
+  font-size: 1.2em;
+  letter-spacing: .1em;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.team__gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100%);
+  padding: 0 12.5%;
+}
+@media all and (min-width: 768px) {
+  .team__gridContainer {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, auto);
+    padding: 0 10%;
+  }
+}
+@media all and (min-width: 992px) {
+  .team__gridContainer {
+    padding: 0 15%;
+  }
+}
+.team__gridContainer h3 {
+  margin-top: 15px;
+  font-size: 1.8em;
+  font-weight: 500;
+  letter-spacing: .1em;
+  line-height: 1em;
+}
+.team__gridContainer p {
+  margin-bottom: 50px;
+  font-weight: 600;
+  word-spacing: .1em;
+  color: #333;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+.team img {
+  width: 100%;
+}
+.team__contactButton {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 10px 60px;
+  font-size: 20px;
+  font-size: 1.25rem;
+  margin: 15px auto 50px;
+  text-transform: uppercase;
+}
+@media all and (min-width: 576px) {
+  .team {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+}
+@media all and (min-width: 768px) {
+  .team {
+    font-size: 19px;
+    font-size: 1.1875rem;
+  }
+}
+@media all and (min-width: 992px) {
+  .team {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
+@media all and (min-width: 1200px) {
+  .team {
+    font-size: 24px;
     font-size: 1.5rem;
   }
 }
