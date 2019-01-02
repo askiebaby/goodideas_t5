@@ -211,7 +211,12 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
 }
 .workClients__gridContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+@media all and (min-width: 1200px) {
+  .workClients__gridContainer {
+    grid-template-columns: repeat(4, minmax(320px, 1fr));
+  }
 }
 .workClients__gridItem {
   position: relative;
