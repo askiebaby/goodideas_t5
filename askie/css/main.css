@@ -67,7 +67,6 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
   color: #fff;
   text-align: center;
   min-height: calc(100vh - 52px);
-  padding-bottom: 15vh;
 }
 .banner .banner__mainTitle {
   padding: 20vh 0 15vh;
@@ -213,7 +212,6 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
 .workClients__gridContainer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  font-size: 0;
 }
 .workClients__gridItem {
   position: relative;
@@ -224,6 +222,7 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
 }
 .workClients__snapshot {
   width: 100%;
+  display: block;
 }
 .workClients__description {
   cursor: pointer;
@@ -321,8 +320,6 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
 @media all and (min-width: 768px) {
   .team__gridContainer {
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(2, auto);
-    padding: 0 10%;
   }
 }
 @media all and (min-width: 992px) {
@@ -356,7 +353,7 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
   text-transform: uppercase;
   margin: 0 auto;
   text-align: center;
-  width: 250px;
+  width: 255px;
   width: max-content;
   font-weight: 600;
   background: #000;
@@ -500,7 +497,7 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
   text-transform: uppercase;
   margin: 0 auto;
   text-align: center;
-  width: 250px;
+  width: 255px;
   width: max-content;
   font-weight: 600;
   background: #fff;

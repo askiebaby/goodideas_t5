@@ -39,7 +39,6 @@
   &__gridContainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr) ) ;
-    font-size: 0;
   }
 
   &__gridItem {
@@ -55,6 +54,7 @@
 
   &__snapshot {
     width: 100%;
+    display: block;
   }
 
   &__description {

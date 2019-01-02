@@ -32,8 +32,6 @@
     
     @include media-sm {
       grid-template-columns: repeat(2, 50%);
-      grid-template-rows: repeat(2, auto);
-      padding: 0 10%;
     }
 
     @include media-md {
