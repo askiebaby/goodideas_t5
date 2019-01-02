@@ -86,7 +86,7 @@
     }
   }
 
-  &__statement__whoWeAre {
+  &__statement__whoWeAre, &__statement__whatWeBelieve {
     @include media-md {
       margin-bottom: 120px;
     }
@@ -127,10 +127,4 @@
   &__toTopButton {
     @include button(white);
   }
-
-  // &__statementContainer + &__statementContainer {
-  //   .concept__paragraphSeparator {
-  //     display: block;
-  //   }
-  // }
 }

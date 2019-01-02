@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lobster|Noto+Sans|Noto+Serif|Source+Sans+Pro:300");
+@import url("https://fonts.googleapis.com/css?family=Lobster|Noto+Serif|Source+Sans+Pro:300");
 html {
   box-sizing: border-box;
 }
@@ -52,7 +52,7 @@ header {
   font-family: 'Noto Serif', serif;
 }
 
-header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton, .concept p, .concept__toTopButton {
+header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton, .concept p, .concept__toTopButton, footer {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -207,7 +207,7 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
 }
 @media all and (min-width: 576px) {
   .workClients h2 {
-    padding: 20px 90px;
+    padding: 20px 100px;
   }
 }
 .workClients__gridContainer {
@@ -230,7 +230,8 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 28px;
+  font-size: 1.75rem;
   position: absolute;
   text-align: center;
   width: 100%;
@@ -357,6 +358,7 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
   text-align: center;
   width: 250px;
   width: max-content;
+  font-weight: 600;
   background: #000;
   color: #fff;
   margin: 15px auto 50px;
@@ -456,7 +458,7 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
   }
 }
 @media all and (min-width: 992px) {
-  .concept__statement__whoWeAre {
+  .concept__statement__whoWeAre, .concept__statement__whatWeBelieve {
     margin-bottom: 120px;
   }
 }
@@ -500,6 +502,20 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
   text-align: center;
   width: 250px;
   width: max-content;
+  font-weight: 600;
   background: #fff;
   color: #000;
+}
+
+footer {
+  background: #e5e4e4;
+  text-align: center;
+  padding: 45px 0;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: .15em;
+}
+footer a {
+  color: #ff0043;
 }

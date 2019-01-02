@@ -1,0 +1,21 @@
+@import '../modules/minxinMediaQueries';
+@import '../modules/extendFontFamily';
+@import '../modules/mixinFontSize';
+
+footer {
+  background: #e5e4e4;
+  text-align: center;
+  padding: 45px 0;
+  @extend %subTitleFontFamily;
+  @include font-size(18);
+  font-weight: 600;
+  letter-spacing: .15em;
+
+  a {
+    color: $primaryColor;
+  }
+
+  // @include media-md {
+  //   @include font-size(20);
+  // }
+}

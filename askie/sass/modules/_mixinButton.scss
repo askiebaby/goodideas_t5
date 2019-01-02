@@ -8,6 +8,7 @@
   text-align: center;
   width: 250px;
   width: max-content;
+  font-weight: 600;
 
   @if ($style==black) {
     background: #000;
