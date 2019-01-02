@@ -1,0 +1,21 @@
+@mixin button ($style:black) {
+  display: block;
+  padding: 10px 70px;
+  @include font-size(20);
+  @extend %subTitleFontFamily;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+  width: 250px;
+  width: max-content;
+
+  @if ($style==black) {
+    background: #000;
+    color: #fff;
+  }
+
+  @if ($style==white) {
+    background: #fff;
+    color:#000;
+  }
+}

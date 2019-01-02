@@ -2,6 +2,7 @@
 @import '../modules/extendFontFamily';
 @import '../modules/mixinFontSize';
 @import '../modules/mixinPinkTitle';
+@import '../modules/mixinButton';
 
 .team {
   @include font-size(16);
@@ -18,7 +19,7 @@
 
   &__mainTitle {
     padding: 50px 0;
-    font-size: 1.2em;
+    font-size: 1.15em;
     letter-spacing: .1em;
     font-weight: 500;
     text-transform: capitalize;
@@ -27,7 +28,7 @@
   &__gridContainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, 100%);
-    padding: 0 12.5%;
+    padding: 0 10%;
     
     @include media-sm {
       grid-template-columns: repeat(2, 50%);
@@ -36,7 +37,7 @@
     }
 
     @include media-md {
-      padding: 0 15%;
+      padding: 0 18%;
     }
 
 
@@ -47,7 +48,6 @@
       letter-spacing: .1em;
       line-height: 1em;
 
-      
     }
     
     p {
@@ -66,14 +66,8 @@
   }
 
   &__contactButton {
-    display: inline-block;
-    background: #000;
-    color: #fff;
-    padding: 10px 60px;
-    @include font-size(20);
+    @include button(black);
     margin: 15px auto 50px;
-    text-transform: uppercase;
-    @extend %subTitleFontFamily;
   }
 
   @include media-xs {

@@ -48,11 +48,11 @@ header {
   color: #fc5988;
 }
 
-.banner, .workClients__description, .team h3 {
+.banner, .workClients__description, .team h3, .concept h2 {
   font-family: 'Noto Serif', serif;
 }
 
-header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton {
+header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton, .concept p, .concept__toTopButton {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -61,7 +61,7 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton 
 }
 
 .banner {
-  background: url('/images/banner.png?1543846315') no-repeat center center/cover;
+  background: url("../images/banner.png") no-repeat center center/cover;
   font-size: 16px;
   font-size: 1rem;
   color: #fff;
@@ -70,7 +70,7 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton 
   padding-bottom: 15vh;
 }
 .banner .banner__mainTitle {
-  padding: 15vh 0;
+  padding: 20vh 0 15vh;
 }
 .banner h1 {
   font-style: italic;
@@ -95,10 +95,11 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton 
 .banner .banner__highlightWord {
   margin-left: .5em;
   text-transform: lowercase;
+  letter-spacing: 0;
 }
 .banner .banner__paragraphSeparator, .banner .banner__paragraphSeparator::before, .banner .banner__paragraphSeparator::after {
-  width: 7px;
-  height: 7px;
+  width: 9px;
+  height: 9px;
   display: block;
   border-radius: 5px;
   background: #fff;
@@ -110,12 +111,12 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton 
 .banner .banner__paragraphSeparator::before {
   content: '';
   position: absolute;
-  top: 25px;
+  top: 30px;
 }
 .banner .banner__paragraphSeparator::after {
   content: '';
   position: absolute;
-  bottom: 25px;
+  bottom: 30px;
 }
 @media all and (min-width: 576px) {
   .banner {
@@ -306,7 +307,7 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton 
 }
 .team__mainTitle {
   padding: 50px 0;
-  font-size: 1.2em;
+  font-size: 1.15em;
   letter-spacing: .1em;
   font-weight: 500;
   text-transform: capitalize;
@@ -314,7 +315,7 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton 
 .team__gridContainer {
   display: grid;
   grid-template-columns: repeat(auto-fill, 100%);
-  padding: 0 12.5%;
+  padding: 0 10%;
 }
 @media all and (min-width: 768px) {
   .team__gridContainer {
@@ -325,7 +326,7 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton 
 }
 @media all and (min-width: 992px) {
   .team__gridContainer {
-    padding: 0 15%;
+    padding: 0 18%;
   }
 }
 .team__gridContainer h3 {
@@ -347,14 +348,18 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton 
   width: 100%;
 }
 .team__contactButton {
-  display: inline-block;
-  background: #000;
-  color: #fff;
-  padding: 10px 60px;
+  display: block;
+  padding: 10px 70px;
   font-size: 20px;
   font-size: 1.25rem;
-  margin: 15px auto 50px;
   text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+  width: 250px;
+  width: max-content;
+  background: #000;
+  color: #fff;
+  margin: 15px auto 50px;
 }
 @media all and (min-width: 576px) {
   .team {
@@ -379,4 +384,122 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton 
     font-size: 24px;
     font-size: 1.5rem;
   }
+}
+
+.concept {
+  font-size: 0;
+  background: url(../images/sea-horse-bg.jpg) no-repeat center center/cover;
+  color: #fff;
+  padding: 80px 10% 30px;
+}
+@media all and (min-width: 992px) {
+  .concept {
+    padding: 80px 15% 30px;
+  }
+}
+@media all and (min-width: 992px) {
+  .concept__statementContainer:first-child {
+    margin-right: 15%;
+  }
+}
+.concept__statementContainer:first-child .concept__statement:first-child .concept__paragraphSeparator {
+  display: none;
+}
+@media all and (min-width: 992px) {
+  .concept__statementContainer:nth-child(2) {
+    margin-top: 290px;
+  }
+}
+@media all and (min-width: 992px) {
+  .concept__statementContainer {
+    display: inline-block;
+    width: 42.5%;
+    vertical-align: top;
+  }
+  .concept__statementContainer .concept__statement:first-child .concept__paragraphSeparator {
+    display: none;
+  }
+}
+.concept__paragraphSeparator {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.concept__paragraphSeparator__dot {
+  position: relative;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 5px;
+}
+.concept__paragraphSeparator__dot::before, .concept__paragraphSeparator__dot::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 5px;
+}
+.concept__paragraphSeparator__dot::before {
+  left: 40px;
+}
+.concept__paragraphSeparator__dot::after {
+  right: 40px;
+}
+.concept__statement {
+  margin-bottom: 60px;
+  position: relative;
+}
+@media all and (min-width: 992px) {
+  .concept__statement__whatWeDo {
+    margin-bottom: 150px;
+  }
+}
+@media all and (min-width: 992px) {
+  .concept__statement__whoWeAre {
+    margin-bottom: 120px;
+  }
+}
+@media all and (min-width: 992px) {
+  .concept__statement + .concept__statement {
+    margin-left: 5%;
+  }
+}
+.concept h2 {
+  font-size: 1.6rem;
+  letter-spacing: .1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+@media all and (min-width: 992px) {
+  .concept h2 {
+    font-size: 2rem;
+  }
+}
+@media all and (min-width: 1200px) {
+  .concept h2 {
+    font-size: 2.7rem;
+  }
+}
+.concept p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+@media all and (min-width: 768px) {
+  .concept p {
+    font-size: 1.15rem;
+  }
+}
+.concept__toTopButton {
+  display: block;
+  padding: 10px 70px;
+  font-size: 20px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+  width: 250px;
+  width: max-content;
+  background: #fff;
+  color: #000;
 }

@@ -1,0 +1,136 @@
+@import '../modules/minxinMediaQueries';
+@import '../modules/extendFontFamily';
+@import '../modules/mixinFontSize';
+@import '../modules/mixinButton';
+@import '../modules/mixinSquare';
+
+.concept {
+  font-size: 0;
+  background: url(../images/sea-horse-bg.jpg) no-repeat center center / cover;
+  color: #fff;
+  padding: 80px 10% 30px;
+
+  @include media-md {
+    padding: 80px 15% 30px;
+  }
+
+  &__statementContainer {
+    &:first-child {
+      @include media-md {
+        margin-right: 15%;
+      }
+
+      .concept__statement:first-child {
+        .concept__paragraphSeparator {
+          display: none;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      @include media-md {
+        margin-top: 290px; 
+      }
+    }
+
+    @include media-md {
+      display: inline-block;
+      width: 42.5%;
+      vertical-align: top;
+
+      .concept__statement:first-child {
+        .concept__paragraphSeparator {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__paragraphSeparator {
+    text-align: center;
+    margin-bottom: 60px;
+
+    &__dot {
+      position: relative;
+      display: inline-block;
+      @include square(8px);
+      background: #fff;
+      border-radius: 5px;
+
+      &::before, &::after {
+        content: '';
+        position: absolute;
+        @include square(8px);
+        background: #fff; 
+        border-radius: 5px;
+      }
+
+      &::before {
+        left: 40px;
+      }
+
+      &::after {
+        right: 40px;
+      }
+    }
+  }
+
+  &__statement {
+    margin-bottom: 60px;
+    position: relative;
+  }
+
+  &__statement__whatWeDo {
+    @include media-md {
+      margin-bottom: 150px;
+    }
+  }
+
+  &__statement__whoWeAre {
+    @include media-md {
+      margin-bottom: 120px;
+    }
+  }
+
+  &__statement + &__statement {
+    @include media-md { 
+      margin-left: 5%;
+    }
+  }
+
+  h2 {
+    @extend %mainTitleFontFamily;
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+    @include media-md {
+      font-size: 2rem;
+    }
+
+    @include media-lg {
+      font-size: 2.7rem;
+    }
+  }
+
+  p {
+    @extend %subTitleFontFamily;
+    font-size: 1rem;
+    line-height: 1.6rem;
+
+    @include media-sm {
+      font-size: 1.15rem;
+    }
+  }
+
+  &__toTopButton {
+    @include button(white);
+  }
+
+  // &__statementContainer + &__statementContainer {
+  //   .concept__paragraphSeparator {
+  //     display: block;
+  //   }
+  // }
+}

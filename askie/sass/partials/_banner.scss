@@ -3,7 +3,7 @@
 @import '../modules/mixinFontSize';
 
 .banner {
-  background: image-url('banner.png') no-repeat center center / cover;
+  background: url('../images/banner.png') no-repeat center center / cover;
   @extend %mainTitleFontFamily;
   @include font-size(16);
   color: $secondaryColor;
@@ -12,7 +12,7 @@
   padding-bottom: 15vh;
 
   .banner__mainTitle {
-    padding: 15vh 0;
+    padding: 20vh 0 15vh;
   }
 
   h1 {
@@ -43,11 +43,12 @@
     @extend %highlightFontFamily;
     margin-left: .5em;
     text-transform: lowercase;
+    letter-spacing: 0;
   }
 
   .banner__paragraphSeparator, .banner__paragraphSeparator::before, .banner__paragraphSeparator::after {
-    width: 7px;
-    height: 7px;
+    width: 9px;
+    height: 9px;
     display: block;
     border-radius: 5px;
     background: $secondaryColor;
@@ -60,13 +61,13 @@
     &::before{
       content: '';
       position: absolute;
-      top: 25px;
+      top: 30px;
     }
 
     &::after {
       content: '';
       position: absolute;
-      bottom: 25px;
+      bottom: 30px;
     }
   }
 
