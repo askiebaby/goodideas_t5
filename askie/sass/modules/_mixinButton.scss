@@ -9,6 +9,7 @@
   width: 255px;
   width: max-content;
   font-weight: 600;
+  border: 0;
 
   @if ($style==black) {
     background: #000;

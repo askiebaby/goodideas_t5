@@ -24,7 +24,10 @@
 
     &:nth-child(2) {
       @include media-md {
-        margin-top: 290px; 
+        margin-top: 290px;
+        .concept__paragraphSeparator:first-child {
+          display: none;
+        } 
       }
     }
 
@@ -32,12 +35,6 @@
       display: inline-block;
       width: 40%;
       vertical-align: top;
-
-      .concept__statement:first-child {
-        .concept__paragraphSeparator {
-          display: none;
-        }
-      }
     }
   }
 

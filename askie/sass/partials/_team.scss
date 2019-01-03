@@ -40,12 +40,11 @@
 
 
     h3 {
-      margin-top: 15px;
+      margin-top: 20px;
       font-size: 1.8em;
       font-weight: 500;
       letter-spacing: .1em;
       line-height: 1em;
-
     }
     
     p {
@@ -61,6 +60,7 @@
 
   img {
     width: 100%;
+    vertical-align: bottom;
   }
 
   &__contactButton {

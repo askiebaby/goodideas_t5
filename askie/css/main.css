@@ -335,7 +335,7 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
   }
 }
 .team__gridContainer h3 {
-  margin-top: 15px;
+  margin-top: 20px;
   font-size: 1.8em;
   font-weight: 500;
   letter-spacing: .1em;
@@ -351,6 +351,7 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
 }
 .team img {
   width: 100%;
+  vertical-align: bottom;
 }
 .team__contactButton {
   display: block;
@@ -363,6 +364,7 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
   width: 255px;
   width: max-content;
   font-weight: 600;
+  border: 0;
   background: #000;
   color: #fff;
   margin: 15px auto 50px;
@@ -413,15 +415,15 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
   .concept__statementContainer:nth-child(2) {
     margin-top: 290px;
   }
+  .concept__statementContainer:nth-child(2) .concept__paragraphSeparator:first-child {
+    display: none;
+  }
 }
 @media all and (min-width: 992px) {
   .concept__statementContainer {
     display: inline-block;
     width: 40%;
     vertical-align: top;
-  }
-  .concept__statementContainer .concept__statement:first-child .concept__paragraphSeparator {
-    display: none;
   }
 }
 .concept__paragraphSeparator {
@@ -503,6 +505,7 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
   width: 255px;
   width: max-content;
   font-weight: 600;
+  border: 0;
   background: #fff;
   color: #000;
 }
