@@ -62,11 +62,12 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
 
 .banner {
   background: url("../images/banner.png") no-repeat center center/cover;
+  background-attachment: fixed;
   font-size: 16px;
   font-size: 1rem;
   color: #fff;
   text-align: center;
-  min-height: calc(100vh - 52px);
+  min-height: calc(100vh - 53px);
 }
 .banner .banner__mainTitle {
   padding: 20vh 0 15vh;
@@ -99,7 +100,6 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
 .banner .banner__paragraphSeparator, .banner .banner__paragraphSeparator::before, .banner .banner__paragraphSeparator::after {
   width: 9px;
   height: 9px;
-  display: block;
   border-radius: 5px;
   background: #fff;
   margin: auto;
@@ -111,11 +111,13 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
   content: '';
   position: absolute;
   top: 30px;
+  display: block;
 }
 .banner .banner__paragraphSeparator::after {
   content: '';
   position: absolute;
   bottom: 30px;
+  display: block;
 }
 @media all and (min-width: 576px) {
   .banner {
@@ -393,6 +395,7 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
 .concept {
   font-size: 0;
   background: url(../images/sea-horse-bg.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
   color: #fff;
   padding: 80px 10% 30px;
 }
@@ -403,11 +406,8 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
 }
 @media all and (min-width: 992px) {
   .concept__statementContainer:first-child {
-    margin-right: 15%;
+    margin-right: 20%;
   }
-}
-.concept__statementContainer:first-child .concept__statement:first-child .concept__paragraphSeparator {
-  display: none;
 }
 @media all and (min-width: 992px) {
   .concept__statementContainer:nth-child(2) {
@@ -417,7 +417,7 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
 @media all and (min-width: 992px) {
   .concept__statementContainer {
     display: inline-block;
-    width: 42.5%;
+    width: 40%;
     vertical-align: top;
   }
   .concept__statementContainer .concept__statement:first-child .concept__paragraphSeparator {
@@ -454,6 +454,9 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
   margin-bottom: 60px;
   position: relative;
 }
+.concept__statement p + p {
+  margin-top: 30px;
+}
 @media all and (min-width: 992px) {
   .concept__statement__whatWeDo {
     margin-bottom: 150px;
@@ -462,11 +465,6 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
 @media all and (min-width: 992px) {
   .concept__statement__whoWeAre, .concept__statement__whatWeBelieve {
     margin-bottom: 120px;
-  }
-}
-@media all and (min-width: 992px) {
-  .concept__statement + .concept__statement {
-    margin-left: 5%;
   }
 }
 .concept h2 {

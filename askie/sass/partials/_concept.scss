@@ -7,6 +7,7 @@
 .concept {
   font-size: 0;
   background: url(../images/sea-horse-bg.jpg) no-repeat center center / cover;
+  background-attachment: fixed;
   color: #fff;
   padding: 80px 10% 30px;
 
@@ -17,13 +18,7 @@
   &__statementContainer {
     &:first-child {
       @include media-md {
-        margin-right: 15%;
-      }
-
-      .concept__statement:first-child {
-        .concept__paragraphSeparator {
-          display: none;
-        }
+        margin-right: 20%;
       }
     }
 
@@ -35,7 +30,7 @@
 
     @include media-md {
       display: inline-block;
-      width: 42.5%;
+      width: 40%;
       vertical-align: top;
 
       .concept__statement:first-child {
@@ -78,6 +73,10 @@
   &__statement {
     margin-bottom: 60px;
     position: relative;
+
+    p + p {
+      margin-top: 30px;
+    }
   }
 
   &__statement__whatWeDo {
@@ -89,12 +88,6 @@
   &__statement__whoWeAre, &__statement__whatWeBelieve {
     @include media-md {
       margin-bottom: 120px;
-    }
-  }
-
-  &__statement + &__statement {
-    @include media-md { 
-      margin-left: 5%;
     }
   }
 
