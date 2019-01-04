@@ -1,15 +1,32 @@
-@import '../modules/minxinMediaQueries';
+@import '../modules/mixinMediaQueries';
 @import '../modules/extendFontFamily';
 @import '../modules/mixinFontSize';
-@import '../modules/mixinPinkTitle';
+@import '../modules/mixinSectionTitle';
 @import '../modules/mixinButton';
 
 .team {
-  @include font-size(16);
   text-align: center;
+  padding-bottom: 50px;
+  @include fontSize(16);
+
+  @include mediaMobile {
+    @include fontSize(18);
+  }
+
+  @include mediaTablet {
+    @include fontSize(19);
+  }
+
+  @include mediaPC {
+    @include fontSize(20);
+  }
+
+  @include mediaLargeDevice {
+    @include fontSize(24);
+  }
 
   h2 {
-    @include pinkTitle(block);
+    @include sectionTitle(block);
   }
 
   h3 {
@@ -30,14 +47,13 @@
     grid-template-columns: repeat(auto-fill, 100%);
     padding: 0 10%;
     
-    @include media-sm {
+    @include mediaTablet {
       grid-template-columns: repeat(2, 50%);
     }
 
-    @include media-md {
+    @include mediaPC {
       padding: 0 18%;
     }
-
 
     h3 {
       margin-top: 20px;
@@ -53,10 +69,9 @@
       font-weight: 600;
       word-spacing: .1em;
       color: #333;
-      @include font-size(18);
+      @include fontSize(18);
     }
   }
-
 
   img {
     width: 100%;
@@ -65,22 +80,5 @@
 
   &__contactButton {
     @include button(black);
-    margin: 15px auto 50px;
-  }
-
-  @include media-xs {
-    @include font-size(18);
-  }
-
-  @include media-sm {
-    @include font-size(19);
-  }
-
-  @include media-md {
-    @include font-size(20);
-  }
-
-  @include media-lg {
-    @include font-size(24);
   }
 }

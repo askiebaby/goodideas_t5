@@ -36,10 +36,10 @@ header {
 .headerMenu a {
   color: #fff;
   padding: .5rem;
-  font-size: 18px;
-  font-size: 1.125rem;
   font-weight: 600;
   letter-spacing: .05rem;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 .headerMenu a + a {
   margin-left: 15px;
@@ -63,11 +63,35 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
 .banner {
   background: url("../images/banner.png") no-repeat center center/cover;
   background-attachment: fixed;
-  font-size: 16px;
-  font-size: 1rem;
   color: #fff;
   text-align: center;
   min-height: calc(100vh - 53px);
+  font-size: 16px;
+  font-size: 1rem;
+}
+@media all and (min-width: 576px) {
+  .banner {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+}
+@media all and (min-width: 768px) {
+  .banner {
+    font-size: 19px;
+    font-size: 1.1875rem;
+  }
+}
+@media all and (min-width: 992px) {
+  .banner {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
+@media all and (min-width: 1200px) {
+  .banner {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
 }
 .banner .banner__mainTitle {
   padding: 20vh 0 15vh;
@@ -97,65 +121,70 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
   text-transform: lowercase;
   letter-spacing: 0;
 }
-.banner .banner__paragraphSeparator, .banner .banner__paragraphSeparator::before, .banner .banner__paragraphSeparator::after {
+.banner__paragraphSeparator {
+  position: relative;
   width: 9px;
   height: 9px;
   border-radius: 5px;
   background: #fff;
   margin: auto;
 }
-.banner .banner__paragraphSeparator {
-  position: relative;
+.banner__paragraphSeparator::before, .banner__paragraphSeparator::after {
+  width: 9px;
+  height: 9px;
+  border-radius: 5px;
+  background: #fff;
+  margin: auto;
 }
-.banner .banner__paragraphSeparator::before {
+.banner__paragraphSeparator::before {
   content: '';
   position: absolute;
   top: 30px;
   display: block;
 }
-.banner .banner__paragraphSeparator::after {
+.banner__paragraphSeparator::after {
   content: '';
   position: absolute;
   bottom: 30px;
   display: block;
 }
+
+.workClients {
+  position: relative;
+  margin-bottom: 120px;
+  font-size: 16px;
+  font-size: 1rem;
+}
 @media all and (min-width: 576px) {
-  .banner {
+  .workClients {
     font-size: 18px;
     font-size: 1.125rem;
   }
 }
 @media all and (min-width: 768px) {
-  .banner {
+  .workClients {
     font-size: 19px;
     font-size: 1.1875rem;
   }
 }
 @media all and (min-width: 992px) {
-  .banner {
+  .workClients {
     font-size: 20px;
     font-size: 1.25rem;
   }
 }
 @media all and (min-width: 1200px) {
-  .banner {
+  .workClients {
     font-size: 24px;
     font-size: 1.5rem;
   }
 }
-
-.workClients {
-  position: relative;
-  font-size: 16px;
-  font-size: 1rem;
-  margin-bottom: 120px;
-}
 .workClients__titleContainer {
   position: absolute;
-  top: -60px;
   left: 0;
   right: 0;
   text-align: center;
+  top: -60px;
 }
 @media all and (min-width: 576px) {
   .workClients__titleContainer {
@@ -198,7 +227,7 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
   transform: rotate(45deg);
   z-index: 1;
 }
-@media all and (min-width: 992px) {
+@media all and (min-width: 768px) {
   .workClients h2::after {
     width: 30px;
     height: 30px;
@@ -236,8 +265,6 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 28px;
-  font-size: 1.75rem;
   position: absolute;
   text-align: center;
   width: 100%;
@@ -248,36 +275,39 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 0.3s linear;
+  font-size: 28px;
+  font-size: 1.75rem;
+}
+
+.team {
+  text-align: center;
+  padding-bottom: 50px;
+  font-size: 16px;
+  font-size: 1rem;
 }
 @media all and (min-width: 576px) {
-  .workClients {
+  .team {
     font-size: 18px;
     font-size: 1.125rem;
   }
 }
 @media all and (min-width: 768px) {
-  .workClients {
+  .team {
     font-size: 19px;
     font-size: 1.1875rem;
   }
 }
 @media all and (min-width: 992px) {
-  .workClients {
+  .team {
     font-size: 20px;
     font-size: 1.25rem;
   }
 }
 @media all and (min-width: 1200px) {
-  .workClients {
+  .team {
     font-size: 24px;
     font-size: 1.5rem;
   }
-}
-
-.team {
-  font-size: 16px;
-  font-size: 1rem;
-  text-align: center;
 }
 .team h2 {
   position: relative;
@@ -301,7 +331,7 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
   transform: rotate(45deg);
   z-index: 1;
 }
-@media all and (min-width: 992px) {
+@media all and (min-width: 768px) {
   .team h2::after {
     width: 30px;
     height: 30px;
@@ -367,31 +397,6 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
   border: 0;
   background: #000;
   color: #fff;
-  margin: 15px auto 50px;
-}
-@media all and (min-width: 576px) {
-  .team {
-    font-size: 18px;
-    font-size: 1.125rem;
-  }
-}
-@media all and (min-width: 768px) {
-  .team {
-    font-size: 19px;
-    font-size: 1.1875rem;
-  }
-}
-@media all and (min-width: 992px) {
-  .team {
-    font-size: 20px;
-    font-size: 1.25rem;
-  }
-}
-@media all and (min-width: 1200px) {
-  .team {
-    font-size: 24px;
-    font-size: 1.5rem;
-  }
 }
 
 .concept {
@@ -407,13 +412,19 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
   }
 }
 @media all and (min-width: 992px) {
-  .concept__statementContainer:first-child {
+  .concept__statementContainer:nth-child(1) {
     margin-right: 20%;
+  }
+  .concept__statementContainer:nth-child(1) .concept__statement:first-child {
+    margin-bottom: 150px;
   }
 }
 @media all and (min-width: 992px) {
   .concept__statementContainer:nth-child(2) {
     margin-top: 290px;
+  }
+  .concept__statementContainer:nth-child(2) .concept__statement:nth-child(2) {
+    margin-bottom: 120px;
   }
   .concept__statementContainer:nth-child(2) .concept__paragraphSeparator:first-child {
     display: none;
@@ -433,18 +444,18 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
 .concept__paragraphSeparator__dot {
   position: relative;
   display: inline-block;
-  width: 8px;
-  height: 8px;
   background: #fff;
   border-radius: 5px;
+  width: 8px;
+  height: 8px;
 }
 .concept__paragraphSeparator__dot::before, .concept__paragraphSeparator__dot::after {
   content: '';
   position: absolute;
-  width: 8px;
-  height: 8px;
   background: #fff;
   border-radius: 5px;
+  width: 8px;
+  height: 8px;
 }
 .concept__paragraphSeparator__dot::before {
   left: 40px;
@@ -459,21 +470,11 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
 .concept__statement p + p {
   margin-top: 30px;
 }
-@media all and (min-width: 992px) {
-  .concept__statement__whatWeDo {
-    margin-bottom: 150px;
-  }
-}
-@media all and (min-width: 992px) {
-  .concept__statement__whoWeAre, .concept__statement__whatWeBelieve {
-    margin-bottom: 120px;
-  }
-}
 .concept h2 {
-  font-size: 1.6rem;
   letter-spacing: .1rem;
   font-weight: 500;
   margin-bottom: 10px;
+  font-size: 1.6rem;
 }
 @media all and (min-width: 992px) {
   .concept h2 {
@@ -486,8 +487,8 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
   }
 }
 .concept p {
-  font-size: 1rem;
   line-height: 1.6rem;
+  font-size: 1rem;
 }
 @media all and (min-width: 768px) {
   .concept p {
@@ -514,10 +515,10 @@ footer {
   background: #e5e4e4;
   text-align: center;
   padding: 45px 0;
-  font-size: 18px;
-  font-size: 1.125rem;
   font-weight: 600;
   letter-spacing: .15em;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 footer a {
   color: #ff0043;

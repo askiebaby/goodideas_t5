@@ -1,46 +1,62 @@
-@import '../modules/minxinMediaQueries';
-@import '../modules/mixinPinkTitle';
+@import '../modules/mixinMediaQueries';
+@import '../modules/mixinSectionTitle';
 @import '../modules/mixinFontSize';
 
 
 .workClients {
   position: relative;
-  @include font-size(16);
   margin-bottom: 120px;
+  @include fontSize(16);
+
+  @include mediaMobile {
+    @include fontSize(18);
+  }
+
+  @include mediaTablet {
+    @include fontSize(19);
+  }
+
+  @include mediaPC {
+    @include fontSize(20);
+  }
+
+  @include mediaLargeDevice {
+    @include fontSize(24);
+  }
 
   &__titleContainer {
     position: absolute;
-    top: -60px;
     left: 0;
     right: 0;
     text-align: center;
+    top: -60px;
 
-    @include media-xs {
+    @include mediaMobile {
       top: -63px;
     }
 
-    @include media-sm {
+    @include mediaTablet {
       top: -64px;
     }
 
-    @include media-md {
+    @include mediaPC {
       top: -65px;
     }
   
-    @include media-lg {
+    @include mediaLargeDevice {
       top: -71px;
     }
 
   }
 
   h2 {
-    @include pinkTitle(inline-block);
+    @include sectionTitle(inline-block);
 }
   &__gridContainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr) );
 
-    @include media-lg {
+    @include mediaLargeDevice {
       grid-template-columns: repeat(4, minmax(320px, 1fr));
     }
   }
@@ -66,7 +82,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include font-size(28);
     position: absolute;
     text-align: center;
     width: 100%;
@@ -74,25 +89,10 @@
     top: 0;
     color: #fff;
     background: rgba(255, 0, 67, .5);
-    @extend %mainTitleFontFamily;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.3s linear;
-  }
-
-  @include media-xs {
-    @include font-size(18);
-  }
-
-  @include media-sm {
-    @include font-size(19);
-  }
-
-  @include media-md {
-    @include font-size(20);
-  }
-
-  @include media-lg {
-    @include font-size(24);
+    @extend %mainTitleFontFamily;
+    @include fontSize(28);
   }
 }

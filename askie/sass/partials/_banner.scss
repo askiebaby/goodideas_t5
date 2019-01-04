@@ -1,22 +1,38 @@
+@import '../modules/mixinMediaQueries';
 @import '../modules/extendFontFamily';
-@import '../modules/minxinMediaQueries';
 @import '../modules/mixinFontSize';
+@import '../modules/mixinSquare';
 
 .banner {
   background: url('../images/banner.png') no-repeat center center / cover;
   background-attachment: fixed;
-  @extend %mainTitleFontFamily;
-  @include font-size(16);
   color: $secondaryColor;
   text-align: center;
   min-height: calc(100vh - 53px);
+  @extend %mainTitleFontFamily;
+  @include fontSize(16);
+
+  @include mediaMobile {
+    @include fontSize(18);
+  }
+
+  @include mediaTablet {
+    @include fontSize(19);
+  }
+
+  @include mediaPC {
+    @include fontSize(20);
+  }
+
+  @include mediaLargeDevice {
+    @include fontSize(24);
+  }
 
   .banner__mainTitle {
     padding: 20vh 0 15vh;
   }
 
   h1 {
-    
     font-style: italic;
     text-transform: uppercase;
     font-weight: 500;
@@ -45,17 +61,23 @@
     text-transform: lowercase;
     letter-spacing: 0;
   }
+  
 
-  .banner__paragraphSeparator, .banner__paragraphSeparator::before, .banner__paragraphSeparator::after {
-    width: 9px;
-    height: 9px;
+  &__paragraphSeparator {
+    position: relative;
+
+    @include square(9px);
     border-radius: 5px;
     background: $secondaryColor;
     margin: auto;
-  }
 
-  .banner__paragraphSeparator {
-    position: relative;
+    &::before,
+    &::after {
+      @include square(9px);
+      border-radius: 5px;
+      background: $secondaryColor;
+      margin: auto;
+    }
 
     &::before{
       content: '';
@@ -71,21 +93,4 @@
       display: block;
     }
   }
-
-  @include media-xs {
-    @include font-size(18);
-  }
-
-  @include media-sm {
-    @include font-size(19);
-  }
-
-  @include media-md {
-    @include font-size(20);
-  }
-
-  @include media-lg {
-    @include font-size(24);
-  }
-
 }
