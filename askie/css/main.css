@@ -27,6 +27,18 @@ h1, h2, h3, p {
 /* base */
 /* header */
 /* banner */
+.banner, .workClients__description, .team h3, .concept h2 {
+  font-family: 'Noto Serif', serif;
+}
+
+header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton, .concept p, .concept__toTopButton, footer {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.banner__highlightWord {
+  font-family: 'Lobster', cursive;
+}
+
 header {
   background: #370537;
   text-align: center;
@@ -48,21 +60,8 @@ header {
   color: #fc5988;
 }
 
-.banner, .workClients__description, .team h3, .concept h2 {
-  font-family: 'Noto Serif', serif;
-}
-
-header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton, .concept p, .concept__toTopButton, footer {
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-.banner .banner__highlightWord {
-  font-family: 'Lobster', cursive;
-}
-
 .banner {
   background: url("../images/banner.png") no-repeat center center/cover;
-  background-attachment: fixed;
   color: #fff;
   text-align: center;
   min-height: calc(100vh - 53px);
@@ -93,7 +92,7 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
     font-size: 1.5rem;
   }
 }
-.banner .banner__mainTitle {
+.banner__mainTitle {
   padding: 20vh 0 15vh;
 }
 .banner h1 {
@@ -116,7 +115,7 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
   max-width: 450px;
   line-height: 1.5em;
 }
-.banner .banner__highlightWord {
+.banner__highlightWord {
   margin-left: .5em;
   text-transform: lowercase;
   letter-spacing: 0;
@@ -139,13 +138,13 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
 .banner__paragraphSeparator::before {
   content: '';
   position: absolute;
-  top: 30px;
+  bottom: 30px;
   display: block;
 }
 .banner__paragraphSeparator::after {
   content: '';
   position: absolute;
-  bottom: 30px;
+  top: 30px;
   display: block;
 }
 

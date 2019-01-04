@@ -5,7 +5,6 @@
 
 .banner {
   background: url('../images/banner.png') no-repeat center center / cover;
-  background-attachment: fixed;
   color: $secondaryColor;
   text-align: center;
   min-height: calc(100vh - 53px);
@@ -28,7 +27,7 @@
     @include fontSize(24);
   }
 
-  .banner__mainTitle {
+  &__mainTitle {
     padding: 20vh 0 15vh;
   }
 
@@ -55,7 +54,7 @@
     line-height: 1.5em;
   }
 
-  .banner__highlightWord {
+  &__highlightWord {
     @extend %highlightFontFamily;
     margin-left: .5em;
     text-transform: lowercase;
@@ -82,14 +81,14 @@
     &::before{
       content: '';
       position: absolute;
-      top: 30px;
+      bottom: 30px;
       display: block;
     }
 
     &::after {
       content: '';
       position: absolute;
-      bottom: 30px;
+      top: 30px;
       display: block;
     }
   }
