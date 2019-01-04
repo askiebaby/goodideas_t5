@@ -402,7 +402,6 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
 .concept {
   font-size: 0;
   background: url(../images/sea-horse-bg.jpg) no-repeat center center/cover;
-  background-attachment: fixed;
   color: #fff;
   padding: 80px 10% 30px;
 }
