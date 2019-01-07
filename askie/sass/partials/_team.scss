@@ -1,8 +1,8 @@
-@import '../modules/mixinMediaQueries';
-@import '../modules/extendFontFamily';
-@import '../modules/mixinFontSize';
-@import '../modules/mixinSectionTitle';
-@import '../modules/mixinButton';
+@import '../modules/MediaQueries';
+@import '../modules/Font';
+@import '../modules/SectionTitle';
+@import '../modules/Button';
+
 
 .team {
   text-align: center;

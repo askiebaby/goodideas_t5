@@ -25,13 +25,11 @@ h1, h2, h3, p {
 }
 
 /* base */
-/* header */
-/* banner */
 .banner, .workClients__description, .team h3, .concept h2 {
   font-family: 'Noto Serif', serif;
 }
 
-header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton, .concept p, .concept__toTopButton, footer {
+.headerMenu, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton, .concept p, .concept__toTopButton, footer {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -39,12 +37,12 @@ header, .workClients h2, .team h2, .team__gridContainer p, .team__contactButton,
   font-family: 'Lobster', cursive;
 }
 
-header {
+/* header */
+.headerMenu {
   background: #370537;
   text-align: center;
   padding: 15px 0;
 }
-
 .headerMenu a {
   color: #fff;
   padding: .5rem;
@@ -93,7 +91,12 @@ header {
   }
 }
 .banner__mainTitle {
-  padding: 20vh 0 15vh;
+  padding: 15vh 0;
+}
+@media all and (min-width: 768px) {
+  .banner__mainTitle {
+    padding: 18vh 0;
+  }
 }
 .banner h1 {
   font-style: italic;
@@ -218,20 +221,20 @@ header {
 .workClients h2::after {
   content: '';
   position: absolute;
+  background: #ff0043;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(45deg) translate(0, 50%);
+  transform-origin: bottom;
   width: 20px;
   height: 20px;
-  bottom: -10px;
-  left: calc(50% - 10px);
-  background: #ff0043;
-  transform: rotate(45deg);
-  z-index: 1;
 }
 @media all and (min-width: 768px) {
   .workClients h2::after {
     width: 30px;
     height: 30px;
-    bottom: -15px;
-    left: calc(50% - 15px);
   }
 }
 @media all and (min-width: 576px) {
@@ -322,20 +325,20 @@ header {
 .team h2::after {
   content: '';
   position: absolute;
+  background: #ff0043;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(45deg) translate(0, 50%);
+  transform-origin: bottom;
   width: 20px;
   height: 20px;
-  bottom: -10px;
-  left: calc(50% - 10px);
-  background: #ff0043;
-  transform: rotate(45deg);
-  z-index: 1;
 }
 @media all and (min-width: 768px) {
   .team h2::after {
     width: 30px;
     height: 30px;
-    bottom: -15px;
-    left: calc(50% - 15px);
   }
 }
 .team h3 {
@@ -400,13 +403,18 @@ header {
 
 .concept {
   font-size: 0;
-  background: url(../images/sea-horse-bg.jpg) no-repeat center center/cover;
+  background: url(../images/sea-horse-bg.jpg) no-repeat top center/cover;
   color: #fff;
   padding: 80px 10% 30px;
 }
+@media all and (min-width: 768px) {
+  .concept {
+    background-position: center;
+  }
+}
 @media all and (min-width: 992px) {
   .concept {
-    padding: 80px 15% 30px;
+    padding: 80px 14vw 30px;
   }
 }
 @media all and (min-width: 992px) {

@@ -1,3 +1,5 @@
+@import './Colors';
+
 @mixin button ($style:black) {
   display: block;
   padding: 10px 70px;

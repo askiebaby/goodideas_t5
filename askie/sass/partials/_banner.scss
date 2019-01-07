@@ -1,7 +1,6 @@
-@import '../modules/mixinMediaQueries';
-@import '../modules/extendFontFamily';
-@import '../modules/mixinFontSize';
-@import '../modules/mixinSquare';
+@import '../modules/MediaQueries';
+@import '../modules/Font';
+@import '../modules/Square';
 
 .banner {
   background: url('../images/banner.png') no-repeat center center / cover;
@@ -28,7 +27,10 @@
   }
 
   &__mainTitle {
-    padding: 20vh 0 15vh;
+    padding: 15vh 0;
+    @include mediaTablet {
+      padding: 18vh 0;
+    }
   }
 
   h1 {

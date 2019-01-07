@@ -1,17 +1,19 @@
-@import '../modules/mixinMediaQueries';
-@import '../modules/extendFontFamily';
-@import '../modules/mixinFontSize';
-@import '../modules/mixinButton';
-@import '../modules/mixinSquare';
+@import '../modules/MediaQueries';
+@import '../modules/Font';
+@import '../modules/Button';
+@import '../modules/Square';
 
 .concept {
   font-size: 0;
-  background: url(../images/sea-horse-bg.jpg) no-repeat center center / cover;
+  background: url(../images/sea-horse-bg.jpg) no-repeat top center / cover;
   color: #fff;
   padding: 80px 10% 30px;
 
+  @include mediaTablet {
+    background-position: center;
+  }
   @include mediaPC {
-    padding: 80px 15% 30px;
+    padding: 80px 14vw 30px;
   }
 
   &__statementContainer {

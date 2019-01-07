@@ -1,15 +1,19 @@
-@import '../modules/variblesColors';
-@import '../modules/mixinFontSize';
-@import '../modules/extendFontFamily';
+@import '../modules/Colors';
+@import '../modules/Font';
 
-header {
+
+/* header */
+$navLinkColor: $white;
+$navLinkNowColor: $pink;
+$headerBackgroundColor: $purple;
+
+
+.headerMenu {
   background: $headerBackgroundColor;
   text-align: center;
   padding: 15px 0;
   @extend %subTitleFontFamily;
-}
 
-.headerMenu {
   a {
     color: $navLinkColor;
     padding: .5rem;

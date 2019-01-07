@@ -1,5 +1,5 @@
-@import './mixinMediaQueries';
-@import './mixinSquare';
+@import './MediaQueries';
+@import './Square';
 
 @mixin sectionTitle ($status: block){
   position: relative;
@@ -12,17 +12,17 @@
   &::after {
     content: '';
     position: absolute;
-    @include square(20px);
-    bottom: -10px;
-    left: calc(50% - 10px);
     background: $primaryColor;
-    transform: rotate(45deg);
-    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: rotate(45deg) translate(0, 50%);
+    transform-origin: bottom;
+    @include square(20px);
 
     @include mediaTablet {
       @include square(30px);
-      bottom: -15px;
-      left: calc(50% - 15px);
     }
   }
 
